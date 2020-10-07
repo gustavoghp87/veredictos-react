@@ -1,0 +1,171 @@
+
+
+
+body {
+    max-width: 100%;
+    background-color: #0d0c18;
+    text-align: justify;
+    color: aliceblue;
+    padding-left: 4%;
+    padding-right: 4%;
+    display: block;
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+#hammer {
+    width: 50%;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.title1 {
+text-align: center;
+font-size: 3.5rem;
+margin-top: 35px;
+margin-bottom: 40px;
+line-height: 50px;
+}
+
+#chapImage {
+max-width:60%;
+display:block;
+margin:auto;
+margin-top: 70px;
+margin-bottom: 20px;
+}
+
+.title2 {
+text-align: center;
+font-size: 2.5rem;
+margin-bottom: 40px;
+line-height: 50px;
+}
+
+ul {
+margin-left: 13%;
+margin-right: 13%;
+font-size: 1.5rem;
+margin-bottom: 20px;
+padding-left: 0px;
+}
+
+.subtitle {
+text-align: center;
+font-size: 2rem;
+margin-top: 70px;
+margin-bottom: 30px;
+line-height: 50px;
+}
+
+.prebody {
+padding-left: 0%;
+padding-right: 0%;
+margin-top: 60px;
+line-height: 35px;
+text-indent: 30px;
+}
+
+.btnContainer {
+display: flex;
+margin: auto;
+margin-top: 80px;
+margin-left: 12%;
+margin-right: 12%;
+}
+
+.buttons {
+width: 100%;
+display: block;
+margin-right: 140px;
+font-size: 1.5rem;
+border-radius: 12px;
+height:60px;
+color: #007bff;
+}
+
+.special-right {
+margin-left: 5%;
+margin-right: 5%;
+text-indent: 0px;
+line-height: 25px;
+}
+
+.center {
+display: block;
+margin: auto;
+text-align: center;
+font-size: 2rem;
+margin-top: 35px;
+margin-bottom: 35px;
+}
+
+.image-center {
+display: block;
+margin: auto;
+padding-top: 20px;
+padding-bottom: 20px !important;
+width: 40% !important;
+margin-bottom: 40px !important;
+}
+
+.index {
+padding-top: 30px;
+font-size:2.2rem;
+line-height:25px;
+text-align:left;
+}
+
+a.anchorIndex:link {
+color: #007bff;
+font-weight: 800;
+}
+
+a.anchorIndex:visited {
+color: #007bff;
+font-weight: 800;
+}
+
+a.anchorIndex:hover {
+color: white;
+font-weight: 800;
+}
+
+#logoFooter {
+max-width: 25%;
+display: block;
+margin:auto;
+}
+
+
+/* index */
+
+.presentation {
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 1.5rem;
+    margin-top:60px;
+}
+
+p {
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    line-height: 55px;
+    text-indent: 40px;
+}
+
+.presentation-p {
+    line-height: 36px !important;
+}
+
+#foot {
+    text-align: justify;
+    text-indent: 40px;
+}
+
+#footW {
+    font-size: 2.2rem;
+}
