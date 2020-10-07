@@ -1,76 +1,128 @@
 import React from 'react'
-
+import { INDEX, HR, ULANCHOR } from './css/css'
+import { Link } from 'react-router-dom'
 
 
 export const Indice = () => {
 
+    const dec = {textDecoration:'none', display:'block', textIndent:'0'}
 
     return (
         
-        <div className="index">
+        <INDEX>
 
-            <ul> <a href="/" className="anchorIndex"> PRESENTACIÓN </a> </ul>
+            <ULANCHOR>
+                <Link to="/" style={dec}> PRESENTACIÓN </Link>
+            </ULANCHOR>
     
-            <ul> <a href="/01" className="anchorIndex"> I. ECONOMÍA Y RIQUEZA </a> </ul>
+            <ULANCHOR>
+                <Link to="/01" style={dec}> I. ECONOMÍA Y RIQUEZA </Link>
+            </ULANCHOR>
     
-            <ul> <a href="/02" className="anchorIndex"> II. VALOR DE CAMBIO </a> </ul>
+            <ULANCHOR>
+                <Link to="/02" style={dec}> II. VALOR DE CAMBIO </Link>
+            </ULANCHOR>
     
-            <ul> <a href="/03" className="anchorIndex"> III. VALOR AGREGADO Y PRECIOS </a> </ul>
+            <ULANCHOR>
+                <Link to="/03" style={dec}> III. VALOR AGREGADO Y PRECIOS </Link>
+            </ULANCHOR>
     
-            <ul> <a href="/04" className="anchorIndex"> IV. SALARIOS Y GANANCIAS </a> </ul>
+            <ULANCHOR>
+                <Link to="/04" style={dec}> IV. SALARIOS Y GANANCIAS </Link>
+            </ULANCHOR>
     
-            <ul> <a href="/05" className="anchorIndex"> V. LA BANCARROTA DE MARX </a> </ul>
+            <ULANCHOR>
+                <Link to="/05" style={dec}> V. LA BANCARROTA DE MARX </Link>
+            </ULANCHOR>
     
-            <ul> <a href="/06" className="anchorIndex"> VI. CRECIMIENTO Y DESIGUALDAD: LA TEORÍA DEL MANIFIESTO </a> </ul>
+            <ULANCHOR>
+                <Link to="/06" style={dec}> VI. CRECIMIENTO Y DESIGUALDAD: LA TEORÍA DEL MANIFIESTO </Link>
+            </ULANCHOR>
     
-            <ul> <a href="/07" className="anchorIndex"> VII. CONSUMO Y CRECIMIENTO </a> </ul>
+            <ULANCHOR>
+                <Link to="/07" style={dec}> VII. CONSUMO Y CRECIMIENTO </Link>
+            </ULANCHOR>
     
-            <ul> <a href="/08" className="anchorIndex"> VIII. LA PARADOJA KEYNESIANA DEL AHORRO </a> </ul>
+            <ULANCHOR>
+                <Link to="/08" style={dec}> VIII. LA PARADOJA KEYNESIANA DEL AHORRO </Link>
+            </ULANCHOR>
     
-            <ul> <a href="/09" className="anchorIndex"> IX. CONCENTRACIÓN Y OLIGOPOLIOS </a> </ul>
+            <ULANCHOR>
+                <Link to="/09" style={dec}> IX. CONCENTRACIÓN Y OLIGOPOLIOS </Link>
+            </ULANCHOR>
     
-            <ul> <a href="/10" className="anchorIndex"> X. SISTEMA DE PRECIOS, PROPIEDAD PRIVADA, MANO INVISIBLE </a> </ul>
+            <ULANCHOR>
+                <Link to="/10" style={dec}> X. SISTEMA DE PRECIOS, PROPIEDAD PRIVADA, MANO INVISIBLE </Link>
+            </ULANCHOR>
     
-            <ul> <a href="/11" className="anchorIndex"> XI. MALTHUSIANISMO </a> </ul>
+            <ULANCHOR>
+                <Link to="/11" style={dec}> XI. MALTHUSIANISMO </Link>
+            </ULANCHOR>
     
-            <ul> <a href="/12" className="anchorIndex"> XII. COMERCIO INTERNACIONAL </a> </ul>
+            <ULANCHOR>
+                <Link to="/12" style={dec}> XII. COMERCIO INTERNACIONAL </Link>
+            </ULANCHOR>
     
-            <ul> <a href="/13" className="anchorIndex"> XIII. EL PROBLEMA DE LA RENTA </a> </ul>
+            <ULANCHOR>
+                <Link to="/13" style={dec}> XIII. EL PROBLEMA DE LA RENTA </Link>
+            </ULANCHOR>
     
-            <ul> <a href="/14" className="anchorIndex"> XIV. MARXISMO CONTRA LENINISMO </a> </ul>
+            <ULANCHOR>
+                <Link to="/14" style={dec}> XIV. MARXISMO CONTRA LENINISMO </Link>
+            </ULANCHOR>
     
-            <ul> <a href="/15" className="anchorIndex"> XV. INFLACIÓN </a> </ul>
+            <ULANCHOR>
+                <Link to="/15" style={dec}> XV. INFLACIÓN </Link>
+            </ULANCHOR>
     
-            <ul> <a href="/16" className="anchorIndex"> XVI. ¿QUÉ PASA CON LOS BANCOS CENTRALES? </a> </ul>
+            <ULANCHOR>
+                <Link to="/16" style={dec}> XVI. ¿QUÉ PASA CON LOS BANCOS CENTRALES? </Link>
+            </ULANCHOR>
     
-            <ul> <a href="/17" className="anchorIndex"> XVII. ¿QUÉ PASÓ EN 1929? </a> </ul>
+            <ULANCHOR>
+                <Link to="/17" style={dec}> XVII. ¿QUÉ PASÓ EN 1929? </Link>
+            </ULANCHOR>
     
-            <ul> <a href="/18" className="anchorIndex"> XVIII. ¿QUÉ HAY PODRIDO EN EL FMI? </a> </ul>
+            <ULANCHOR>
+                <Link to="/18" style={dec}> XVIII. ¿QUÉ HAY PODRIDO EN EL FMI? </Link>
+            </ULANCHOR>
     
-            <ul> <a href="/19" className="anchorIndex"> XIX. LA TEORÍA GENERAL DEL INTERÉS QUE NO LO ES </a> </ul>
+            <ULANCHOR>
+                <Link to="/19" style={dec}> XIX. LA TEORÍA GENERAL DEL INTERÉS QUE NO LO ES </Link>
+            </ULANCHOR>
     
-            <ul> <a href="/20" className="anchorIndex"> XX. LA TEORÍA DEL CAPITAL Y LOS CICLOS </a> </ul>
+            <ULANCHOR>
+                <Link to="/20" style={dec}> XX. LA TEORÍA DEL CAPITAL Y LOS CICLOS </Link>
+            </ULANCHOR>
     
-            <ul> <a href="/21" className="anchorIndex"> XXI. HACER MACROECONOMÍA </a> </ul>
+            <ULANCHOR>
+                <Link to="/21" style={dec}> XXI. HACER MACROECONOMÍA </Link>
+            </ULANCHOR>
     
-            <ul> <a href="/22" className="anchorIndex"> XXII. NEOLIBERALISMO </a> </ul>
+            <ULANCHOR>
+                <Link to="/22" style={dec}> XXII. NEOLIBERALISMO </Link>
+            </ULANCHOR>
     
-            <ul> <a href="/23" className="anchorIndex"> XXIII. LA INTERPRETACIÓN MATERIALISTA DE LA HISTORIA </a> </ul>
+            <ULANCHOR>
+                <Link to="/23" style={dec}> XXIII. LA INTERPRETACIÓN MATERIALISTA DE LA HISTORIA </Link>
+            </ULANCHOR>
     
-            <ul> <a href="/24" className="anchorIndex"> XXIV. DETERMINISMO CONTRA ESTOCASTICISMO </a> </ul>
+            <ULANCHOR>
+                <Link to="/24" style={dec}> XXIV. DETERMINISMO CONTRA ESTOCASTICISMO </Link>
+            </ULANCHOR>
     
-            <ul> <a href="/25" className="anchorIndex"> XXV. EL GENOMA SOCIALISTA </a> </ul>
+            <ULANCHOR>
+                <Link to="/25" style={dec}> XXV. EL GENOMA SOCIALISTA </Link>
+            </ULANCHOR>
     
-            {/* {{!-- <ul> <a href="/26" className="anchorIndex"> XXVI. BITCOIN </a> </ul> --}}
+            {/* {{!-- <ULANCHOR> <Link to="/26" style={dec}> XXVI. BITCOIN </Link> </ULANCHOR> --}}
     
-            {{!-- <ul> <a href="/27" className="anchorIndex"> XXVII. NUEVA GENERACIÓN DE CRIPTOMONEDAS </a> </ul> --}} */}
+            {{!-- <ULANCHOR> <Link to="/27" style={dec}> XXVII. NUEVA GENERACIÓN DE CRIPTOMONEDAS </Link> </ULANCHOR> --}} */}
     
             <br/>
     
-            <hr style={{border:'1px solid white', marginBottom:'35px', width:'100%', borderRadius:'5px'}}></hr> 
+            <HR /> 
         
-        </div>
-    
-    
+        </INDEX>
     )
 }

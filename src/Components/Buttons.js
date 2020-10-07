@@ -1,40 +1,65 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, withRouter } from 'react-router-dom'
+import { HR, ROWBUTTONS, BUTTON } from './css/css'
+import { Col, Row } from 'react-bootstrap'
 
 
-export const Buttons = () => {
+export default withRouter(function Buttons(props) {
+
+    
+    const act = props.location.pathname
+    let ant, pos
+    if (act==='/') {console.log("estoy en index"); ant = '/'; pos = '/01'}
+    else if (act==='/01') {console.log("estoy en 01"); ant = '/'; pos = '/02'}
+    else if (act==='/10') {ant = '/09'; pos = '/11'}
+    else {
+        let aux = act.split('/')[1]
+        if (aux[0]==='0') {
+            aux = aux.split('0')[1]
+            aux = parseInt(aux)
+            ant = `/0${aux-1}`
+            pos = `/0${aux+1}`
+        } else {
+            aux = parseInt(aux)
+            ant = `/${aux-1}`
+            pos = `/${aux+1}`
+        }
+    }
+
 
     return (
     
-        <div className="btnContainer row">
+        <div>
+            <Row style={ROWBUTTONS}>
 
-            <div className="col-md-4">
-                <a href="/" style={{textDecoration:'none', display:'block'}} id="button{{json.vers}}">
-                <button className="btn btn-dark buttons"> 
-                    <b>ANTERIOR</b> 
-                </button>
-                </a>
-            </div>
+                <Col lg={4}>
+                    <Link to={ant} style={{textDecoration:'none', display: ant==='/' ? 'none' : 'block'}}>
+                        <BUTTON className="btn btn-dark"> 
+                            <b>ANTERIOR</b> 
+                        </BUTTON>
+                    </Link>
+                </Col>
 
-            <div className="col-md-4">
-                <Link to="/" style={{textDecoration:'none'}} id="buttonBeginning">
-                    <button className="btn btn-dark buttons">
-                        <b>PRINCIPIO</b> 
-                    </button>
-                </Link>
-            </div>
+                <Col lg={4}>
+                    <Link to={'/'} style={{textDecoration:'none', display: act==='/' ? 'none' : 'block'}}>
+                        <BUTTON className="btn btn-dark">
+                            <b>PRINCIPIO</b> 
+                        </BUTTON>
+                    </Link>
+                </Col>
 
-            <div className="col-md-4">
-                <a href="/" style={{textDecoration:'none'}}>
-                <button className="btn btn-dark buttons"> 
-                    <b>SIGUIENTE</b> 
-                </button>
-                </a>
-            </div>
+                <Col lg={4}>
+                    <Link to={pos} style={{textDecoration:'none', display: act==='/25' ? 'none' : 'block'}}>
+                        <BUTTON className="btn btn-dark" style={{textDecoration:'none'}}> 
+                            <b>SIGUIENTE</b> 
+                        </BUTTON>
+                    </Link>
+                </Col>
 
-            <hr style={{border:'1px solid white', marginBottom:'35px', width:'100%', borderRadius:'5px'}} />
+            </Row>
+
+            <HR />
 
         </div>
-    
     )
-}
+})

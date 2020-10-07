@@ -1,18 +1,18 @@
 import React from 'react'
+import { HAMMER, TITLE1, HR } from './css/css'
 
 
+export const Navbar = () => {
 
-export const Navbar = (props) => {
-    console.log(props)
     return (
+        
         <div>
 
-            <div id="headlogo{{vers}}">
-                <img src="/frontend-src/index/hammer5.png" id="hammer" />
-                <div className="title1"> VEREDICTOS DE ECONOMÍA  </div>
-            </div>
+            <HAMMER src="/frontend-src/index/hammer5.png" />
+
+            <TITLE1> VEREDICTOS DE ECONOMÍA  </TITLE1>
         
-            <hr style={{border:'1px solid white', marginBottom:'35px', width:'100%', borderRadius:'5px'}} />
+            <HR />
 
         </div>
     )
