@@ -50,7 +50,7 @@ export default withRouter(function Buttons(props) {
 
                 <Col lg={4}>
                     <Link to={pos} style={{textDecoration:'none', display: act==='/25' ? 'none' : 'block'}}>
-                        <BUTTON className="btn btn-dark" style={{textDecoration:'none'}}> 
+                        <BUTTON className="btn btn-dark"> 
                             <b>SIGUIENTE</b> 
                         </BUTTON>
                     </Link>

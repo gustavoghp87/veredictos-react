@@ -12,7 +12,7 @@ export const V19 = () => {
 
         <CHAPIMAGE src="/frontend-src/19/19.jpg" />
 
-        <TITLE2> XIX. LA TEORÍA GENERAL DEL<br />INTERES QUE NO LO ES </TITLE2>
+        <TITLE2> XIX. LA TEORÍA GENERAL DEL<br/>INTERÉS QUE NO LO ES </TITLE2>
 
         <UL> 1. En 1936 vio la luz la obra más determinante en el pensamiento socialista desde el <i>Manifiesto Comunista</i> de 1848. La <i>General Theory of Employment, Interest and Money</i> de Keynes incluyó una explicación general de cómo se determinan los tipos de interés de los créditos y los activos financieros que dice: </UL>
 

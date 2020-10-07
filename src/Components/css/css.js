@@ -24,7 +24,7 @@ export const HAMMER = styled.img`
 export const TITLE1 = styled.h1`
     text-align: center;
     font-size: ${mobile ? '2.2rem' : '3.7rem'};
-    margin: 0px auto 30px auto;
+    margin: ${mobile ? '0px auto 30px auto' : '25px auto 40px auto'};
     line-height: ${mobile ? '40px' : '50px'};
     text-indent: 0 !important;
 `
@@ -39,7 +39,7 @@ export const TITLE2 = styled.h1`
     text-align: center;
     font-size: ${mobile ? '1.7rem' : '3rem'};
     max-width: 90%;
-    margin: ${mobile ? '10px auto 10px auto' : '50px auto 40px auto'};
+    margin: ${mobile ? '10px auto 10px auto' : '60px auto 30px auto'};
     line-height: ${mobile ? '35px' : '50px'};
     text-indent: ${mobile ? '0 !important' : '0'};
 `
@@ -100,9 +100,8 @@ export const CENTER = styled.div`
 
 export const IMAGECENTER = styled.img`
     display: block;
-    margin: 0 auto 40px auto !important;
-    padding: 20px 0 !important;
-    width: 40% !important;
+    margin: ${mobile ? '15px auto' : '10px auto 40px auto !important'};
+    width: ${mobile ? '90% !important' : '40% !important'};
 `
 
 export const INDEX = styled.div`
