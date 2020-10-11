@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { CHAPIMAGE, TITLE2, UL } from '../css/css'
+import { data } from '../../chapters'
 
 
 export const V01 = () => {
@@ -11,7 +12,7 @@ export const V01 = () => {
 
         <CHAPIMAGE src="/frontend-src/01/01.jpg" />
 
-        <TITLE2> I. ECONOMÍA Y RIQUEZA </TITLE2>
+        <TITLE2> I. {data[1].title} </TITLE2>
 
         <UL> 1. ¿De qué trata la economía como ciencia? Es acerca de gente trabajando, intercambiando, ahorrando, invirtiendo, haciendo contratos, tomando riesgos... y sus resultados. Es acerca de los humanos y la riqueza. </UL>
 

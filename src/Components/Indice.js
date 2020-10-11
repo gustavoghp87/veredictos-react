@@ -1,6 +1,7 @@
 import React from 'react'
 import { INDEX, HR, ULANCHOR } from './css/css'
 import { Link } from 'react-router-dom'
+import { data } from '../chapters'
 
 
 export const Indice = () => {
@@ -12,15 +13,15 @@ export const Indice = () => {
         <INDEX>
 
             <ULANCHOR>
-                <Link to="/" style={dec}> PRESENTACIÓN </Link>
+                <Link to="/" style={dec}> {data[0].number} </Link>
             </ULANCHOR>
     
             <ULANCHOR>
-                <Link to="/01" style={dec}> I. ECONOMÍA Y RIQUEZA </Link>
+                <Link to="/01" style={dec}> {data[1].number}. {data[1].title} </Link>
             </ULANCHOR>
     
             <ULANCHOR>
-                <Link to="/02" style={dec}> II. VALOR DE CAMBIO </Link>
+                <Link to="/02" style={dec}> {data[2].number}. {data[2].title} </Link>
             </ULANCHOR>
     
             <ULANCHOR>

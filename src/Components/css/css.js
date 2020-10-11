@@ -8,7 +8,7 @@ export const ROWBUTTONS = {margin: mobile ? '40px 4% 60px 4%' : '110px 12%'}
 export const VERE = {fontSize: mobile ? '1.5rem' : '2.2rem', textIndent:'0 !important'}
 
 export const HR = styled.hr`
-    border: 1px solid white;
+    border: 1px solid gray;
     margin-bottom: 35px;
     width: ${mobile ? '100%' : '90%'};
     border-radius: 5px;
@@ -27,6 +27,7 @@ export const TITLE1 = styled.h1`
     margin: ${mobile ? '0px auto 30px auto' : '25px auto 40px auto'};
     line-height: ${mobile ? '40px' : '50px'};
     text-indent: 0 !important;
+    color: gray;
 `
 
 export const CHAPIMAGE = styled.img`
@@ -39,7 +40,7 @@ export const TITLE2 = styled.h1`
     text-align: center;
     font-size: ${mobile ? '1.7rem' : '3rem'};
     max-width: 90%;
-    margin: ${mobile ? '10px auto 10px auto' : '60px auto 30px auto'};
+    margin: ${mobile ? '10px auto 10px auto' : '70px auto 50px auto'};
     line-height: ${mobile ? '35px' : '50px'};
     text-indent: ${mobile ? '0 !important' : '0'};
 `
@@ -126,7 +127,7 @@ export const FOOT = styled.div`
 
 export const PRESENTATION = styled.div`
     padding: ${mobile ? '0 5%' : '0 15%'};
-    font-size: ${mobile ? '1rem' : '1.5rem'};
+    font-size: ${mobile ? '0.9rem' : '1.5rem'};
     margin-top: ${mobile ? '0' : '60px'};
 `
 

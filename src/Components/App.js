@@ -32,6 +32,8 @@ import { Indice } from './Indice'
 import { Footer } from './Footer'
 
 
+export const url = 'https://veredictos.herokuapp.com/count'
+
 function App() {
 
   const appStyle = {

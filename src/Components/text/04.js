@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react'
 import { CHAPIMAGE, TITLE2, UL, SUBTITLE } from '../css/css'
-
+import { url } from '../App'
+import { isLocalhost } from '../../index'
 
 
 export const V04 = () => {
 
-    useEffect(() => {window.scrollTo(0, 0)}, [])
+    useEffect(() => {window.scrollTo(0, 0); if (!isLocalhost) fetch(`${url}04`); console.log(isLocalhost); }, [])
 
     return (
     <div>
