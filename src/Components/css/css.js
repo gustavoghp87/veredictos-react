@@ -39,8 +39,8 @@ export const CHAPIMAGE = styled.img`
 export const TITLE2 = styled.h1`
     text-align: center;
     font-size: ${mobile ? '1.7rem' : '3rem'};
-    max-width: 90%;
-    margin: ${mobile ? '10px auto 10px auto' : '70px auto 50px auto'};
+    max-width: ${mobile ? '80%' : '50%'};
+    margin: ${mobile ? '30px auto 30px auto' : '70px auto 50px auto'};
     line-height: ${mobile ? '35px' : '50px'};
     text-indent: ${mobile ? '0 !important' : '0'};
 `
@@ -101,7 +101,7 @@ export const CENTER = styled.div`
 
 export const IMAGECENTER = styled.img`
     display: block;
-    margin: ${mobile ? '15px auto' : '10px auto 40px auto !important'};
+    margin: ${mobile ? '22px auto' : '10px auto 40px auto !important'};
     width: ${mobile ? '90% !important' : '40% !important'};
 `
 
