@@ -1,18 +1,20 @@
 import React, { useEffect } from 'react'
 import { CHAPIMAGE, TITLE2, UL, SUBTITLE, SPECIALRIGHT } from '../css/css'
-
+import { data } from '../../chapters'
+import { urlbase, isLocalhost } from '../../index'
 
 
 export const V26 = () => {
 
-    useEffect(() => {window.scrollTo(0, 0)}, [])
+    const url = urlbase + data[26].url
+    useEffect(() => {window.scrollTo(0, 0); if(!isLocalhost)fetch(url)}, [])
 
     return (
     <div>
 
         <CHAPIMAGE src="/frontend-src/26/26.jpg" />
 
-        <TITLE2> XXVI. BITCOIN </TITLE2>
+        <TITLE2> {data[26].number}. {data[26].title} </TITLE2>
 
         <UL> 1. Bitcoin es la primera moneda privada que se ha creado desde las innovaciones bancarias del siglo XIX, no porque sí, sino porque cuando los Estados se lanzaron a crear sus propias monedas de papel y de banco y las impusieron, anularon la posibilidad de innovación privada por la sencilla razón de que no tiene sentido invertir en innovación si no se puede obtener rédito por ello. </UL>
 

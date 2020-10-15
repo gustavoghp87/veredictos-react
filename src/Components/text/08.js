@@ -1,72 +1,76 @@
 import React, { useEffect } from 'react'
-import { CHAPIMAGE, TITLE2, UL, SUBTITLE, CENTER } from '../css/css'
-
+import { CHAPIMAGE, TITLE2, UL, SUBTITLE } from '../css/css'
+import { data } from '../../chapters'
+import { urlbase, isLocalhost } from '../../index'
 
 
 export const V08 = () => {
 
-    useEffect(() => {window.scrollTo(0, 0)}, [])
+    const url = urlbase + data[8].url
+    useEffect(() => {window.scrollTo(0, 0); if(!isLocalhost)fetch(url)}, [])
 
     return (
     <div>
 
-        <CHAPIMAGE src="/frontend-src/08/08.jpg" />
+        <CHAPIMAGE src="/frontend-src/11/11.jpg" />
 
-        <TITLE2> VIII. LA PARADOJA KEYNESIANA<br/>DEL AHORRO </TITLE2>
+        <TITLE2> {data[8].number}. {data[8].title} </TITLE2>
 
-        <UL> 1. Toda persona tiene ingresos y debe elegir cuánto consumir y cuánto ahorrar. Y respecto al ahorro, también tiene que decidir cuánto invertir como capital y cuánto preservar sin poner a producir como ahorro atesorado. </UL>
+        <UL> 1. Adam Smith había observado en 1776 que las familias obreras y campesinas tenían una alta tasa de mortalidad debido al hambre. Así, cuando los salarios reales subían, disminuía la mortalidad, eso incrementaba la fuerza laboral del país y los salarios volvían a bajar al nivel de subsistencia. Cuando, en cambio, los salarios reales bajaban, aumentaba la mortalidad, se reducía luego la clase trabajadora y los salarios volvían a subir. </UL>
 
-        <UL> 2. Si una persona quiere hacerse rica, lo que tiene que hacer es consumir una porción menor de sus ingresos (aparte de buscar mayores ingresos). Elemental. </UL>
+        <UL> 2. Luego, Thomas Malthus publicó un ensayo sobre población en 1798, adjudicándole esta dinámica a una disonancia entre el crecimiento de la producción de alimentos (lineal) y la natalidad (exponencial). Y al día de hoy se conoce como "malthusianismo" a la postura de oposición —pasiva o activa— a la natalidad de los pobres. </UL>
 
-        <UL> 3. Pero para J. M. Keynes (buscando explicar la gran contracción de 1929-1933 y levantar nuevos argumentos socialistas), esto no es cierto a nivel macroeconómico: Cuando todos o muchos en un país empiezan a ahorrar una mayor proporción de sus ingresos, la producción se tiene que venir abajo. Y, consecuentemente, los ingresos tienen que caer, de forma que todos terminarán ahorrando menos que antes. Es la <i>paradoja keynesiana del ahorro</i>. </UL>
+        <UL> 3. Los malthusianos creen que los pobres no deberían tener hijos o que deberían tener pocos porque esa sería la causa o la causa principal de la pobreza; que la economía no puede generar oportunidades de empleo y progreso al ritmo al que los pobres tienen hijos. </UL>
 
-        <UL> 3. Esta "paradoja" es el argumento keynesiano para decir que la redistribución del ingreso es una "política fiscal expansiva": Los pobres ahorran poco o nada, mientras que los "ricos" ahorran una buena porción de sus ingresos. De modo que quitarles a unos para darles a otros tiene que disminuir el ahorro macroeconómico, causando un auge económico. </UL>
+        <UL> 4. Lo de Smith fue una observación de algo que sucedía en la primera sociedad capitalista moderna... capitalista a medias y que heredaba del feudalismo una población sumamente pobre. La propuesta de reprimir la natalidad para que así subieran los salarios reales fue enteramente de Malthus y no se lleva bien con el pensamiento de Smith. </UL>
 
-        <UL> 4. De esta manera, la "paradoja" es una especie de mutación de la <i>teoría del Manifiesto Comunista</i>: Ahora la libertad no solo causaría desigualdad sino también mucho ahorro nocivo. Si la gente ejerciera su libertad de decidir cuánto gastar y cuánto ahorrar, habría malos resultados para la sociedad, incluso para los ahorradores. </UL>
+        <UL> 5. La dinámica tenía una perspectiva positiva ya para 1776 porque parecía que el progreso económico iba a ser más veloz que cualquier tasa de natalidad de los pobres. Fue, de hecho, lo que pasó y la pobreza en Gran Bretaña fue erradicada por los mismos pobres, trabajando. </UL>
 
-        <UL> 5. Habría una contradicción entre la libertad y el respeto a la propiedad privada, por un lado, y el bien común, por el otro. Y por eso se necesita concentrar poder en un enorme Estado socialista. </UL>
+        <UL> 6. Así, la realidad misma se encargó de refutar a Malthus: la solución a la pobreza es el crecimiento económico, no la represión de la natalidad de los pobres. Y cuando la pobreza se supera, la natalidad baja. </UL>
 
-
-        <SUBTITLE> EL HACK </SUBTITLE>
-
-        <UL> 6. ¿Por qué podríamos decir que la producción debe caer cuando aumente el ahorro? Porque, para Keynes, el producto de una economía es función directa del consumo, mientras que el ahorro sería el némesis del consumo: </UL>
-
-        <CENTER> PIB = alguna constante . CONSUMO </CENTER>
-
-        <UL> 7. Es el famoso multiplicador keynesiano. Cuando la gente consume un valor, genera más valor. Pero cuando ahorra, su valor cae en un agujero negro, desaparece. El legendario pensamiento comunista resumido en una sola ecuación. </UL>
-
-        <UL> 8. "Ahorro" es un concepto general. Puede significar comprar un activo que conserva su valor en el tiempo, invertir en el país o sacar el dinero del país. Hay, entonces, un ahorro que es inversión y otro que no lo es. Keynes dio por hecho que ningún ahorro es inversión. </UL>
-
-        <UL> 9. En Keynes, como se explicita en los manuales de macroeconomía, el ingreso de la población se divide entre lo que se consume y lo que se ahorra. Y el producto generado por las empresas (que explica esos ingresos) se divide entre lo que se produce para consumir y para invertir: </UL>
-
-        <CENTER> INGRESO GLOBAL  =  CONSUMO + AHORRO </CENTER>
-
-        <CENTER> PRODUCTO GLOBAL  =  CONSUMO + INVERSIÓN </CENTER>
-
-        <UL> 10. Pero es falso. El ingreso se descompone en consumo, ahorro inversión y ahorro no inversión. Y el producto está formado por el valor de mercado de los bienes y servicios finales de consumo e inversión que se venden más lo que no se venden. </UL>
-
-        <UL> 11. Hay dos trasfondos en el esquema keynesiano. Primeramente, que durante la Gran Depresión (1929-1933) la gente contrajo el consumo y la inversión para comprar oro (ahorro no inversión), desplomando el producto. </UL>
-
-        <UL> 12. Segundo, se ve en Keynes el sueño comunista de convertir al Estado en el único capitalista. Es la división funcional de la economía del artículo anterior (7), donde el Estado produce e invierte y sus súbditos consumen y ahorran (ahorro no inversión). </UL>
-
-        <UL> 13. ¿De qué depende la inversión en el esquema de Keynes? De factores psicológicos ajenos a todo esto, que llamó "animal spirits". Tiene su origen en su experiencia en la bolsa de valores de Londres, donde Keynes operaba usando información privilegiada que obtenía desde su cargo en el ministerio de economía. Como no entendía los movimientos de los precios, concluyó que dependen de las noticias y de las charlas de café. </UL>
+        <UL> 7. No obstante, esta doctrina malthusiana sigue vigente en los pensadores sociales que no entienden de razones ni de datos: los socialistas. </UL>
 
 
-        <SUBTITLE> AHORRO, SISTEMA DE PRECIOS<br/>Y SOCIALISMO </SUBTITLE>
+        <SUBTITLE> HEBREOS EN EGIPTO </SUBTITLE>
 
-        <UL> 14. En casos normales, cuando la gente ahorra más, el sistema de precios hace que esos ahorros se vuelvan inversión o consumo, usualmente mediante bancos y tasas de interés. Esos créditos nuevos hacen que los bienes de consumo y de capital que no fueron vendidos a los nuevos ahorristas sí sean vendidos a los tomadores de créditos. Por esta vía, el aumento del ahorro impulsa la capitalización, no atenta contra la producción. </UL>
+        <UL> 8. El primer malthusianismo registrado se halla en la Biblia: Cuenta Éxodo que el gobernante egipcio era un tirano que tenía a los israelitas trabajando como esclavos, fabricando ladrillos para la fundación de ciudades nuevas en honor al Faraón. En ese contexto, la natalidad entre los esclavos israelitas se volvió muy alta y el rey temió que se rebelaran. </UL>
 
-        <UL> 15. Las excepciones están dadas cuando hay crisis de expectativas y cuando el Estado no deja funcionar al sistema de precios. En esos dos casos, el aumento en el radio de ahorro macroeconómico no hace aumentar la inversión ni el consumo sino que causa la contracción del producto y de la renta interior. </UL>
-        
-        <UL> 16. Y, usualmente, las crisis están causadas porque el Estado no ha dejado funcionar al sistema de precios, como pasó en 1929-1933 y se trata en el capítulo 17. Es el gobierno manipulando las tasas de interés y los tipos de cambio. </UL>
+        <UL> 9. La estructura económica de Egipto asignada a los hebreos (el esclavismo) no podía dar oportunidades a tantos pobres. La solución obvia que se presentó en la mente del rey fue controlar la natalidad, practicando compulsivamente el aborto de la época: matar a los recién nacidos. </UL>
 
-        <UL> 17. En una economía libre, en cambio, el mismo mercado se encarga de que el ahorro no solo no sea nocivo sino que sea la causa de la prosperidad. Genera los instrumentos y los incentivos para ahorrar y para que ese ahorro capitalice la economía, donde la función racional del Estado es garantizar el respeto a la propiedad privada y, por tanto, el funcionamiento del sistema de precios libres. </UL>
 
-        <UL> 18. Quitarle dinero a unos para dárselo a los pobres (que conduce a convertir al Estado socialista en el único capitalista) no es, entonces, una receta válida para lograr la prosperidad de los pueblos. </UL>
+        <SUBTITLE> OPORTUNIDADES DE PROGRESO </SUBTITLE>
 
-        <UL> 19. Cuando una sociedad tiene mucho ahorro improductivo (compra viviendas y monedas extranjeras en vez de capitalizar a las empresas), ese no es el problema sino la consecuencia. Y el problema es el Estado socialista que, como tal, no respeta la propiedad privada. La gente esconde sus activos del Estado para no ser despojados. </UL>
+        <UL> 10. De forma parecida, el malthusianismo moderno —anticonceptivo y abortista— se presenta como la solución o paliativo para la pobreza en las mentes de quienes no reconocen que la falta de oportunidades de trabajo y progreso no está causada por la economía sino por la intervención del Estado en la economía; justamente las mentes de quienes tienen la economía secuestrada mediante el Estado y no lo quieren reconocer. </UL>
 
-        <UL> 20. El ahorro al socialista se le presenta como un enemigo a ser destruido porque es la base del capital privado. Las teorías socialistas del crecimiento basadas en el consumo han causado muchísimo sufrimiento en el mundo. Los gobiernos han destruido los patrimonios de la gente, descapitalizado las economías y puesto a los ciudadanos a odiarse unos a otros. </UL>
+        <UL> 11. Grupos que para vender han sido bendecidos con licencias o habilitaciones. Y profesionales que son pocos porque para ejercer hay que hacer largas carreras universitarias de métodos preindustriales y tener matrículas de "consejos de profesionales" que limitan la competencia a los límites de lo que los profesionales en ejercicio llaman "ética", y que tienen al resto de la sociedad consumiendo sus servicios por obligación pública. </UL>
+
+        <UL> 12. Así, uno está obligado a comprar los servicios de numerosos profesionales por orden del Estado, mientras que ellos son pocos y no compiten gracias a las leyes que los privilegian. </UL>
+
+        <UL> 13. En consecuencia, son grupos caros y de calidad subóptima en sentido de Pareto, que lentifican el progreso de toda la sociedad para que ellos puedan ganar mucho dinero trabajando poco y mal, y hasta haciendo trabajos que no son necesarios. </UL>
+
+        <UL> 14. Una estructura económica rígida —que crece muy poco por el artefacto legal construido para secuestrarla— da pocas oportunidades de trabajo y progreso. Son socialistas burgueses, de clases acomodadas, que viven de la coerción estatal, directa o indirectamente. </UL>
+
+        <UL> 15. Son los beneficiarios de este régimen marxista de dominación de clases los que piensan que el malthusianismo es la solución a la pobreza y reclaman abortos y anticonceptivos para los pobres. </UL>
+
+        <UL> 16. Pero esta intervención socialista del Estado en la economía es solo una parte del problema, la que explica por qué la economía no crece tan rápido. La otra —y más directa— es la legislación laboral. </UL>
+
+        <UL> 17. Cuando un pobre quiere trabajar, tiene que entrar a competir con otros trabajadores poco formados. Por eso, los trabajadores poco formados se adelantaron, y bajo las banderas de los "derechos" del trabajador a no ser "explotados" por los capitalistas exigieron y consiguieron leyes para blindarse contra la competencia que podrían hacerle los pobres: indemnizaciones, impuestos, aportes para el sindicato, reglamentaciones sobre las condiciones de trabajo, prioridad para los familiares, etc. </UL>
+
+
+        <SUBTITLE> DERECHO Y PRIVILEGIO </SUBTITLE>
+
+        <UL> 18. Los socialistas pretenden lograr la riqueza de las naciones privilegiando a todos los sectores mediante leyes que violen la propiedad privada y prohiban la libertad económica, la competencia y el sistema de precios, de acuerdo a lo que ellos llaman "derechos". </UL>
+
+        <UL> 19. No entendieron que un privilegio es una ventaja relativa solamente al grupo que lo recibió pero perjudica a todos los demás, y que el resultado global de privilegiar a todos los sectores es no privilegiar a ninguno porque se genera una estructura económica rígida, que no crece, aparte de que excluye a quienes no tienen poder de <i>lobby</i>. </UL>
+
+        <UL> 20. Los mercados libres, por sí mismos, generan oportunidades para todos porque cada uno genera su propia oportunidad al salir a trabajar. A su vez, cuando las personas progresan tienen menos hijos y, así, la reducción de la natalidad es siempre consecuencia y nunca causa de la mejoría económica de las naciones. </UL>
+
+        <UL> 21. El malthusianismo, en cambio, es una falsa solución socialista —planificadora y coercitiva— que se presenta en las mentes comunistas cuando perciben el fracaso del socialismo que ellos mismos impusieron con su egoísmo ignorante, que siempre fracasó y siempre va a fracasar. Es la crueldad de decirles a los pobres —falsamente— que tienen la culpa de ser pobres y que la solución es renunciar a tener hijos. </UL>
+
+
+        <SUBTITLE> MALTHUS MAYOR </SUBTITLE>
+
+        <UL> 22. La humanidad libre está expectante para contemplar el desastre que sobrevendrá sobre China comunista por lo que fue el malthusianismo más grande de la historia: la política de hijo único, aparte de los abortos obligatorios y las esterilizaciones forzadas de minorías. Desastre que está llegando y que está arrojando al Partido Comunista Chino a hacer robo masivo de tecnología, espionaje y conflictividad internacional a gran escala, mientras acentúa el sometimiento de su propia población. </UL>
 
     </div>
     )

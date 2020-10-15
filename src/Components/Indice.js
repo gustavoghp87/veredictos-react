@@ -13,7 +13,7 @@ export const Indice = () => {
         <INDEX>
 
             <ULANCHOR>
-                <Link to="/" style={dec}> {data[1].title} </Link>
+                <Link to="/" style={dec}> {data[0].title} </Link>
             </ULANCHOR>
     
             <ULANCHOR>
@@ -104,7 +104,7 @@ export const Indice = () => {
                 <Link to="/22" style={dec}> {data[22].number}. {data[22].title} </Link>
             </ULANCHOR>
     
-            <ULANCHOR>
+            {/* <ULANCHOR>
                 <Link to="/23" style={dec}> {data[23].number}. {data[23].title} </Link>
             </ULANCHOR>
     
@@ -114,7 +114,7 @@ export const Indice = () => {
     
             <ULANCHOR>
                 <Link to="/25" style={dec}> {data[25].number}. {data[25].title} </Link>
-            </ULANCHOR>
+            </ULANCHOR> */}
     
             {/* {{!-- <ULANCHOR> <Link to="/26" style={dec}> XXVI. BITCOIN </Link> </ULANCHOR> --}}
     

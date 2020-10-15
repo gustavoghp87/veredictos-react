@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react'
-import { Switch, Route } from 'react-router-dom'
+import { Switch, Route, Redirect } from 'react-router-dom'
 import { Navbar } from './Navbar'
 import { Index } from './text/index'
 import { V01 } from './text/01'
@@ -24,15 +24,10 @@ import { V19 } from './text/19'
 import { V20 } from './text/20'
 import { V21 } from './text/21'
 import { V22 } from './text/22'
-import { V23 } from './text/23'
-import { V24 } from './text/24'
-import { V25 } from './text/25'
 import Buttons from './Buttons'
 import { Indice } from './Indice'
 import { Footer } from './Footer'
 
-
-export const url = 'https://veredictos.herokuapp.com/count'
 
 function App() {
 
@@ -75,9 +70,16 @@ function App() {
           <Route exact path="/20" component={V20} />
           <Route exact path="/21" component={V21} />
           <Route exact path="/22" component={V22} />
-          <Route exact path="/23" component={V23} />
-          <Route exact path="/24" component={V24} />
-          <Route exact path="/25" component={V25} />
+          <Redirect exact strict from="/1" to="/01" />
+          <Redirect exact strict from="/2" to="/02" />
+          <Redirect exact strict from="/3" to="/03" />
+          <Redirect exact strict from="/4" to="/04" />
+          <Redirect exact strict from="/5" to="/05" />
+          <Redirect exact strict from="/6" to="/06" />
+          <Redirect exact strict from="/7" to="/07" />
+          <Redirect exact strict from="/8" to="/08" />
+          <Redirect exact strict from="/9" to="/09" />
+          <Redirect from="/" to="/" />
         </Switch>
         <Buttons />
         <Indice />

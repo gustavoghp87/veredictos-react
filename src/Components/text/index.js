@@ -9,7 +9,7 @@ export const Index = () => {
     return (
     <div>
 
-        <CHAPIMAGE src="/frontend-src/01/01.jpg" />
+        <CHAPIMAGE src="/frontend-src/index/index.png" />
 
         <PRESENTATION>
 

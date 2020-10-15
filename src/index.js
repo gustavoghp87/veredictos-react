@@ -4,6 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import App from './Components/App'
 
 
+export const urlbase = 'https://veredictos.herokuapp.com/count'
 export const isLocalhost = Boolean(
   window.location.hostname === 'localhost' ||
   window.location.hostname === '[::1]' ||

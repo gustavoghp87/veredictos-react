@@ -1,87 +1,101 @@
 import React, { useEffect } from 'react'
 import { CHAPIMAGE, TITLE2, UL, SUBTITLE } from '../css/css'
-
+import { data } from '../../chapters'
+import { urlbase, isLocalhost } from '../../index'
 
 
 export const V10 = () => {
 
-    useEffect(() => {window.scrollTo(0, 0)}, [])
+    const url = urlbase + data[10].url
+    useEffect(() => {window.scrollTo(0, 0); if(!isLocalhost)fetch(url)}, [])
 
     return (
     <div>
 
-        <CHAPIMAGE src="/frontend-src/10/10.jpg" />
+        <CHAPIMAGE src="/frontend-src/13/13.jpg" />
 
-        <TITLE2> X. SISTEMA DE PRECIOS,<br/>PROPIEDAD PRIVADA,<br/>MANO INVISIBLE </TITLE2>
+        <TITLE2> {data[10].number}. {data[10].title} </TITLE2>
 
-        <UL> 1. Probablemente ningún concepto teórico tiene tanta burla y desprecio de los socialistas como la mano invisible de Adam Smith, que es solo una metáfora para hablar del sistema de precios y sus resultados. </UL>
+        <UL> 1. Desde el comienzo de la teoría económica se vio el protagonismo de lo que antes se llamaba "renta". Todos los clásicos decían que hay una retribución por trabajar (proporcionada a la pericia del trabajo) y una retribución por invertir (cierto porcentaje anual sobre el capital arriesgado, proporcionado a los riesgos asumidos). </UL>
 
-        <UL> 2. En mercados libres, los precios son señales que le dicen a la gente cómo conviene proceder para hacer valor agregado: a quién comprar, a quién vender, dónde, cuánto, cómo producir, con qué materiales, a quiénes contratar, dónde ahorrar, dónde invertir... Toda decisión económica es tomada a través del sistema de precios de acuerdo a las preferencias y las necesidades de cada uno. </UL>
+        <UL> 2. Pero, además, el mercado le da cierta retribución a algunos por ser propietarios de algo, algo que es necesario para la producción pero que no fue el resultado de la inversión y el trabajo: tierras y minas para la era clásica de la teoría económica; petróleo, gas, derechos de propiedad intelectual, derechos para emitir dinero, espacio construibles dentro de centros urbanos, etcétera. </UL>
 
-        <UL> 3. Cuando los precios son libres, millones de personas trabajan coordinadamente como si existiese un gran planificador sobre ellos, asegurándose de que todo funcione de la mejor manera para todos; que cada uno logre sus objetivos y, al mismo tiempo, colabore con el resto de la sociedad. </UL>
+        <UL> 3. Nótese que la escasez de algunos medios es natural pero la de otros es causada artificialmente por el Estado. </UL>
 
-        <UL> 4. Y esta especie de mano invisible trabaja todo el día, todos los días, sin importarle la burla y el desprecio de los socialistas, gente resentida con una disonancia enorme entre la posición económica que tienen y la que están convencidos que deberían tener. </UL>
-
-
-        <SUBTITLE> PRECIOS INTERVENIDOS </SUBTITLE>
-
-        <UL> 5. Los socialistas, en cambio, creen que los precios son mecanismos de distribución del ingreso que reflejan relaciones de poder, de modo que intentan intervenirlos para cambiar la distribución del ingreso ─que ellos juzgan injusta e incluso mala para la economía─. </UL>
-
-        <UL> 6. ¿Con qué resultados? Si los precios son señales que indican qué producir, la reducción coercitiva de un precio debe conducir a una caída en la producción y un crecimiento en las cantidades demandadas: escasez, desabastecimiento. Y el crecimiento coercitivo de un precio (como el salario) causa disminución en las cantidades demandadas y, por eso, achica el mercado. </UL>
-
-        <UL> 7. Así, intervenir los precios no es una buena idea; hace más escaso y caro lo que pretenten que se haga más abundante y barato. </UL>
-
-        <UL> 8. La forma de bajar los precios y subir los salarios es dejarlos en libartad. Primero, porque el precio de mercado libre es el de máxima producción. Y, segundo, porque si hay libertad y respeto a la propiedad privada, llegarán mejoras en la productividad que bajarán los precios y saturarán de productos el mercado. </UL>
-
-        <UL> 9. Pero cuando hablamos de los salarios, en cambio, conviene dejarlos libres porque, primero, a salarios libres se da el máximo de contrataciones. Y, segundo, porque aumentarán con el crecimiento de la economía, porque ninguna población crece tan rápidamente como un mercado libre. No falla. </UL>
+        <UL> 4. Es decir, no llamamos "renta" en sentido clásico a lo que se cobra de alquiler por un rodado ordinario (que sí es el resultado del capital y el trabajo) sino al ingreso por usar un capital que se originó en la naturaleza o en la coerción estatal. La renta de un inmueble, en cambio, se puede dividir en la parte que retribuye la inversión y el trabajo (ganancia capitalista), y la parte que paga los "metros cuadrados", escasos de acuerdo a la escasez que causa el ayuntamiento con sus limitaciones a la construcción ("renta", en sentido clásico). </UL>
 
 
-        <SUBTITLE> PRECIOS Y SOCIALISMO</SUBTITLE>
+        <SUBTITLE> RENTA CLÁSICA Y MARXISMO </SUBTITLE>
 
-        <UL> 10. El socialismo cree que un precio es alto (de acuerdo a lo que juzga que es un precio alto) porque el vendedor tiene poder de mercado y lo usa para explotar a los consumidores. Pero la realidad es exactamente la inversa: No es el poder lo que da precio alto sino el precio alto lo que da poder, y atentar contra los precios daña los intereses de tanto vendedores como compradores. </UL>
+        <UL> 5. La visión clásica de las cosas ("los rentistas no aportan nada a la producción, sino que sus ingresos son un residuo no competitivo del precio de mercado") dejó todo servido al socialismo: Si todas estas "rentas" son remuneraciones por ser propietario sin aportar nada a la producción, solo sirven para mantener a una clase social de parásitos, que viven de la actividad económica de los demás. </UL>
 
-        <UL> 11. Sin embargo, poner precios máximos o mínimos tiene mucho sentido sectorial cuando es posible separar, por un lado, a quienes venderán en el nuevo mercado reducido y, por el otro, a los que operarán en el mercado paralelo desregulado. Así se atenta contra el bien común. </UL>
+        <UL> 6. El socialismo marxista anunció así su vocación de apoderarse de toda "renta" para el Estado y para el partido comunista dictatorial en ejercicio: "Expropiación de la propiedad de la tierra y empleo de la renta de la tierra para los gastos del Estado" (<i>Manifiesto Comunista</i>, 1848). </UL>
 
-        <UL> 12. Es para esto que sindicatos y cámaras empresariales operan porque el socialismo es la doctrina de privilegiar a quienes tienen poder de negociación extraeconómico mediante la intervención del Estado. El Estado asume, así, un rol de dirección o planificación de la economía para poder privileriar a los grupos de presión con los roles destacados del esquema planificado. </UL>
+        <UL> 7. El conocimiento del contexto y el entendimiento del estado de la teoría económica para 1848 explican que la voluntad comunista de confiscar las tierras para apoderarse de las "rentas" agropecuarias no se limita a la cuestión de la tierra. Se hablaba solo de la tierra porque solo la tierra tenía un rol determinante en la producción en aquel tiempo (de los "capitales" listados en el punto 2). </UL>
 
-
-        <SUBTITLE> TEORÍA DEL DERRAME </SUBTITLE>
-
-        <UL> 13. ¿Hay una teoría del "derrame" en Adam Smith y en el liberalismo? Ciertamente, pero no en el sentido de quienes se burlan. La expresión "derrame" no significa que una redistribución del ingreso a favor de grandes compañías ejecutada por el Estado vaya a lograr el bien común. Parece estúpido aclararlo pero es lo que hay detrás de algunos discursos. </UL>
-
-        <UL> 14. "Derrame" significa que la libertad económica y el respeto a la propiedad privada conducen al bien común, de manera que el progreso que hace una persona o una empresa resulta en beneficios para toda la sociedad. </UL>
-
-        <UL> 15. Y no es una idea alocada, ya que, en una economía libre, la riqueza se logra generando valor agregado, y valor agregado significa lograr el favor voluntario de los otros. </UL>
+        <UL> 8. Pero luego de 1848 llegaron los otros tipos, con especial importancia en el petróleo. No obstante, el privilegio de emitir dinero es mucho más importante que cualquiera de los otros. ¿Cuál fue la postura del socialismo respecto a todas estas problemáticas posteriores? Que todo tiene que ser confiscado para que el Estado socialista pueda tener esas "rentas". </UL>
 
 
-        <SUBTITLE> INVERSIÓN Y PROPIEDAD PRIVADA </SUBTITLE>
+        <SUBTITLE> RENTA Y COMPETENCIA </SUBTITLE>
 
-        <UL> 16. ¿Cuál es la diferencia entre vender en un mercado libre y vender en un mercado solamente porque el Estado fuerza a los ciudadanos a comprar en él, o los fuerza a comprarle particularmente a una empresa? Que tu ingreso depende de la voluntad de muchas personas, que son más estables, en vez de depender de la voluntad de los políticos, que son usualmente más inestables. </UL>
+        <UL> 9. Lo que define a estos factores de producción que causan "renta" es que son útiles a la producción sin ser el resultado del ahorro humano (tienen demanda), y que no pueden ser multiplicados mediante trabajo y capital (tienen escasez de oferta). Como dijimos, que no sean fruto del esfuerzo humano hace que muchos se cuestionen que las rentas que generan tengan que enriquecer a sus propietarios, que no aportarían nada. </UL>
 
-        <UL> 17. Entonces, la diferencia es la inversión. Las inversiones no dependen de las ventas actuales sino de las expectativas de ventas futuras y, por eso, las economías libres tienen el máximo de inversión concebible. </UL>
+        <UL> 10. Pero el fenómeno de mercado es este: Aunque un capital no sea el resultado de la inversión ni del trabajo, su precio de mercado es alrededor de 20 veces los ingresos netos que (se espera) cause en un año, para que pueda dar una tasa de ganancia cercana al 5% anual (por ponerle números). </UL>
 
-        <UL> 18. Una economía tiene una buena parte dedicada a la producción de bienes consumo, otra a la producción de bienes de exportación y otra de producción de bienes de inversión. Cuanto más grande sea la industria de bienes de capital, más altos los salarios en el presente y la productividad futura. </UL>
+        <UL> 11. Luego, ningún propietario aporta estos factores para actividades económicas si no les pagan ese 5%, ni aceptaría venderlos por menos de esas 20 veces. De modo que estos "capitales" llegan a participar en economía de forma idéntica a la de los capitales normales, y sus remuneraciones llegan a ser partes activas del valor agregado de las cosas (de acuerdo a la teoría general del valor agregado del capítulo 3). </UL>
 
-        <UL> 19. Una economía coercitiva dirigida por el Estado, en cambio, no tiene estas ventajas; nunca crece y su pueblo nunca progresa. </UL>
+        <UL> 12. Si aportan los factores, tienen que pagarles. El precio lo pagan los compradores últimos. Y si no los aportan, no hay producción. Así, la "renta" es valor agregado de mercado competitivo y causa el menor de los precios posibles. </UL>
 
-        <UL> 20. De esta manera, la gran conclusión de la teoría económica del siglo XVIII ─el liberalismo clásico─ fue que la libertad económica y los bajos impuestos son la clave. En una palabra, el Estado como garante de la propiedad privada y el cumplimiento de los contratos, de acuerdo a una constitución escrita y consensuada, a diferencia de las actuales constituciones que ponen al Estado como el primer violador de la propiedad de sus súbditos. </UL>
+        <UL> 13. Se preguntaba Ricardo cuáles eran las tierras que determinaban los precios de los productos agropecuarios: las de más fertilidad o las de menos. La respuesta es: todas, según un esquema de equilibrio general. </UL>
+                                            
 
-        <UL> 21. Más allá de Adam Smith, las grandes reformas promovidas en la Europa de las monarquías absolutistas y en las revoluciones del continente americano pasaban por esto. La gran dicotomía que existía es la misma que existe ahora: usar al Estado como el garante de la propiedad privada y la libertad económica para el progreso continuo de la sociedad toda, o usar al Estado como un saqueador que reparte privilegios en función del poder del grupo de presión para el atraso y el enfrentamiento social, bajo un discurso "progresista" del socialismo. </UL>
+        <SUBTITLE> EXPROPIACIÓN, CONFISCACIÓN </SUBTITLE>
 
-        <UL> 22. El socialismo no es una doctrina que provenga del pueblo, de los trabajadores o de los pobres sino de intelectuales arrogantes que creían y creen que pueden dirigir y planificar la vida de los demás mejor que ellos mismos. Pero es ejecutado por políticos, empresarios y sindicalistas que han encontrado su negocio en la economía coercitiva a través del poder público, en una simbiosis con el Estado. </UL>
+        <UL> 14. Si el Estado pagara el precio de mercado de uno de estos capitales naturales, tendría que pagar el precio completo, para solo obtener el mismo rendimiento que dejan los otros capitales (los que sí son ahorros surgidos del trabajo y la inversión). De forma que la "expropiación" del marxismo no es expropiación sino confiscación. El marxismo nunca va a pagar el precio de mercado de los capitales que dan "renta". </UL>
+
+        <UL> 15. Este es el secreto de la "expropiación" del Manifiesto Comunista de 1848: La "expropiación" de las tierras y los medios de transporte no se limitaba a las tierras y los transportes sino a todo capital que no sea resultado del ahorro humano; y "expropiación" en realidad significa confiscación. </UL>
+
+        <UL> 16. ¿Qué pasa cuando el Estado socialista confisca para apoderarse de la "renta" clásica y promete una baja de precios? </UL>
 
 
-        <SUBTITLE> CIERRE </SUBTITLE>
+        <SUBTITLE> COLECTIVIZACIONES Y GENOCIDIOS </SUBTITLE>
 
-        <UL> 23. Los mercados libres son conducidos por el sistema de precios, que funciona como una mano invisible que asigna los recursos de la mejor manera posible; es decir, mejor de lo que lo haría cualquier Estado dirigista o planificador. Cualquier alternativa significa la violación de la propiedad y la libertad de los demás, que ataca de dos maneras: mala asignación de recursos en el presente que causa menos producción e ingresos, y menos inversión en el futuro, mientras se beneficia a unos pocos. </UL>
+        <UL> 17. Los dos genocidios más grandes de la historia de la humanidad los hicieron los regímenes comunistas de la Unión Soviética (en tiempos de Stalin) y la China (en tiempos de Mao Tse Tung), siguiendo las directivas del Manifiesto Comunista. </UL>
 
-        <UL> 24. Los únicos países que se hicieron ricos lo hicieron mediante la libertad económica y el respeto a la propiedad privada. Antes de la Primera Guerra Mundial: EE.UU., Reino Unido, Francia, Alemania, Argentina, Canadá, Australia, Nueva Zelanda, Suiza, todo el norte de Europa. Después de la Segunda Guerra Mundial: Japón, Hong Kong, Singapur, Israel, Taiwán, Malasia, Corea (sur). </UL>
+        <UL> 18. El razonamiento indicaba que grandes explotaciones agrícolas estatales iban a producir mucho más alimento y materias primas que muchos campesinos explotando las mismas tierras por separado, mientras el Estado socialista se apoderaba de la "renta" de la tierra. Por eso, procedieron a confiscar ("expropiar") las tierras (parcelas pequeñas) para obligar a la gente a trabajar para el Estado. </UL>
 
-        <UL> 25. Los países del socialismo planificador que se fundieron pero giraron a economías de mercado y ahora les va mucho mejor: China, Chile, Vietnam, todos los ex URSS y su bloque. </UL>
+        <UL> 19. La producción cayó tanto que los campesinos murieron de hambre por millones. Es lo que en la literatura se conoce como "colectivizaciones forzosas", resultados de la ignorancia criminal y el odio del comunista contra los campesinos. </UL>
 
-        <UL> 26. Argentina fue el único país rico que cayó en el socialismo, no por una guerrilla o una invasión extranjera, sino por la vocación de sus ciudadanos de todas las clases sociales, y se estancó en la miseria. </UL>
+        <UL> 20. Nuevamente: Que un capital no haya llegado a existir mediante el trabajo humano y el capital humano no implica que no produzca valor. Sí produce valor y su confiscación solo arruina la producción. </UL>
 
-        <UL> 27. En realidad, es posible explicar la riqueza de las naciones con solo dos variables: la posición en el <i>ranking</i> de libertades económicas de cada país y cuánto tiempo lleva en esa posición. </UL>
+
+        <SUBTITLE> PETRÓLEO Y MINERALES </SUBTITLE>
+
+        <UL> 21. La lógica de que la "renta" era una fuente mágica de ingresos llevó a los marxistas del mundo a estatizar el petróleo y las minas de los países, y también a crear empresas estatales de extracción y refinamiento. </UL>
+
+        <UL> 22. La "renta" petrolera causó que las economías de estos países reasignaran todos sus recursos para vender bienes y servicios a los Estados, el único cliente y gran manipulador del tipo de cambio. Cuando los precios internacionales caen, estos países son arrasados. Así, el Estado socialista usa la "renta" petrolera para sabotear todo desarrollo económico. </UL>
+
+        <UL> 23. La gran ruina de Venezuela comenzó cuando estatizó la industria petrolera en 1973 como respuesta al gran aumento de ventas y de precio causado por el embargo de los países islámicos a occidente (motivado por la guerra de Yom Kipur). Toda la economía se hizo dependiente del gasto público, el consumo y las importaciones, se generalizó la corrupción para venderle algo al Estado, y todo se terminó de desmoronar en la década siguiente cuando bajó el precio del crudo. Repetirían los errores en las décadas siguientes. </UL>
+
+        <UL> 24. Y a los Estados socialistas petroleros islámicos no les va mejor. Son el eterno subdesarrollo. </UL>
+
+
+        <SUBTITLE> MEDIOS DE TRANSPORTE </SUBTITLE>
+
+        <UL> 25. Nuevamente, la idea de que los medios de transporte generan "renta" por ser "monopólicos" llevó a los marxistas a confiscarlos, como manda el sexto mandamiento del Manifiesto Comunista. ¿Con qué resultado? Terminaron usando los ingresos para otros gastos, desinvirtiendo, y finalmente atrasando las tarifas para contener el aumento del costo de vida que causan con sus políticas desastrosas. </UL>
+
+        <UL> 26. Como se dijo en el capítulo 9, los servicios únicos de transporte pueden tener tarifas y servicios de competencia perfecta si los gobiernos llaman a licitación pública. </UL>
+
+
+        <SUBTITLE> CONCLUSIÓN </SUBTITLE>
+
+        <UL> 27. Lo único que diferencia a un capital industrial de un capital agrícola o minero o de licencia es el origen de su existencia. No hay diferencias económicas en cuanto a determinación de precios o valor agregado de los productos o servicios en cuyos procesos productivos intervienen, ni hay diferencias en la determinación de sus propios precios de mercado. </UL>
+
+        <UL> 28. Lo único que hace el origen del capital (si es resultado de la inversión y el trabajo o si, por el contrario, surgió de la naturaleza o de leyes del Estado o de coerción no estatal) es encender los debates y abrir el apetito socialista por quedarse con las cosas de los demás. </UL>
+
+        <UL> 29. Estos "capitales" no son una fuente mágica de ingresos. Apoyan la producción y generan su propio valor agregado para beneficio del bien común. </UL>
+
+        <UL> 30. Cuando el Estado socialista se apodera de estos "capitales", arruina la economía. </UL>
 
     </div>
     )

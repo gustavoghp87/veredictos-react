@@ -1,165 +1,126 @@
 import React, { useEffect } from 'react'
-import { CHAPIMAGE, TITLE2, UL, SUBTITLE, SPECIALRIGHT } from '../css/css'
+import { CHAPIMAGE, TITLE2, UL, SUBTITLE, IMAGECENTER } from '../css/css'
+import { data } from '../../chapters'
+import { urlbase, isLocalhost } from '../../index'
 
 
 export const V16 = () => {
 
-    useEffect(() => {window.scrollTo(0, 0)}, [])
+    const url = urlbase + data[16].url
+    useEffect(() => {window.scrollTo(0, 0); if(!isLocalhost)fetch(url)}, [])
 
     return (
     <div>
-        
-        <CHAPIMAGE src="/frontend-src/16/16.jpg" />
 
-        <TITLE2> XVI. ¿QUÉ PASA CON LOS BANCOS CENTRALES? </TITLE2>
+        <CHAPIMAGE src="/frontend-src/19/19.jpg" />
 
-        <UL> 1. ¿Por qué el dinero es un billete de banco o un depósito nominal figurativo en un banco? ¿Por qué todo el mundo está endeudado con los bancos? ¿Por qué tenemos una crisis cada 10 años desde mediados del siglo XIX? ¿Por qué existen los bancos centrales? ¿Por qué se prohibieron las monedas de plata y oro? ¿Por qué parece que los bancos centrales lo arruinan todo? </UL>
+        <TITLE2> {data[16].number}. {data[16].title} </TITLE2>
 
-        <UL> 2. Se procede en este orden: primero se estudia la naturaleza del dinero moderno, luego la razón de ser del banco central y, por último, el viejo patrón oro. </UL>
+        <UL> 1. En 1936 vio la luz la obra más determinante en el pensamiento socialista desde el <i>Manifiesto Comunista</i> de 1848. La <i>General Theory of Employment, Interest and Money</i> de Keynes incluyó una explicación general de cómo se determinan los tipos de interés de los créditos y los activos financieros que dice: </UL>
 
+        <UL> 2. A cada momento, hay una cantidad de dinero circulante, y hay una demanda de dinero o "preferencia por la liquidez" que hace que la gente quiera dinero en efectivo. El equilibrio entre ambas variables determina la tasa de interés de referencia de la economía (cierta tasa base para los activos y créditos, a la que se le suma un componente riesgo). </UL>
 
-        <SUBTITLE> DINERO, CRÉDITO Y BANCOS </SUBTITLE>
+        <UL> 3. Los motivos para aceptar y conservar una cantidad de dinero (en vez de correr a cambiarla por otra cosa) son tres: para hacer transacciones pronto, para disponer por si pasara algo malo, y para conservar a la espera de una buena oportunidad de inversión. Se llaman "motivo transacción", "motivo precaución" y "motivo especulación", respectivamente. </UL>
 
-        <UL> 3. En la sociedad moderna, hay 2 formas de dinero que coexisten: el dinero material y el dinero de banco. El primero está hecho de papel o monedas, y el dinero de banco está hecho de depósitos en cuentas a la vista, que son valores que aparecen en cuentas de los clientes y están listos para ser usados como medios de pago (depósitos en cuenta corriente, caja de ahorro, cuenta sueldo, etc.). Ambas formas son, usualmente, intercambiables. </UL>
+        <UL> 4. La "función de demanda de dinero" keynesiana es decreciente con la tasa de interés de referencia porque cuanto menor sea la tasa, menos atractivo tienen los activos financieros. Mas bien, con tasas bajas (que significa activos financieros caros) conviene retener el dinero a la espera de que suban. O sea, a la espera de que los activos se hagan más baratos. Porque no tiene sentido asumir riesgos por activos que no dejan rendimientos significativos. </UL>
 
-        <UL> 4. ¿Por qué el dinero de banco es realmente dinero? Porque puede ser usado por medio de transferencias, cheques al día, tarjetas de débito y medios electrónicos. Y no hay nada que lo diferencie del dinero físico en cuento a funcionalidad. </UL>
+        <IMAGECENTER src="/frontend-src/19/k.jpg" />
 
-        <UL> 5. ¿Cómo se crea el dinero de banco? Hay dos métodos: Cuando la gente deposita dinero material en una cuenta a la vista y entonces el banco presta ese dinero físico a otro cliente, duplicando la cantidad de dinero inicial. Y cuando el banco simplemente presta dinero a sus clientes anotando en sus cuentas que tienen dinero nuevo, aunque no cuenten con dinero físico para respaldarlo. </UL>
+        <UL> 5. Así, el mercado tiende a una tasa de equilibrio que es la que hace coincidir los planes de los demandantes de dinero con la cantidad de circulante que determina el banco central. </UL>
 
-        <UL> 6. Por estas dos vías, los bancos son capaces de prestar dinero a interés pero sin tener que pagar intereses por ese dinero, despreciando a los ahorristas, a quienes sí tienen que pagarles. Pero (en sentido funcional) ese dinero que crean en realidad es del Estado (y sí tienen que compartir la renta con él). </UL>
+        <UL> 6. A una demanda de dinero dada, la tasa de referencia baja cuando aumenta la cantidad de dinero circulante (desplazamiento a la derecha de la recta vertical). Y, a una cantidad de dinero determinada, la tasa sube cuando aumenta la demanda de dinero por alguno de los 3 motivos: porque crece la economía ("motivo transacción") o porque crece el atesoramiento ("motivos precaución y especulación") (desplazamiento a la derecha de la curva de demanda). </UL>
 
-        <UL> 7. Muchos creen que un banco es una institución financiera, o sea que su negocio principal es tomar dinero de los ahorristas y prestarlo a inversores, cobrando un diferencial de tasas. Pero el principal negocio de la banca es prestar dinero que crean de la nada, mediante mecanismos institucionales tecnológicos. </UL>
 
+        <SUBTITLE> TRAMPA DE LIQUIDEZ </SUBTITLE>
 
-        <SUBTITLE> LA RESERVA FRACCIONARIA </SUBTITLE>
+        <UL> 7. Sigue de esto una de las conclusiones más importantes del keynesianismo: La "política monetaria" tiene un límite a la hora de estimular el consumo y la inversión por medio de bajar la tasa de interés. Y es porque, cuando la tasa de interés de referencia se acerca a cero, toda expansión de la cantidad de dinero que se haga será retenida por el público a la espera de que las tasas vuelvan a subir, no usada en transacciones (inversión o consumo). </UL>
 
-        <UL> 8. Pero todo banco necesita conservar alguna cantidad de dinero material para hacer funcionar al sistema (para hacer que ambas formas de dinero sea intercambiables). Esa cantidad suele ser de entre 10% y 20% del total de depósitos a la vista, un porcentaje que se conoce como coeficiente de encaje o radio de reserva. </UL>
+        <UL> 8. Es el "motivo especulación" el que hace que la tasa de interés sea decreciente con la cantidad de dinero circulante. Pero no es por siempre así, puesto que no tiene sentido seguir invirtiendo en activos financieros que ya casi no dejan rendimiento por lo caros que están. Por eso, en el gráfico, la curva de "demanda de dinero" se hace prácticamente horizontal. </UL>
 
-        <UL> 9. Hay, luego, un cálculo muy sencillo: La cantidad de dinero bancario en la economía es de 5 a 10 veces la cantidad de dinero físico que los bancos tienen en reserva (dependiendo del coeficiente de encaje). Así, la cantidad de dinero material en los bancos (que depende, sobre todo, de la confianza en los bancos) limita la creación de dinero de banco. </UL>
+        <UL> 9. Existiría, entonces, un límite definido a la efectividad de la "política monetaria expansiva" (que significa "estimular" el consumo y la inversión bajando los tipos de interés usando dinero de nueva emisión). Y el gobierno tendrá que recurrir a políticas fiscales, consecuentemente. En tiempos de fuertes crisis, la política monetaria se volvería ineficaz porque la expansión del crédito no logra reactivar la economía; el mercado retiene el dinero ("motivos precaución y especulación"); es la <i>trampa de la liquidez</i>. </UL>
 
-        <UL> 10. ¿Qué sucede si muchos clientes de un banco retiran mucho dinero físico, es decir, cambian dinero bancario por dinero material? La reserva de dinero físico en un banco es bastante limitada en comparación con el dinero en depósitos a la vista. El banco tiene que salir a pedir prestado, o a vender activos. </UL>
+        <UL> 10. La vocación por legitimar la estatización de la economía es admirable. Pero nos toca combatir esta teoría socialista también. </UL>
 
 
-        <SUBTITLE> PÁNICO BANCARIO </SUBTITLE>
+        <SUBTITLE> NO FUE LO QUE PASÓ </SUBTITLE>
 
-        <UL> 11. Pero ¿qué pasa si muchos bancos sufren retiros de efectivo de muchos clientes al mismo tiempo? Los costos de los préstamos suben abruptamente y los valores de los activos que los bancos salen a vender caen. Los patrimonios netos de los bancos se hacen negativos y no pueden cumplir las obligaciones. El problema de iliquidez se convierte en problema de solvencia. Se llama a la bancarrota, y los ahorros de los clientes se pierden (o se devuelven parcialmente). </UL>
+        <UL> 11. Primeramente, no fue lo que pasó en 1929-1933, la crisis que Keynes quería explicar con su concepto de trampa de la liquidez. Como se explicó en el capítulo 16, el sistema de patrón oro con banca de reserva fraccionaria ejecutó una contracción monetaria brutal, no una expansión monetaria que haya caído en una trampa de ineficiencia. </UL>
 
-        <UL> 12. El temor de que esto pase amontona a los clientes en los bancos para transformar el dinero virtual en dinero físico antes de que sea tarde. Es una corrida bancaria, o pánico bancario, un hábito del sistema que ocurría cada 8 o 10 años. </UL>
+        <UL> 12. De hecho, la tasa de interés pasiva fue de 4% en 1928, 9% en 1929, 4% en 1930, 2% en 1931, 3% en 1932 y 3% 1933, y con deflación de precios. Nunca fue de 0%. </UL>
 
-        <UL> 13. ¿Por qué la gente acepta depositar dinero en bancos inestables? Los bancos que conservaban el dinero físico de sus clientes en vez de prestarlo fueron incapaces de competir con los bancos creadores de dinero a causa de la inflación que causaban ellos, así que cerraron o se refundaron como bancos emisores. </UL>
+        <UL> 13. La trampa fue el sistema de doble reserva fraccionaria y consistió en que el banco central sacó circulante de la calle para contener las caídas de reservas, mientras los bancos destruían dinero bancario al no renovar los créditos (por el aumento de riesgos y por los retiros de dinero efectivo). </UL>
 
+        <UL> 14. No es cierto de ninguna manera que la política monetaria expansiva haya sido ineficiente. Es que no se hizo ninguna política monetaria expansiva sino todo lo contrario. Keynes no tenía idea de cómo funcionaba el sistema que pretendía estar explicando. </UL>
 
-        <SUBTITLE> CANTIDAD DE CIRCULANTE </SUBTITLE>
+        <UL> 15. Una política monetaria expansiva hubiera sido devaluar el dólar. O, también, retirar a la FED del mercado cambiario, en vez de dejarlo vender oro barato para sacar dólares de circulación. </UL>
 
-        <UL> 14. Así como la cantidad de dinero circulante se expande fuertemente cuando los bancos reducen el coeficiente de encaje, también se contrae fuertemente cuando lo suben. Por ejemplo, si las reservas son del 20% y bajan al 10%, la cantidad de dinero de banco se expande 100%. Pero si vuelve a subir a 20%, la cantidad de circulante bancario se contrae 50%. Una economía que sufre esos cambios extremos nunca puede ser estable. </UL>
 
-        <UL> 15. El impacto que estos cambios en la cantidad de dinero bancario puede tener sobre la actividad económica, los precios, el empleo y la inversión depende de cuán importante sea el dinero de banco en la economía. Tenía poca importancia cuando la economía se movía esencialmente con monedas de plata y oro, y tiene una importancia superlativa desde que esas monedas fueron prohibidas. </UL>
+        <SUBTITLE> NO ES GENERAL </SUBTITLE>
 
-        <UL> 16. Este es el motivo por el cual los banqueros privados tuvieron en sus manos la "política monetaria" de los países antes de que los Estados tomaran el control. Y es también el motivo por el que los pánicos bancarios se fueron haciendo cada vez más fuertes hasta que el mundo estalló por el aire en 1930. </UL>
+        <UL> 16. Segundo, la "teoría general del interés" de Keynes no es una teoría general, porque es un esquema explicativo exclusivo para una economía donde el Estado ha secuestrado el mercado de dinero y dictamina cuál es la cantidad de dinero a cada momento desde un banco central (la recta vertical del gráfico). </UL>
 
+        <UL> 17. Es, entonces, una explicación para un sistema de banca central con <i>monetary targeting</i>, o sea, donde el banco central tiene poder absoluto sobre los coeficientes de encaje de los bancos comerciales. Y donde usa su poder para dictaminar la cantidad de circulante, no para dictaminar el tipo de cambio. </UL>
 
-        <SUBTITLE> CÁRTELES DE LA BANCA </SUBTITLE>
+        <UL> 18. En la era del patrón oro, no obstante, la cantidad de dinero era endógena al sistema porque los bancos centrales no imponían el coeficiente de encaje bancario, y porque la cantidad física de circulante dependía de la demanda de oro. </UL>
 
-        <UL> 17. La generalización del dinero bancario daba a los grandes banqueros la posibilidad de acordar entre ellos para cambiar la cantidad de dinero en el país de manera abrupta, coordinando subidas y bajadas en los radios de reservas de efectivo (o sea, negándose a renovar préstamos a sus clientes). </UL>
+        <UL> 19. Así, por poner un ejemplo, en caso de aumento en la demanda de dinero en efectivo por "motivo precaución" (en el gráfico, desplazamiento a la derecha de la curva), había contracción de la cantidad de dinero circulante por la caída de los préstamos bancarios (desplazamiento a la izquierda de la recta vertical). </UL>
 
-        <UL> 18. Pero también esparciendo rumores desde la prensa acerca de supuestos problemas de insolvencia de algunos bancos competidores, causándoles retiros y obligándolos a participar de la coordinación de "política monetaria", pero sin encontrarse preparados con mucho efectivo de reserva. </UL>
+        <UL> 20. Pero si la crisis de expectativas llevaba al mercado a demandar menos dinero en moneda estatal nacional y más oro, eso significaba (también) menos oferta de dinero (en el gráfico, ambas curvas se desplazan a la izquierda), dando indeterminación para la tasa de interés. </UL>
 
-        <UL> 19. Durante las crisis desatadas por estas fuertes perturbaciones, los miembros del cártel podían comprar compañías y tierras a precios de remate, y prestar dinero a tasas muy altas (al gobierno en particular). Pero también lograr la quiebra de los bancos competidores, no informados de la fecha de la corrida, al tiempo de ganar para ellos la reputación de ser bancos especialmente solventes, que se preocupan por los ahorros de sus clientes. </UL>
+        <UL> 21. Así, la "teoría general del interés" no puede explicar la tasa de interés en un sistema monetario-cambiario de doble reserva fraccionaria (patrón oro), ni el de una economía libre donde haya competencia de monedas. Para que las dos funciones del esquema fueran independientes una de otra se necesita plena dirección de la cantidad de dinero por el órgano planificador central, algo que fue impuesto después del <i>crash</i> de 1929-1933 (y es el mandamiento quinto del Manifiesto Comunista). </UL>
 
-        <UL> 20. Como el juego de la silla pero conociendo de antemano el momento en que la música se detendrá, porque ellos mismos manejaban la música. </UL>
 
-        <UL> 21. Si la creación de dinero bancario es el negocio perfecto, ¿por qué no crece desmedidamente el número de bancos? La cantidad de bancos en cada país era, de hecho, enorme en otros tiempos. Pero fueron arrasados por incontables crisis periódicas entre los siglos XIX y XX. (La cantidad de bancos que cerraron en el <i>crack</i> de 1929-1933 en EE.UU., por ejemplo, fue de un tercio del total.) Y hoy ya no es fácil iniciar un nuevo banco desde cero y entrar a competir con bancos en simbiosis con el Estado. </UL>
+        <SUBTITLE> NO ES DEMANDA DE DINERO </SUBTITLE>
 
-        <UL> 22. Los pocos bancos que han sobrevivido a esta "preservación de bancos favorecidos en la lucha por la vida" han formado un cártel pacífico bajo la bendición de la gente en general y de los bancos centrales en particular. </UL>
+        <UL> 22. La función de "demanda de dinero" no es una función de demanda de dinero. Es una curva de reacción que muestra los puntos de correlación entre cantidad de dinero y tasa de interés. No representa algo que pase en ningún mercado. </UL>
 
+        <UL> 23. Una teoría general del interés tiene, en cambio, que analizar los mercados de capitales y de créditos en un esquema de equilibrio general, de acuerdo a una oferta y demanda de capitales y ahorros. </UL>
 
-        <SUBTITLE> RECAPITULACIÓN SOBRE RESERVA<br/>FRACCIONARIA </SUBTITLE>
+        <UL> 24. Pero el esquema de Keynes "teoría general del interés" convierte al dinero emitido por el Estado en capital sin más, y convierte al keynesiano en un estatizador de la economía y en un despreciador del ahorrista y de la propiedad privada. </UL>
 
-        <UL> 23. Para recapitular, la "creación secundaria de dinero" (como se le llama) tiene 4 implicaciones: </UL>
 
-        <SPECIALRIGHT>
-            <UL> (1°) da beneficios estratosféricos a los bancos comerciales; </UL>
-            <UL> (2°) pone la "política monetaria" de los países en manos de los bancos comerciales; </UL>
-            <UL> (3°) causa elevada inestabilidad; </UL>
-            <UL> (4°) deja servida la posibilidad de acciones coordinadas de los grandes bancos contra los menores y contra la sociedad en general. </UL>
-        </SPECIALRIGHT>
+        <SUBTITLE> FALTA LA INFLACIÓN </SUBTITLE>
 
-        <UL> 24. Crisis recurrentes, control sobre la sociedad y rentas condujeron a oligopolios bancarios que devoraron las riquezas de las naciones mediante el privilegio de abastecer a la economía de dinero a interés a perpetuidad. </UL>
+        <UL> 25. De alguna manera, la "teoría general del interés" no tiene en cuenta el efecto que pueda tener la emisión en la inflación. Emitir dinero no afecta a la función de "demanda de dinero" sino que supone que toda la emisión será absorbida y retenida por "motivo especulación", a la espera de que los activos financieros bajen de precio. </UL>
 
+        <UL> 26. Pero si, en cambio, la emisión causa inflación, la tasa de interés real siempre puede ser más negativa, "estimulando" la actividad económica (o la compra de activos externos), porque nadie retiene dinero que inflaciona. Aunque la curva de "preferencia por la liquidez" se haga horizonal, el dinero jamás cae en una trampa, en el sentido de que sea retenido por el mercado a causa de la falta de oportunidades de rentabilidad. </UL>
 
-        <SUBTITLE> EL BANCO CENTRAL DE<br/>PRIMERA GENERACIÓN </SUBTITLE>
+        <UL> 27. De hecho, si el gobierno abusa de la emisión, la demanda de dinero se desploma (o la oferta privada de dinero se dispara) causando hiperinflación, mientras que el esquema de Keynes sigue mostrando una curva de "demanda de dinero" horizontal, insensible a la emisión, haciendo caer al dinero en una supuesta trampa de inmovilidad, opuesta a la enorme velocidad de circulación del dinero que todo el mundo percibe. </UL>
 
-        <UL> 25. El banco central originalmente fue promocionado como el prestamista de última instancia que podría prevenir los pánicos bancarios, por esta idea sencilla: si lo que causa los pánicos es el faltante de efectivo, un órgano emisor podría emitirlo y prestárselo a los bancos con problemas de liquidez. La sola existencia de un prestamista de última instancia tendría que eliminar toda posibilidad de corrida bancaria. Así fue promocionado por el cártel de banqueros. </UL>
+        <UL> 28. Está el mito de que durante una crisis se puede emitir sin causar inflación. Pocos conocen cómo era el sistema monetario-cambiario durante 1929-1933 pero, como se dijo varias veces, no es que se emitió sin inflación sino que se destruyó gran cantidad de dinero para causar una deflación de 33%. Cuando la emisión no causa inflación, está evitando una deflación. </UL>
 
-        <UL> 26. Sin embargo, los bancos centrales de primera generación fueron bancos privados dirigidos por los bancos más grandes de cada país, y su papel no era evitar el pánico sino en los pánicos salvar a los bancos que quisiera y dejar quebrar a los demás. </UL>
+        <UL> 29. Durante la Gran Depresión, la tasa de referencia en EE.UU. promedió el 3%, mientras que la deflación de precios fue de cerca de 8% en promedio cada año. Eso da tasas reales de más del 10%. La contracción monetaria para salvar el tipo de cambio era lo que arruinó la economía, no una trampa de liquidez. </UL>
 
-        <UL> 27. El banco central fue una creación de los grandes bancos, que recurrieron al engaño, el soborno, la compra de periodistas, el financiamiento de campañas políticas y golpes de Estado, amenazas, asesinatos, para lograr las leyes que se necesitaban. El acuerdo entre banqueros y políticos significó, en cada país, darles lo que pedían a cambio de que este superbanco prestara a los gobiernos todo el dinero que quisieran. </UL>
 
+        <SUBTITLE> NO ES ASÍ LA CAUSALIDAD<br/>DE LA OFERTA </SUBTITLE>
 
-        <SUBTITLE> PATRÓN ORO | STANDARD GOLD </SUBTITLE>
+        <UL> 30. En los mercados bursátiles, los valores (y, por lo tanto, las tasas de rendimiento o interés) dependen de las expectativas presentes de valor futuro y rendimientos, no de la cantidad de dinero circulante presente. </UL>
 
-        <UL> 28. Los bancos centrales nacieron con la hipotética doble meta de lograr la estabilidad bancaria (cumpliendo función de prestamista de última instancia) y, al mismo tiempo, lograr cierta tasa constante de intercambio entre el oro y la "moneda nacional" (billetes y depósitos). </UL>
+        <UL> 31. Muchas veces pasa que el Estado emite pero los valores caen, sencillamente porque los inversores saben que la emisión arruina la economía de los países y es mejor vender antes de que la crisis llegue. O que el Estado retraiga el crédito pero los valores suban, por el motivo inverso. </UL>
 
-        <UL> 29. El patrón oro era un régimen cambiario bajo el cual el dinero en papel moneda podía ser cambiado por oro a una tasa fija garantizada por el banco emisor, siendo la cantidad de dinero en papel moneda circulante de 5 a 10 veces la cantidad de oro en las reservas del banco emisor, de acuerdo a la tasa de cambio. </UL>
+        <UL> 32. Lo mismo pasa con la banca. Las tasas "activas" aumentan más que la inflación por el riesgo de que la inflación se dispare antes de que los créditos sean devueltos. Por esto es que los países de historial inflacionario no tienen crédito hipotecario. </UL>
 
-        <UL> 30. La cantidad de dinero bancario era también de 5 a 10 veces la cantidad de dinero físico en reserva. Por tanto, la cantidad de dinero bancario podía llegar a ser de hasta 100 veces la cantidad de oro de respaldo (en su equivalencia). </UL>
+        <UL> 33. Repetimos: Todo activo da un rendimiento base más un agregado por riesgo percibido por el mercado. Y, aunque la emisión pueda bajar esa tasa base, suele hacer crecer aun más el componente por riesgo. Así, la determinación del interés por la "oferta" monetaria resulta inversa a la planteada. </UL>
 
-        <UL> 31. Se repiten y multiplican los problemas: más inestabilidad, más ganancias espectaculares para el cártel de bancos, más poder sobre la economía y más capacidad de acciones coordinadas. La problemática del sistema monetario de reserva fraccionaria multiplicado por 5 o por 10. </UL>
+        <UL> 34. La ecuación de Keynes donde se puede aumentar la cantidad de dinero circulante para hacer caer la tasa de interés por encarecimiento de los activos financieros está, así, floja de papeles. El concepto de "expectativas racionales" llegó en la década de 1960 para contrarrestar esta visión de cosas. </UL>
 
 
-        <SUBTITLE> DOBLE META IMPOSIBLE </SUBTITLE>
+        <SUBTITLE> LA TASA DE REFERENCIA NO IMPORTA </SUBTITLE>
 
-        <UL> 32. Bajo el patrón oro, el tipo de cambio se protegía de perturbaciones de manera automática: el dinero usado para comprar reservas salía de circulación, y que, a su vez, causaba reducción de la cantidad de dinero bancario por menor renovación de créditos. Con menos circulante (papel moneda y "depósitos" en cuentas a la vista), la economía entraba en recesión hasta que la deflación de precios aumentara la productividad internacional de la economía. </UL>
+        <UL> 35. Es confuso poner la tasa de interés de referencia como el protagonista de una teoría general del interés. Todo activo o crédito da o promete un rendimiento base (nivelado entre todos los activos y créditos), más un componente por el riesgo percibido por el mercado para cada activo y crédito en particular. Y una teoría que se ocupe de la tasa base de referencia pero se desentienda del componente riesgo no sirve para nada. </UL>
 
-        <UL> 33. Sucede que bajo este sistema una corrida bancaria termina causando una corrida cambiaria porque el retiro de fondos de los bancos puede provocar una devaluación, si el pánico se generaliza y el banco emisor decide salvar a los bancos. </UL>
 
-        <UL> 34. Pero también sucede que toda corrida cambiaria puede terminar causando una corrida bancaria porque los clientes de los bancos quieren retirar dinero para comprar oro antes de que se devalúe, poniendo a la banca en crisis de solvencia. </UL>
+        <SUBTITLE> RECAPITULACIÓN </SUBTITLE>
 
-        <UL> 35. Y ante un pánico que sea tanto bancario como cambiario, el banco central "prestamista de última instancia" se ve obligado a decidir si emitir para salvar a los bancos o no emitir para salvar al tipo de cambio. Es una dicotomía. La doble meta para el banco emisor de ser prestamista de última instancias que erradicara los pánicos bancarios y, a su vez, guardián del <i>standard gold</i> era una doble meta imposible. Había un problema sin solución porque el dinero extranjero y el oro no se pueden imprimir. </UL>
+        <UL> 36. Keynes sostuvo en su <i>Teoría General</i> de 1936 que la política monetaria es efectiva dentro de límites bien definidos puesto que con la tasa de referencia cercana al 0% el mercado opta por tomar esos créditos para simplemente retener el dinero, por si la situación siguiera empeorando o a la expectativa de que los activos financieros comiencen a dar rendimiento (bajen de precio). El dinero se retiene, no circula, no estimula la economía. Ahí es cuando (y siempre según Keynes) solamente la política fiscal de obras públicas, empleo público y asistencialismo podría sacar adelante la economía. </UL>
 
-        <UL> 36. Así, los directorios de los bancos centrales tuvieron los desafíos de elegir entre salvar a los bancos y a sus ahorristas, o salvar al tipo de cambio, en la era de los tipos de cambio fijo (1694-1971). En la práctica, los bancos centrales defendían el tipo de cambio y se limitaban a salvar a algunos bancos a discreción. </UL>
+        <UL> 37. Pero la idea es falsa puesto que Keynes ignoró por completo que la expansión monetaria no solo baja las tasas de interés sino que también causa inflación y aumenta los riesgos de que la inflación se desborde y de que las empresas quiebren. Y como el incentivo para retener el dinero y para tener activos financieros disminuye con la inflación y con la expectativa de más inflación y quiebras, la "trampa de liquidez" no existe ni nunca existió. </UL>
 
-        <UL> 37. La idea de terminar con los pánicos bancarios mediante un banco central prestamista de última instancia parecía buena. Pero no lo fue porque el patrón oro gobernaba el mundo. </UL>
+        <UL> 38. Las tasas de interés de una economía no responden a la cantidad de dinero circulante de manera inversamente proporcional puesto que la emisión multiplica los riesgos de tener un activo. Así, muchas veces sucede que la emisión aumenta las tasas de interés. Y, para "estimular" la economía, se necesita recuperar la disciplina monetaria. </UL>
 
+        <UL> 39. Aparte, el esquema que eligió era inútil para explicar los eventos de la época y oculta el daño que se hace a la propiedad privada, a la libertad y al progreso cuando el Estado falsifica dinero para hacer sus experiencias socialistas. </UL>
 
-        <SUBTITLE> IMPORTANCIA DEL PATRÓN ORO </SUBTITLE>
-
-        <UL> 38. El tipo de cambio fijo era muy importante para el cártel bancario, mientras que la quiebra de los bancos (competidores) le era muy beneficiosa. Por eso es que los pánicos bancarios-cambiarios continuaron ocurriendo cada 8 o 10 años a pesar de la existencia del "prestamista de última instancia", que había sido establecido por la influencia indetenible del <i>lobby</i> bancario. </UL>
-
-        <UL> 39. Cuando el sistema monetario obliga a la deflación a una economía para salvar al tipo de cambio, lo que hace es socializar las pérdidas que causa la inestabilidad inherente al doble sistema de reserva fraccionaria (oro papel moneda y papel moneda dinero bancario). La sociedad entera tiene que sufrir a pérdida de ingresos, desempleo, quiebras, endeudamiento del Estado, ajuste del Estado y encarecimiento del crédito para que el sistema monetario sobreviva a la crisis. Los bancos comerciales se llevan las ganancias (cuando hay ganancias) pero reparten las pérdidas (cuando hay pérdidas) con el resto de la sociedad. </UL>
-
-        <UL> 40. Finalmente pero no menos importante, el patrón oro permitía al cártel bancario controlar enteramente la economía coordinando las compras y ventas de oro, o causando oleadas compradoras y vendedoras desde los encajes bancarios, generando ciclos, poniendo a los gobiernos a su merced. </UL>
-
-        <UL> 41. El Estado da "estabilidad al sistema financiero" (como reza el primer artículo de toda ley carta orgánida de banco central), donde estabilidad significa dejar todo como está, como fue impuesto. Y pide a cambio una participación en el botín, por supuesto. </UL>
-
-
-        <SUBTITLE> EL BANCO CENTRAL MODERNO </SUBTITLE>
-
-        <UL> 42. El plan de erradicar los pánicos bancarios mediante la creación de bancos centrales privados no funcionó. El proyecto nació muerto. Era mentira del cártel de bancos. Entonces y luego de 1934, los políticos decidieron, no quitarles a los bancos comerciales este poder tiránico que habían conseguido, sino aumentar el control estatal sobre los bancos centrales respecto a la "política monetaria" y respecto a la asistencia a bancos en crisis. </UL>
-
-        <UL> 43. Desde entonces, la cantidad de dinero circulante es determinada por las juntas de banco central de cada país (compartidas por el poder político y los grandes bancos) para lograr metas como bajar la inflación o aumentar el empleo o el crecimiento. (El estudio de este tema es para el capítulo 20.) Pero la verdadera razón de ser de estos bancos centrales es dar estabilidad a este aberrante sistema de creación bancaria de dinero. </UL>
-
-        <UL> 44. Un banco central es, podríamos decir, el sindicato de los grandes banqueros. Pero es más que eso. Mas bien, es un órgano del Estado dedicado a la intervención de la economía para garantizar la funcionalidad del negocio de la emisión de dinero de banco y evitar que la cantidad de bancos se desborde. </UL>
-
-
-        <SUBTITLE> RESPUESTAS </SUBTITLE>
-
-        <UL> 45. ¿Por qué el dinero es un billete de banco o un depósito nominal figurativo en un banco? La distancia entre el ridículo costo de producción de estas formas de dinero y su valor de mercado es una renta monopólica que comparten los Estados con los cárteles de bancos. Por esto se prohibió el uso de monedas de oro y plata, que les eran competencia. </UL>
-
-        <UL> 46. ¿Por qué todo el mundo está endeudado con los bancos? Porque la mayor parte del dinero nace del crédito bancario. Y cuando los créditos son devueltos (con interés), se ejecuta una contracción monetaria en la sociedad que empuja a tomar nuevos créditos. La banca está, así, en el eje gravitatorio de la economía, y tiene parasitada a la entera sociedad, pagando regalías por el uso del dinero. </UL>
-
-        <UL> 47. ¿Por qué tenemos una crisis cada 10 años desde mediados del siglo XIX? Porque el sistema monetario es inestable. En otros tiempos, esa inestabilidad era muy funcional para garantizar los privilegios del Estado y de la oligarquía bancaria. Ahora la inestabilidad es solo la cosecha de las ideas socialistas que aplican los políticos (capítulo 20). </UL>
-
-        <UL> 48. ¿Por qué existen los bancos centrales? Nacieron para que los grandes bancos pudieran imponerle sus condiciones a los más pequeños y para garantizar el funcionamiento del sistema bancario de reserva fraccionaria y el patrón oro. Y ahora se usan para generar ciclos económicos. </UL>
-
-        <UL> 49. ¿Por qué parece que los bancos centrales lo arruinan todo? Porque no existen para el bien común sino para los intereses del Estado socialista y las empresas asociadas. Ni la banca ni el resto del mercado financiero, ni el mercado monetario, necesitan regulación estatal, sino un Estado que garantice el cumplimiento de los contratos entre privados. </UL>
-
-
-        <SUBTITLE> COINCIDENCIA DE INTERESES </SUBTITLE>
-
-        <UL> 50. El <i>lobby</i> de grandes bancos logró que los Estados crearan bancos centrales para su propio provecho y en contra de los intereses del bien común. Los socialistas, por su parte, dictaminaron que se necesita un banco central para dirigir o planificar la economía, para lograr el bien común. Por eso, ambos bandos están de acuerdo con dirigir la economía desde un banco central. </UL>
-
-        <UL> 51. No están de acuerdo sobre quiénes tienen que ser los beneficiarios ni en cómo se tiene que usar el engendro. No obstante, la lógica del poder es una sola, y poner la economía al servicio del poder solo sirve para la concentración de poder y la ruina de los gobernados. El cártel internacional de bancos siempre fue más sabio que los intelectuales comunistas. </UL>
+        <UL> 40. La única motivación de Keynes era darle legitimidad al avance del Estado sobre la economía privada; darle apoyo científico a la "política fiscal expansiva" del socialismo. </UL>
 
     </div>
     )

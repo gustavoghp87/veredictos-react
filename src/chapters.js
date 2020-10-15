@@ -2,81 +2,95 @@
 export const data = [
     {
         title: "PRESENTACIÓN",
-        number: ""
+        number: "",
+        url: "index"
     },{
         title: "PRECIOS Y TEORÍA DE LA EXPLOTACIÓN",
-        number: "I"
-    },{
-        title: "VALOR DE CAMBIO",
-        number: "II"
-    },{
-        title: "VALOR AGREGADO Y PRECIOS",
-        number: "III"
-    },{
-        title: "SALARIOS Y GANANCIAS",
-        number: "IV"
+        number: "I",
+        url: "01"
     },{
         title: "LA BANCARROTA DE MARX",
-        number: "V"
+        number: "II",
+        url: "02"
     },{
         title: "CRECIMIENTO Y DESIGUALDAD: LA TEORÍA DEL MANIFIESTO",
-        number: "VI"
+        number: "III",
+        url: "03"
     },{
         title: "CONSUMO Y CRECIMIENTO",
-        number: "VII"
+        number: "IV",
+        url: "04"
     },{
         title: "LA PARADOJA KEYNESIANA DEL AHORRO",
-        number: "VIII"
+        number: "V",
+        url: "05"
     },{
         title: "CONCENTRACIÓN Y OLIGOPOLIOS",
-        number: "IX"
+        number: "VI",
+        url: "06"
     },{
         title: "SISTEMA DE PRECIOS, PROPIEDAD PRIVADA, MANO INVISIBLE",
-        number: "X"
+        number: "VII",
+        url: "07"
     },{
         title: "MALTHUSIANISMO",
-        number: "XI"
+        number: "VIII",
+        url: "08"
     },{
         title: "COMERCIO INTERNACIONAL",
-        number: "XII"
+        number: "IX",
+        url: "09"
     },{
         title: "EL PROBLEMA DE LA RENTA",
-        number: "XIII"
+        number: "X",
+        url: "10"
     },{
         title: "MARXISMO CONTRA LENINISMO",
-        number: "XIV"
+        number: "XI",
+        url: "11"
     },{
         title: "INFLACIÓN",
-        number: "XV"
+        number: "XII",
+        url: "12"
     },{
         title: "¿QUÉ PASA CON LOS BANCOS CENTRALES?",
-        number: "XVI"
+        number: "XIII",
+        url: "13"
     },{
         title: "¿QUÉ PASÓ EN 1929?",
-        number: "XVII"
+        number: "XIV",
+        url: "14"
     },{
         title: "¿QUÉ HAY PODRIDO EN EL FMI?",
-        number: "XVIII"
+        number: "XV",
+        url: "15"
     },{
         title: "LA TEORÍA GENERAL DEL INTERÉS QUE NO LO ES",
-        number: "XIX"
+        number: "XVI",
+        url: "16"
     },{
         title: "LA TEORÍA DEL CAPITAL Y LOS CICLOS",
-        number: "XX"
+        number: "XVII",
+        url: "17"
     },{
         title: "HACER MACROECONOMÍA",
-        number: "XXI"
+        number: "XVIII",
+        url: "18"
     },{
         title: "NEOLIBERALISMO",
-        number: "XXII"
+        number: "XIX",
+        url: "19"
     },{
         title: "LA INTERPRETACIÓN MATERIALISTA DE LA HISTORIA",
-        number: "XXIII"
+        number: "XX",
+        url: "20"
     },{
         title: "DETERMINISMO CONTRA ESTOCASTICISMO ",
-        number: "XXIV"
+        number: "XXI",
+        url: "21"
     },{
         title: "EL GENOMA SOCIALISTA",
-        number: "XXV"
+        number: "XXII",
+        url: "22"
     }
 ]

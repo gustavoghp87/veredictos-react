@@ -15,16 +15,16 @@ export const HR = styled.hr`
 `
 
 export const HAMMER = styled.img`
-    width: ${mobile ? '90%' : '60%'};
+    width: ${mobile ? '100%' : '60%'};
     display: block;
     margin: auto;
-    padding: ${mobile ? '40px 0 20px 0' : '50px 0 20px 0'};
+    padding: ${mobile ? '40px 0 30px 0' : '50px 0 20px 0'};
 `
 
 export const TITLE1 = styled.h1`
     text-align: center;
     font-size: ${mobile ? '2.2rem' : '3.7rem'};
-    margin: ${mobile ? '0px auto 30px auto' : '25px auto 40px auto'};
+    margin: ${mobile ? '0 auto 25px auto' : '25px auto 40px auto'};
     line-height: ${mobile ? '40px' : '50px'};
     text-indent: 0 !important;
     color: gray;
@@ -39,7 +39,7 @@ export const CHAPIMAGE = styled.img`
 export const TITLE2 = styled.h1`
     text-align: center;
     font-size: ${mobile ? '1.7rem' : '3rem'};
-    max-width: ${mobile ? '80%' : '50%'};
+    max-width: ${mobile ? '80%' : '60%'};
     margin: ${mobile ? '30px auto 30px auto' : '70px auto 50px auto'};
     line-height: ${mobile ? '35px' : '50px'};
     text-indent: ${mobile ? '0 !important' : '0'};
@@ -47,9 +47,9 @@ export const TITLE2 = styled.h1`
 
 export const UL = styled.ul`
     margin: ${mobile ? '20px 2%' : '30px 13%'};
-    font-size: ${mobile ? '0.9rem' : '1.5rem'};
+    font-size: ${mobile ? '0.8rem' : '1.5rem'};
     padding-left: 0px;
-    text-indent: ${mobile ? '20px' : '35px'};
+    text-indent: ${mobile ? '15px' : '35px'};
 `
 
 export const ULANCHOR = styled.ul`
@@ -62,19 +62,16 @@ export const ULANCHOR = styled.ul`
 
 export const SUBTITLE = styled.div`
     text-align: center;
-    font-size: ${mobile ? '1.5rem' : '2rem'};
-    margin: ${mobile ? '45px auto 20px auto' : '70px auto 30px auto'};
+    font-size: ${mobile ? '1.3rem' : '2rem'};
+    margin: ${mobile ? '45px auto 0 auto' : '70px auto 30px auto'};
     line-height: ${mobile ? '30px' : '50px'};
-    max-width: ${mobile ? '80%' : '100%'};
+    max-width: ${mobile ? '92%' : '74%'};
     text-indent: 0 !important;
+    background-color: #0d0c15;
+    padding: ${mobile ? '7px' : '2px'};
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
 `
-
-// export const PREBODY = styled.div`
-//     padding: 100px;
-//     margin-top: ${mobile ? '0' : '60px'};
-//     line-height: ${mobile ? '25px' : '35px'};
-//     text-indent: 30px;
-// `
 
 export const BUTTON = styled.button`
     width: 100%;
@@ -101,12 +98,12 @@ export const CENTER = styled.div`
 
 export const IMAGECENTER = styled.img`
     display: block;
-    margin: ${mobile ? '22px auto' : '10px auto 40px auto !important'};
-    width: ${mobile ? '90% !important' : '40% !important'};
+    margin: ${mobile ? '32px auto' : '40px auto'};
+    width: ${mobile ? '92%' : '40%'};
 `
 
 export const INDEX = styled.div`
-    padding: 10px 0;
+    padding: 5px 0;
     font-size: 2.2rem;
     line-height: 25px;
     text-align: left;
@@ -116,7 +113,7 @@ export const INDEX = styled.div`
 export const LOGOFOOTER = styled.img`
     max-width: ${mobile ? '55%' : '25%'};
     display: block;
-    margin: ${mobile ? '0 auto 10px auto' : '40px auto 40px auto'};
+    margin: ${mobile ? '0 auto' : '40px auto 40px auto'};
 `
 
 export const FOOT = styled.div`
@@ -133,11 +130,9 @@ export const PRESENTATION = styled.div`
 
 export const FIRM = styled.p`
     padding: 0;
-    margin-left: 0;
-    margin-right: 0;
-    line-height: ${mobile ? '0' : '20px'};
+    margin: ${mobile ? '10px 0 30px 0' : '35px 0 0 0'};
+    line-height: ${mobile ? '0' : '10px'};
     text-indent: 40px;
-    margin-top: 40px;
     text-align: right;
 `
 

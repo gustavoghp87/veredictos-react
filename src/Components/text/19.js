@@ -1,124 +1,56 @@
 import React, { useEffect } from 'react'
-import { CHAPIMAGE, TITLE2, UL, SUBTITLE, IMAGECENTER } from '../css/css'
-
+import { CHAPIMAGE, TITLE2, UL, SUBTITLE } from '../css/css'
+import { data } from '../../chapters'
+import { urlbase, isLocalhost } from '../../index'
 
 
 export const V19 = () => {
 
-    useEffect(() => {window.scrollTo(0, 0)}, [])
+    const url = urlbase + data[19].url
+    useEffect(() => {window.scrollTo(0, 0); if(!isLocalhost)fetch(url)}, [])
 
     return (
     <div>
 
-        <CHAPIMAGE src="/frontend-src/19/19.jpg" />
+        <CHAPIMAGE src="/frontend-src/22/22.jpg" />
 
-        <TITLE2> XIX. LA TEORÍA GENERAL DEL<br/>INTERÉS QUE NO LO ES </TITLE2>
+        <TITLE2> {data[19].number}. {data[19].title} </TITLE2>
 
-        <UL> 1. En 1936 vio la luz la obra más determinante en el pensamiento socialista desde el <i>Manifiesto Comunista</i> de 1848. La <i>General Theory of Employment, Interest and Money</i> de Keynes incluyó una explicación general de cómo se determinan los tipos de interés de los créditos y los activos financieros que dice: </UL>
+        <UL> 1. Han pasado 90 años desde la Gran Depresión (1929-1933). Pocos saben que, antes de esa crisis, los gobiernos no hacían macroeconomía (política económica). ¿Qué es la macroeconomía? Son medidas de política económica que buscan alcanzar algunos objetivos como nivel de empleo, bajar inflación o estimular la inversión, etcétera. </UL>
 
-        <UL> 2. A cada momento, hay una cantidad de dinero circulante, y hay una demanda de dinero o "preferencia por la liquidez" que hace que la gente quiera dinero en efectivo. El equilibrio entre ambas variables determina la tasa de interés de referencia de la economía (cierta tasa base para los activos y créditos, a la que se le suma un componente riesgo). </UL>
-
-        <UL> 3. Los motivos para aceptar y conservar una cantidad de dinero (en vez de correr a cambiarla por otra cosa) son tres: para hacer transacciones pronto, para disponer por si pasara algo malo, y para conservar a la espera de una buena oportunidad de inversión. Se llaman "motivo transacción", "motivo precaución" y "motivo especulación", respectivamente. </UL>
-
-        <UL> 4. La "función de demanda de dinero" keynesiana es decreciente con la tasa de interés de referencia porque cuanto menor sea la tasa, menos atractivo tienen los activos financieros. Mas bien, con tasas bajas (que significa activos financieros caros) conviene retener el dinero a la espera de que suban. O sea, a la espera de que los activos se hagan más baratos. Porque no tiene sentido asumir riesgos por activos que no dejan rendimientos significativos. </UL>
-
-        <IMAGECENTER src="/frontend-src/19/k.jpg" />
-
-        <UL> 5. Así, el mercado tiende a una tasa de equilibrio que es la que hace coincidir los planes de los demandantes de dinero con la cantidad de circulante que determina el banco central. </UL>
-
-        <UL> 6. A una demanda de dinero dada, la tasa de referencia baja cuando aumenta la cantidad de dinero circulante (desplazamiento a la derecha de la recta vertical). Y, a una cantidad de dinero determinada, la tasa sube cuando aumenta la demanda de dinero por alguno de los 3 motivos: porque crece la economía ("motivo transacción") o porque crece el atesoramiento ("motivos precaución y especulación") (desplazamiento a la derecha de la curva de demanda). </UL>
+        <UL> 2. Hay 3 clases de macroeconomía: política fiscal, política monetaria y política cambiaria. </UL>
 
 
-        <SUBTITLE> TRAMPA DE LIQUIDEZ </SUBTITLE>
+        <SUBTITLE> POLÍTICA FISCAL </SUBTITLE>
 
-        <UL> 7. Sigue de esto una de las conclusiones más importantes del keynesianismo: La "política monetaria" tiene un límite a la hora de estimular el consumo y la inversión por medio de bajar la tasa de interés. Y es porque, cuando la tasa de interés de referencia se acerca a cero, toda expansión de la cantidad de dinero que se haga será retenida por el público a la espera de que las tasas vuelvan a subir, no usada en transacciones (inversión o consumo). </UL>
-
-        <UL> 8. Es el "motivo especulación" el que hace que la tasa de interés sea decreciente con la cantidad de dinero circulante. Pero no es por siempre así, puesto que no tiene sentido seguir invirtiendo en activos financieros que ya casi no dejan rendimiento por lo caros que están. Por eso, en el gráfico, la curva de "demanda de dinero" se hace prácticamente horizontal. </UL>
-
-        <UL> 9. Existiría, entonces, un límite definido a la efectividad de la "política monetaria expansiva" (que significa "estimular" el consumo y la inversión bajando los tipos de interés usando dinero de nueva emisión). Y el gobierno tendrá que recurrir a políticas fiscales, consecuentemente. En tiempos de fuertes crisis, la política monetaria se volvería ineficaz porque la expansión del crédito no logra reactivar la economía; el mercado retiene el dinero ("motivos precaución y especulación"); es la <i>trampa de la liquidez</i>. </UL>
-
-        <UL> 10. La vocación por legitimar la estatización de la economía es admirable. Pero nos toca combatir esta teoría socialista también. </UL>
+        <UL> 3. Política fiscal es cuando el Estado toma dinero de los que ganan más para dárselo a los que tienen menos para aumentar la producción de bienes de consumo. O es cuando cobra impuestos para financiar obras públicas o crear empleos públicos. O es cuando hace todo eso con dinero prestado. Diferentes formas de violar la propiedad privada por cuestiones ajenas al funcionamiento del Estado, los servicios básicos y la defensa nacional. </UL>
 
 
-        <SUBTITLE> NO FUE LO QUE PASÓ </SUBTITLE>
+        <SUBTITLE> POLÍTICA MONETARIA </SUBTITLE>
 
-        <UL> 11. Primeramente, no fue lo que pasó en 1929-1933, la crisis que Keynes quería explicar con su concepto de trampa de la liquidez. Como se explicó en el capítulo 16, el sistema de patrón oro con banca de reserva fraccionaria ejecutó una contracción monetaria brutal, no una expansión monetaria que haya caído en una trampa de ineficiencia. </UL>
+        <UL> 4. Política monetaria es cuando el Estado secuestra el mercado de dinero monopolizando el abastecimiento de dinero y obligando a los habitantes a usar su moneda. Y, luego, modifica la cantidad de dinero circulante de acuerdo a las metas que se propone. El ahorro de la sociedad, la inversión, el consumo, el empleo, el comercio exterior; toda la economía es dirigida desde el banco central. </UL>
 
-        <UL> 12. De hecho, la tasa de interés pasiva fue de 4% en 1928, 9% en 1929, 4% en 1930, 2% en 1931, 3% en 1932 y 3% 1933, y con deflación de precios. Nunca fue de 0%. </UL>
-
-        <UL> 13. La trampa fue el sistema de doble reserva fraccionaria y consistió en que el banco central sacó circulante de la calle para contener las caídas de reservas, mientras los bancos destruían dinero bancario al no renovar los créditos (por el aumento de riesgos y por los retiros de dinero efectivo). </UL>
-
-        <UL> 14. No es cierto de ninguna manera que la política monetaria expansiva haya sido ineficiente. Es que no se hizo ninguna política monetaria expansiva sino todo lo contrario. Keynes no tenía idea de cómo funcionaba el sistema que pretendía estar explicando. </UL>
-
-        <UL> 15. Una política monetaria expansiva hubiera sido devaluar el dólar. O, también, retirar a la FED del mercado cambiario, en vez de dejarlo vender oro barato para sacar dólares de circulación. </UL>
+        <UL> 5. Cuando el Estado emite dinero, el valor de este nuevo dinero proviene del valor del dinero que ya estaba circulando, y el uso que haga el Estado de este nuevo dinero consiste en un subsidio redistributivo. Es otra forma de violar la propiedad privada y arruinar la economía por la falsa creencia de que el bien común se logra por dirección estatal de la economía. </UL>
 
 
-        <SUBTITLE> NO ES GENERAL </SUBTITLE>
+        <SUBTITLE> POLÍTICA CAMBIARIA </SUBTITLE>
 
-        <UL> 16. Segundo, la "teoría general del interés" de Keynes no es una teoría general, porque es un esquema explicativo exclusivo para una economía donde el Estado ha secuestrado el mercado de dinero y dictamina cuál es la cantidad de dinero a cada momento desde un banco central (la recta vertical del gráfico). </UL>
+        <UL> 6. La política cambiaria es cuando el Estado secuestra el mercado de monedas extranjeras e impone la tasa de cambio entre la moneda nacional y las extranjeras. Y entonces busca impulsar las exportaciones devaluando o reducir la inflación revaluando. </UL>
 
-        <UL> 17. Es, entonces, una explicación para un sistema de banca central con <i>monetary targeting</i>, o sea, donde el banco central tiene poder absoluto sobre los coeficientes de encaje de los bancos comerciales. Y donde usa su poder para dictaminar la cantidad de circulante, no para dictaminar el tipo de cambio. </UL>
+        <UL> 7. Implica un secuestro previo del mercado de dinero, y se ejecuta de alguna de estas dos formas: El Estado obliga a los exportadores a "venderle" todas las divisas que consiguen, para luego el Estado "venderle" esas divisas a los importadores y casas de cambio. Pero, más comúnmente, el Estado se hace con una reserva grande de divisas y se mete en el mercado de cambios dispuesto a comprar y vender a cierta tasa, imponiendo a los demás el precio que él eligió. </UL>
 
-        <UL> 18. En la era del patrón oro, no obstante, la cantidad de dinero era endógena al sistema porque los bancos centrales no imponían el coeficiente de encaje bancario, y porque la cantidad física de circulante dependía de la demanda de oro. </UL>
-
-        <UL> 19. Así, por poner un ejemplo, en caso de aumento en la demanda de dinero en efectivo por "motivo precaución" (en el gráfico, desplazamiento a la derecha de la curva), había contracción de la cantidad de dinero circulante por la caída de los préstamos bancarios (desplazamiento a la izquierda de la recta vertical). </UL>
-
-        <UL> 20. Pero si la crisis de expectativas llevaba al mercado a demandar menos dinero en moneda estatal nacional y más oro, eso significaba (también) menos oferta de dinero (en el gráfico, ambas curvas se desplazan a la izquierda), dando indeterminación para la tasa de interés. </UL>
-
-        <UL> 21. Así, la "teoría general del interés" no puede explicar la tasa de interés en un sistema monetario-cambiario de doble reserva fraccionaria (patrón oro), ni el de una economía libre donde haya competencia de monedas. Para que las dos funciones del esquema fueran independientes una de otra se necesita plena dirección de la cantidad de dinero por el órgano planificador central, algo que fue impuesto después del <i>crash</i> de 1929-1933 (y es el mandamiento quinto del Manifiesto Comunista). </UL>
+        <UL> 8. El Estado se hace con reservas comprando divisas con dinero de la emisión o de la recaudación impositiva. Y luego lo usa para atentar contra el precio más importante de la economía, para que se importe lo que se debería producir, para que se exporte lo que se debería quedar, y para que no se produzca lo que se debería exportar. </UL>
 
 
-        <SUBTITLE> NO ES DEMANDA DE DINERO </SUBTITLE>
+        <SUBTITLE> MACROECONOMÍA Y SOCIALISMO </SUBTITLE>
 
-        <UL> 22. La función de "demanda de dinero" no es una función de demanda de dinero. Es una curva de reacción que muestra los puntos de correlación entre cantidad de dinero y tasa de interés. No representa algo que pase en ningún mercado. </UL>
+        <UL> 9. Hay una idea que los socialistas siempre tienen presente y que modela las mentes de cerca de la mitad de la población de todo país: el Estado genera su propio valor al hacer política económica. Son las creencias de que la redistribución causa prosperidad (capítulos 7 y 8), que bajar tasas de interés causa prosperidad (capítulos 15 y 20) y que determinar el tipo de cambio causa prosperidad (capítulos 16 a 19). </UL>
 
-        <UL> 23. Una teoría general del interés tiene, en cambio, que analizar los mercados de capitales y de créditos en un esquema de equilibrio general, de acuerdo a una oferta y demanda de capitales y ahorros. </UL>
+        <UL> 10. Pero, en realidad, la práctica de la macroeconomía es la violación sistemática de la propiedad privada, así como las regulaciones son la violación de las libertades económicas. A través de la macroeconomía, los pueblos y los gobiernos intentan dirigir la economía, poniéndose en enemistad con la mano invisible y causando pobreza, atraso e inequidad. Y se pone a la gente a odiarse unos a otros, de acuerdo a diferentes explicaciones sobre las causas de la tragedia económica que presencian y a los intereses involucrados. </UL>
 
-        <UL> 24. Pero el esquema de Keynes "teoría general del interés" convierte al dinero emitido por el Estado en capital sin más, y convierte al keynesiano en un estatizador de la economía y en un despreciador del ahorrista y de la propiedad privada. </UL>
+        <UL> 11. Así que, en conclusión, ¿por qué los gobiernos no hacían macroeconomía antes de la Gran Depresión? Porque sabían que el respeto por la propiedad privada es la clave para la prosperidad de los pueblos (junto con las libertades económicas). Y no le llamaban macroeconomía a la violación sistemática de la propiedad privada de sus ciudadanos. </UL>
 
-
-        <SUBTITLE> FALTA LA INFLACIÓN </SUBTITLE>
-
-        <UL> 25. De alguna manera, la "teoría general del interés" no tiene en cuenta el efecto que pueda tener la emisión en la inflación. Emitir dinero no afecta a la función de "demanda de dinero" sino que supone que toda la emisión será absorbida y retenida por "motivo especulación", a la espera de que los activos financieros bajen de precio. </UL>
-
-        <UL> 26. Pero si, en cambio, la emisión causa inflación, la tasa de interés real siempre puede ser más negativa, "estimulando" la actividad económica (o la compra de activos externos), porque nadie retiene dinero que inflaciona. Aunque la curva de "preferencia por la liquidez" se haga horizonal, el dinero jamás cae en una trampa, en el sentido de que sea retenido por el mercado a causa de la falta de oportunidades de rentabilidad. </UL>
-
-        <UL> 27. De hecho, si el gobierno abusa de la emisión, la demanda de dinero se desploma (o la oferta privada de dinero se dispara) causando hiperinflación, mientras que el esquema de Keynes sigue mostrando una curva de "demanda de dinero" horizontal, insensible a la emisión, haciendo caer al dinero en una supuesta trampa de inmovilidad, opuesta a la enorme velocidad de circulación del dinero que todo el mundo percibe. </UL>
-
-        <UL> 28. Está el mito de que durante una crisis se puede emitir sin causar inflación. Pocos conocen cómo era el sistema monetario-cambiario durante 1929-1933 pero, como se dijo varias veces, no es que se emitió sin inflación sino que se destruyó gran cantidad de dinero para causar una deflación de 33%. Cuando la emisión no causa inflación, está evitando una deflación. </UL>
-
-        <UL> 29. Durante la Gran Depresión, la tasa de referencia en EE.UU. promedió el 3%, mientras que la deflación de precios fue de cerca de 8% en promedio cada año. Eso da tasas reales de más del 10%. La contracción monetaria para salvar el tipo de cambio era lo que arruinó la economía, no una trampa de liquidez. </UL>
-
-
-        <SUBTITLE> NO ES ASÍ LA CAUSALIDAD<br/>DE LA OFERTA </SUBTITLE>
-
-        <UL> 30. En los mercados bursátiles, los valores (y, por lo tanto, las tasas de rendimiento o interés) dependen de las expectativas presentes de valor futuro y rendimientos, no de la cantidad de dinero circulante presente. </UL>
-
-        <UL> 31. Muchas veces pasa que el Estado emite pero los valores caen, sencillamente porque los inversores saben que la emisión arruina la economía de los países y es mejor vender antes de que la crisis llegue. O que el Estado retraiga el crédito pero los valores suban, por el motivo inverso. </UL>
-
-        <UL> 32. Lo mismo pasa con la banca. Las tasas "activas" aumentan más que la inflación por el riesgo de que la inflación se dispare antes de que los créditos sean devueltos. Por esto es que los países de historial inflacionario no tienen crédito hipotecario. </UL>
-
-        <UL> 33. Repetimos: Todo activo da un rendimiento base más un agregado por riesgo percibido por el mercado. Y, aunque la emisión pueda bajar esa tasa base, suele hacer crecer aun más el componente por riesgo. Así, la determinación del interés por la "oferta" monetaria resulta inversa a la planteada. </UL>
-
-        <UL> 34. La ecuación de Keynes donde se puede aumentar la cantidad de dinero circulante para hacer caer la tasa de interés por encarecimiento de los activos financieros está, así, floja de papeles. El concepto de "expectativas racionales" llegó en la década de 1960 para contrarrestar esta visión de cosas. </UL>
-
-
-        <SUBTITLE> LA TASA DE REFERENCIA NO IMPORTA </SUBTITLE>
-
-        <UL> 35. Es confuso poner la tasa de interés de referencia como el protagonista de una teoría general del interés. Todo activo o crédito da o promete un rendimiento base (nivelado entre todos los activos y créditos), más un componente por el riesgo percibido por el mercado para cada activo y crédito en particular. Y una teoría que se ocupe de la tasa base de referencia pero se desentienda del componente riesgo no sirve para nada. </UL>
-
-
-        <SUBTITLE> RECAPITULACIÓN </SUBTITLE>
-
-        <UL> 36. Keynes sostuvo en su <i>Teoría General</i> de 1936 que la política monetaria es efectiva dentro de límites bien definidos puesto que con la tasa de referencia cercana al 0% el mercado opta por tomar esos créditos para simplemente retener el dinero, por si la situación siguiera empeorando o a la expectativa de que los activos financieros comiencen a dar rendimiento (bajen de precio). El dinero se retiene, no circula, no estimula la economía. Ahí es cuando (y siempre según Keynes) solamente la política fiscal de obras públicas, empleo público y asistencialismo podría sacar adelante la economía. </UL>
-
-        <UL> 37. Pero la idea es falsa puesto que Keynes ignoró por completo que la expansión monetaria no solo baja las tasas de interés sino que también causa inflación y aumenta los riesgos de que la inflación se desborde y de que las empresas quiebren. Y como el incentivo para retener el dinero y para tener activos financieros disminuye con la inflación y con la expectativa de más inflación y quiebras, la "trampa de liquidez" no existe ni nunca existió. </UL>
-
-        <UL> 38. Las tasas de interés de una economía no responden a la cantidad de dinero circulante de manera inversamente proporcional puesto que la emisión multiplica los riesgos de tener un activo. Así, muchas veces sucede que la emisión aumenta las tasas de interés. Y, para "estimular" la economía, se necesita recuperar la disciplina monetaria. </UL>
-
-        <UL> 39. Aparte, el esquema que eligió era inútil para explicar los eventos de la época y oculta el daño que se hace a la propiedad privada, a la libertad y al progreso cuando el Estado falsifica dinero para hacer sus experiencias socialistas. </UL>
-
-        <UL> 40. La única motivación de Keynes era darle legitimidad al avance del Estado sobre la economía privada; darle apoyo científico a la "política fiscal expansiva" del socialismo. </UL>
+        <UL> 12. La macroeconomía como disciplina de teoría económica ha sido completamente tomada por los keynesianos en las universidades y en la cultura en general. La economía, en cambio, no debería ser dirigida por el Estado. </UL>
 
     </div>
     )

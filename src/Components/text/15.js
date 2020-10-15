@@ -1,233 +1,138 @@
 import React, { useEffect } from 'react'
-import { CHAPIMAGE, TITLE2, UL, SUBTITLE, IMAGECENTER, SPECIALRIGHT, CENTER } from '../css/css'
+import { CHAPIMAGE, TITLE2, UL, SUBTITLE } from '../css/css'
+import { data } from '../../chapters'
+import { urlbase, isLocalhost } from '../../index'
 
 
 export const V15 = () => {
 
-    useEffect(() => {window.scrollTo(0, 0)}, [])
+    const url = urlbase + data[15].url
+    useEffect(() => {window.scrollTo(0, 0); if(!isLocalhost)fetch(url)}, [])
 
     return (
     <div>
 
-        <CHAPIMAGE src="/frontend-src/15/15.jpg" />
+        <CHAPIMAGE src="/frontend-src/18/18.jpg" />
 
-        <TITLE2> XV. INFLACIÓN </TITLE2>
+        <TITLE2> {data[15].number}. {data[15].title} </TITLE2>
 
-        <UL> 1. La inflación es el fenómeno más consultado de toda la economía. Es el origen de debates, controversias, posiciones ideológicas y experimentos gubernamentales de todo tipo. Y no porque sí esta será el capítulo más largo del sitio. Pero la realidad científica es una sola. </UL>
+        <UL> 1. No hay observador inteligente y justo en el mundo que no haya notado que el Fondo Monetario Internacional arruina todo país en el que interviene, causando grandes crisis, pánicos cambiarios, endeudamiento masivo de los Estados, quiebras, pobreza, inequidad, ajustes de salarios y poder de consumo popular, lucha de clases y corrupción. ¿Qué está pasando? </UL>
 
 
-        <SUBTITLE> CONTEXTO </SUBTITLE>
+        <SUBTITLE> ORIGEN: 1944 </SUBTITLE>
 
-        <UL> 2. Antes del siglo XIX, los Estados solo acuñaban monedas. Así, el valor de toda moneda (de oro o plata) estaba determinado por el valor de mercado de su metal y por su peso, no por algo que hiciese el Estado. El servicio de acuñación evitaba a los ciudadanos tener que pesar las monedas antes de cada transacción: si el dibujo de la moneda estaba bien, el peso era el correcto. Y solo eso. </UL>
+        <UL> 2. Mucha gente cree que el FMI es una institución del capitalismo, a la vanguardia del liberalismo económico, un ícono del neoliberalismo anti socialista, una cúpula de economistas ultra ortodoxos. El FMI, sin embargo, es el hijo de John Keynes y el norteamericano Harry Dexter White. </UL>
 
-        <UL> 3. Pero en la modernidad se crearon el billete de papel bancario y el dinero bancario como depósito en cuenta a la vista (depósito donde se supone que hay dinero pero que el banco en realidad no tiene, no obstante se puede usar como medio de pago usando cheque o, más recientemente, tarjeta de débito, transferencias y aplicaciones). No fueron dos introducciones por parte de las dirigencias políticas sino por los bancos, como innovación privada. </UL>
+        <UL> 3. John Keynes fue un firme y confeso admirador del nazismo, del fascismo y de la Unión Soviética, como consta en sus escritos, y Harry White, por su parte, fue descubierto como espía de la Unión Soviética y apareció muerto unas horas después de declarar ante el Comité de Actividades Anti Estadounidenses (<i>House Un-American Activities Committee</i>) del Congreso de Estado Unidos en 1948. </UL>
 
-        <UL> 4. Gradualmente, durante los siglos XIX y XX, los banqueros fueron "convenciendo" a los gobiernos de imponer el uso de dinero bancario de ambos tipos en detrimento de las monedas de oro y plata. Y, finalmente, los "convencieron" también de que prohibieran la circulación de todo tipo de dinero excepto las dos formas de dinero bancarias, que se convirtieron en bancario-estatales. </UL>
+        <UL> 4. En el hotel de Bretton Woods, cuando EE.UU. y el Reino Unido discutían las instituciones de posguerra a mediados de 1944, Keynes fue el representante del gobierno británico, y White el representante de los americanos. </UL>
 
-        <UL> 5. Ya en el siglo XX, los Estados tenían prohibida toda forma de dinero excepto la propia, bajo un monopolio estatal de la emisión —compartido con sus socios, los bancos—. La historia de cómo se llegó a esta situación es acerca de sobornos, engaños, compra de periodistas, amenazas, asesinatos. </UL>
 
-        <UL> 6. Cuando el Estado impone el uso obligatorio de una única moneda, prohibiendo las monedas privadas y las extranjeras, una moneda que tiene costos de producción inapreciables y un monopolio en su emisión, hay un gran negocio socialista que tiene que ser analizado. </UL>
+        <SUBTITLE> INTERPRETACIÓN SOCIALISTA DE<br/>LA CRISIS DEL PATRÓN ORO </SUBTITLE>
 
+        <UL> 5. ¿Por qué? Porque la severidad de la Gran Depresión (1929-1933) y las dificultades de los años siguientes causaron una avanzada cultural del socialismo en ambos países. Por eso, para explicar la naturaleza del FMI, es conveniente comentar la visión socialista de lo que había pasado en el mundo desde la Primera Guerra Mundial, y especialmente desde 1929. </UL>
 
-        <SUBTITLE> MERCADO DE DINERO </SUBTITLE>
+        <UL> 6. La visión predominante en el mundo capitalista era que las monedas de los Estados tenían que guardar una relación fija de intercambio con el oro. En caso de desajustes y pérdidas de reservas en los bancos emisores de papel moneda, el sistema mismo llevaba al equilibrio: La pérdida de reservas tenía como contracara la salida de circulación del dinero moneda nacional que se usaba para comprar oro. El ajuste en la cantidad de dinero circulante subía las tasas de interés, deprimía la economía y causaba deflación de precios, hasta detener la pérdida de reservas. </UL>
 
-        <UL> 7. Para entender el dinero, se necesita pensarlo como un bien económico más del montón. Tiene una función de oferta y una función de demanda. Y tiene una cantidad de equilibrio y un valor de equilibrio para los cuales se encuentran los planes de quienes quieren recibir dinero y quienes quieren entregarlo. </UL>
+        <UL> 7. Pero el sistema patrón oro entró en crisis cuando el Reino Unido perdió sus reservas a causa del esfuerzo bélico, hacia 1918. Cuando hay pocas reservas, el mercado se apresura a comprar el poco oro que queda antes de que lo hagan los otros. Por esto, el período de entreguerras fue de crisis, devaluaciones y endeudamiento. </UL>
 
-        <UL> 8. El mercado de dinero es la otra cara de los mercados de todos los otros bienes y servicios juntos: La oferta de dinero es la demanda de bienes, servicios y monedas extranjeras en general —lo que uno está dispuesto a recibir en cambio por el dinero que ya tiene—. Y la demanda de dinero es la oferta de bienes, servicios y monedas extranjeras en general —lo que uno está dispuesto a dar para recibir dinero—. </UL>
+        <UL> 8. La interpretación socialista no fue que había que dejar de fijar el precio de las monedas estatales para que, en cambio, el mercado decidiera sus valores, de acuerdo a las cantidades de dinero emitido. La interpretación socialista fue que había que diseñar un esquema de intervención estatal, desde un organismo supranacional, para lograr que el patrón oro volviera a funcionar como antes de la guerra. Los Estados tenían que dirigir la economía, ahora a nivel internacional. </UL>
 
-        {/* La única dificultad que tiene este mercado es que el mismo demandante de dinero se convierte en ofertante luego de haberlo recibido y otra vez en demandante cuando ya lo ha entregado. En realidad, toda persona es ofertante y demandante de dinero a la vez, todo el tiempo. Pero el esquema analítico sigue siendo válido y el desafío intelectual no es gran cosa. */}
 
-        <IMAGECENTER src="/frontend-src/15/money.jpg" />
+        <SUBTITLE> BORRADOR DE FMI Y NACIMIENTO (1944) </SUBTITLE>
 
-        <UL> 9. El mercado de dinero -como cualquier otro- ajusta precio y cantidad buscando el equilibrio: </UL>
+        <UL> 9. El plan original de ellos Keynes y White en Bretton Woods para dirigir coercitivamente el mercado internacional de dinero era diferente al que finalmente fue aceptado por el Congreso norteamericano y el Parlamento británico. Hubo un artículo importantísimo que fue rechazado. </UL>
 
-        <SPECIALRIGHT>
-            <UL> (i) Cuando el poder adquisitivo de una moneda es muy bajo, la cantidad de dinero ofrecida en el mercado es muy baja ya que la gente no quiere desprenderse de él fácilmente. Para ellos, los precios están altos. En otras palabras, los dueños de dinero quieren hacer pocas transacciones a causa de la poca contraprestación que les ofrecen por cada unidad monetaria. Y, al contrario, la cantidad de dinero demandada es muy alta. La gente quiere vender muchas cosas al estado actual de precios; quieren mucho dinero. Los planes no se encuentran; la deflación sobreviene. </UL>
+        <UL> 10. El plan original era: Los Estados miembros debían aportar de sus propias monedas para formar un fondo de monedas internacionales (de ahí el nombre). Luego, cuando un país tenía déficit de balanza de pagos (o sea que perdía reservas de oro, principalmente por importar más de lo exportado), ese país podía recibir monedas de los países con superávit de balanza de pagos. De esa manera, el préstamo resultaría en una expansión monetaria en los países superavitarios, que reduciría sus saldos exportables y aumentaría las importaciones, etcétera. </UL>
+        
+        <UL> 11. Así (razonaron), se lograría un mecanismo automático de equilibrio, buscando que cada país tuviese cantidades más o menos estables de reservas de oro, y, entonces, evitando devaluaciones en cadena por "contagio" de desequilibrios de balanza de pagos. Se buscaba darle vida a un engendro que diese respaldo a un sistema aberrante de intervención de los Estados en economía (el patrón oro); repetir la fórmula que había funcionado a políticos y banqueros en las décadas previas a 1914. </UL>
 
-            <UL> (ii) Cuando el poder adquisitivo de una moneda es muy alto, la cantidad de dinero ofrecida en el mercado es muy alta ya que la gente quiere desprenderse de él para conseguir las muchas cosas que se están ofreciendo a cambio. Los precios están bajos. Pero, al mismo tiempo, la cantidad demandada de dinero es muy baja. La gente quiere vender poco porque los precios están bajos y no es negocio. Los planes no se encuentran; la inflación sobreviene. </UL>
+        <UL> 12. No obstante, el artículo que obligaba a los acreedores del FMI a hacer política monetaria expansiva (en contra de sus propios intereses) para ayudar a los países con déficits, obvio, no fue aprobado. EE.UU. y Reino Unido tenían superávit en aquellos años, y la idea de poner la soberanía monetaria en manos de un órgano supranacional les pareció terrible a congresistas y parlamentarios. Para ellos, el FMI era un remedio que los demás países podían probar, pero ellos no. </UL>
 
-            <UL> (iii) Finalmente, hay un poder adquisitivo de equilibrio que hace que los planes se encuentren. Y también hay una cantidad de dinero de equilibrio, que no es la cantidad de dinero circulante M99 sino la cantidad de dinero que cambia de manos en el período cierto de tiempo que se está considerando en el gráfico. </UL>
-        </SPECIALRIGHT>
+        <UL> 13. Lo que quedó es un organismo que presta dinero sacado del presupuesto regular y no de emisión, a discreción de cada gobierno. </UL>
 
-        <UL> 10. En principio, poco más que esto. Todos los mercados están en constante movimiento. Pero cuando todos se mueven en la misma dirección, probablemente sea el mercado de dinero el que está siendo perturbado (en sus variables exógenas). </UL>
 
+        <SUBTITLE> AJUSTE Y PREGUNTA </SUBTITLE>
 
-        <SUBTITLE> VELOCIDAD DE CIRCULACIÓN DEL DINERO </SUBTITLE>
+        <UL> 14. Piénsese ahora en la dinámica en la que entra un país con patrón oro que asume una deuda para hacer frente a una pérdida de reservas, sin que los países superavitarios hagan "macroeconomía" para ayudarlo. El "fortalecimiento de las reservas" hecho con monedas prestadas solo sirve para ganar tiempo, porque el préstamo luego tendrá que ser devuelto y con intereses. </UL>
 
-        <UL> 11. La cantidad de dinero de equilibrio en el mercado de dinero es percibida desde el siglo XVIII (Hume) como velocidad de circulación del dinero, lo cual es muy cierto. Pero no es una variable autónoma sino una variable endógena. </UL>
+        <UL> 15. El país gana tiempo, tiempo para tomar medidas que restablezcan el equilibrio (y, además, permitan generar un sobrante para devolver el crédito). ¿Cuáles son esas medidas? Todas las que signifiquen austeridad monetaria y fiscal. En definitiva, se busca una deflación que haga más competitiva a la economía (que exporte más y que importe menos). </UL>
 
-        <UL> 12. No deberíamos decir que "hay inflación porque se aceleró la velocidad de circulación del dinero" sino que "hay inflación y se aceleró la velocidad de circulación del dinero porque aumentó la oferta de dinero". En el gráfico, la curva de oferta de dinero se desplaza a la derecha. </UL>
+        <UL> 16. Y aquí la pregunta clave: ¿Por que causar una fuerte recesión buscando que bajen los precios de toda la economía, provocando desempleo, endeudamiento, quiebras y conflictividad social, cuando lo único que se necesita es que se encarezcan los productos importados y los productos exportables? </UL>
 
-        <UL> 13. Por supuesto que se puede expresar esta cantidad de dinero de equilibrio M* (cantidad de dinero que cambia de manos en un cierto período) como el producto de la cantidad de circulante M99 y un cierto coeficiente que pretenda medir la velocidad promedio de circulación del dinero. Se puede hacer. </UL>
+        <UL> 17. Porque lo que causa una devaluación es encarecer los productos exportables y los importados, restableciendo el equilibrio externo sin necesidad de ningún otro ajuste. Fijar el tipo de cambio durante una salida de reservas, contrariamente, significa subsidiar a los productos extranjeros y atentar contra las exportaciones. </UL>
 
-        <UL> 14. Pero parece un artilugio matemático de poca utilidad. Así, el producto de la cantidad de dinero intercambiada y el poder adquisitivo de la moneda da el total de transacciones, siendo, como es, la <i>Teoría Cuantitativa del Dinero</i> una visión superficial del mercado de dinero. </UL>
 
+        <SUBTITLE> RESISTENCIA DE LOS PRECIOS A<br/>LA BAJA Y DEVALUACIONES </SUBTITLE>
 
-        <SUBTITLE> OFERTA DE DINERO </SUBTITLE>
+        <UL> 18. El tipo de cambio es el valor que traduce todos los precios internacionales a precios nacionales. Es, por tanto, el precio más importante de toda la economía. Cuando cambia la tasa de cambio, cambian todos los precios. El tipo de cambio es el precio que puede lograr que todos los precios de una economía cambien súbitamente de un momento a otro, desde el punto de vista internacional. </UL>
 
-        <UL> 15. El problema que nos hace hablar de velocidad de circulación como si fuese una variable exógena para explicar la inflación es la dificultad para refundar el concepto de oferta de dinero. Para cualquiera, oferta de dinero es la cantidad de circulante y solo depende de la voluntad del directorio del banco central. En cambio, aquí definimos oferta de dinero como la contracara de la demanda de bienes, servicios y monedas extranjeras. </UL>
+        <UL> 19. Hay, como se sabe, una fuerte resistencia de los precios a la baja. Cuando se emite, los precios se apuran a aumentar, pero lo opuesto no es cierto. Una fuerte disciplina monetaria no logra una deflación fácilmente sino que se necesitan años de depresión, con desempleo alto y fundición general para que los precios bajen. </UL>
 
-        <UL> 16. En las economías modernas, hay en cada país un monopolio del abastecimiento de dinero nuevo pero <b>no</b> un monopolio de la oferta de dinero, porque la oferta de dinero depende principalmente de los poseedores de dinero preexistente. Cada persona con dinero con intensiones de gastarlo es un ofertante. </UL>
+        <UL> 20. En cambio, devaluando se consigue que los precios bajen instantáneamente, desde el punto de vista extranjero. Y es lo que importa, porque el desequilibrio que se quiere corregir es de balanza de pagos internacionales. </UL>
 
-        <UL> 17. En realidad, la oferta de dinero tiene dos componentes: una oferta privada y una oferta pública, que sumadas dan el total. El Estado tiene a su favor la posibilidad de aumentar su oferta de dinero emitiendo dinero nuevo (y no solamente por disponerse a desprenderse más prontamente del dinero que ya tenía, aceptando menos cosas en cambio). </UL>
+        <UL> 21. Pero el concepto de devaluación es inadecuado porque se llama devaluación al aumento del precio fijado por el Estado para la divisa internacional. Cuando, en cambio, el Estado se sale del mercado cambiario y la moneda nacional estatal flota libremente en el mercado (de acuerdo a oferta y demanda), no hay por qué hablar de devaluación. El tipo de cambio deja de ser considerado una herramienta de política económica para ser simplemente una consecuencia de otros factores, para ser el precio que ajusta automáticamente para que nunca haya pérdidas de reservas y siempre se logre el máximo crecimiento del comercio exterior. </UL>
 
+        <UL> 22. Por poner números, si una economía necesita que los precios caigan 10% para que se termine el déficit de balanza de pagos, se puede lograr con una recesión de un año y medio. Pero, también, se puede lograr con una devaluación de 10% que cause una recesión de tres meses. O, mejor aun, si el Estado no secuestra al mercado cambiario, la moneda ajusta instantáneamente, logrando la recesión más corta posible. </UL>
 
-        <SUBTITLE> CASOS DE INFLACIÓN </SUBTITLE>
 
-        <UL> 18. Una cantidad de dinero de nueva emisión largada al mercado de dinero cuando la demanda no había crecido o no está creciendo tanto, y cuando la oferta privada de dinero no se retrajo o no se está retrayendo tanto, tiene que causar un aumento en la cantidad de dinero que se transa y una pérdida de poder adquisitivo de la moneda: inflación. </UL>
+        <SUBTITLE> NATURALEZA SOCIALISTA DEL FMI </SUBTITLE>
 
-        <UL> 19. Una expansión de la oferta privada de dinero causada por expectativas negativas acerca de las finanzas públicas (a igual oferta pública de dinero y a igual demanda de dinero) causa inflación. Es decir, cuando el sector privado se adelanta a la emisión, huyendo de una inflación esperada. </UL>
+        <UL> 23. Así se puede entender al Fondo Monetario Internacional como el engendro socialista que tiene como premisa que los Estados tienen que secuestrar al mercado cambiario para dirigir las economías desde los bancos centrales, porque los precios libres son malos y el tipo de cambio fijo es el mejor sistema posible, contra toda evidencia. </UL>
 
-        <UL> 20. Particularmente, cuando el Estado tiene déficit y se aproximan vencimientos de deuda que no podrán ser refinanciados, la oferta privada de dinero crece mucho: Los privados quieren desprenderse del dinero que tienen antes de que comience la gran emisión y están dispuestos a aceptar menos cosas por él, con tal de que sea rápido. Así se da la inflación sin emisión en las vísperas de una crisis pública de deuda. </UL>
+        <UL> 24. La flotación del tipo de cambio era el enemigo a abatir porque atentaban contra los intereses de los peces más gordos del sistema. El patrón oro es un sistema que permite al sector privado controlar plenamente la economía de todo país simplemente coordinando compras y ventas de oro, y multiplica los efectos del control del cártel de bancos sobre la economía desde el coeficiente de encaje bancario (capítulo 17). </UL>
 
-        <UL> 21. Una contracción de la demanda de dinero porque se reducen los bienes y servicios en el mercado (a igual oferta de dinero) causa inflación. Estos son los 3 motivos puros y generales de la inflación. </UL>
+        <UL> 25. Así, el <i>crash</i> de 1929 duró cuatro años porque el Estado federal de EE.UU. decidió mantener el tipo de cambio fijo en USD 20 la onza y esperar cuatro años a que los precios de la economía cayeran el 33% que se necesitaba, con 25% de desempleo y la quiebra del 33% de todos los bancos. Pero esta dirigencia política no aprendió la lección y quiso que el FMI fuese el respaldo internacional del patrón oro y del tipo de cambio fijo en particular, pero del sistema de emisión bancaria de dinero, en definitiva. </UL>
 
-        <UL> 22. Con este esquema básico ya se comprende por qué la emisión causa inflación: porque aumenta la oferta (pública) de dinero, mientras la función de demanda de dinero es decreciente con el poder adquisitivo del dinero. </UL>
 
-        <UL> 23. ¿Y por qué es la demanda de dinero decreciente con el PAD? Por la misma razón por la que la oferta de bienes, servicios y monedas extranjeras es creciente con los precios: porque los costos de todo negocio son marginalmente crecientes. Se ha hablado mucho sobre esta condición de las funciones de oferta y su relación con el desempleo. </UL>
+        <SUBTITLE> DESAJUSTE DE BALANZA DE PAGOS </SUBTITLE>
 
-        <UL> 24. Es sencillo razonar que para que una expansión monetaria sea la solución al desempleo, la escasez de dinero tiene que ser la causa del desempleo. Pero rara vez es el caso sino que solo ocurre cuando hay una dirección estatal del mercado cambiario (como se estudia en las secciones sobre 1929 y sobre el FMI). </UL>
+        <UL> 26. La idea en sí de prestar dinero para que el país en crisis pueda tener tiempo para ajustar ordenadamente no parece mala de por sí. Pero lo es si lo que se entiende por "ajustar" es hacer pedazos a todo un país para salvar los intereses de la banca, mientras se mata al comercio exterior por obligar a la gente a subsidiar importaciones y compras de activos externos para ahorro, y se penalizan las exportaciones negándoles el acceso a los precios que en realidad corresponden. </UL>
 
-        <UL> 25. Respecto al efecto expansivo sobre la actividad que pueda tener una expansión monetaria, ver las secciones "Consumo y Crecimiento" y "Teoría de los Ciclos". </UL>
+        <UL> 27. El concepto de déficit-superávit corresponde necesariamente a un régimen de tipo de cambio fijo o semi-flotante, es decir que supone que el Estado está metido en el mercado cambiario y lo dirige. En cambio, cuando el Estado no interfiere, el precio de la moneda nacional (medido en monedas extranjeras) sube y baja para que la cantidad de dinero nacional que se quiere vender sea siempre igual (a cada momento) a la cantidad que se quiere comprar. </UL>
 
-        <UL> 26. En los países socialistas la estructura productiva se halla secuestrada por clases sociales dominantes que usan al Estado para no tener que competir con los pobres y así poder obligar a los demás a servirles. En esos países, la cantidad de billetes no es la causa del desempleo ni del bajo crecimiento o la baja inversión, y así el emisionismo nunca soluciona nada sino que confisca más valor para el gobierno. </UL>
+        <UL> 28. Se entiende que las crisis de balanza de pagos son hijos directos y legítimos del secuestro estatal del mercado de cambios, aunque no reconocidos. Sin secuestro estatal del mercado de cambios no existe ni puede existir crisis de balanza de pagos alguna, jamás, y los conceptos de superávit y déficit no tienen razón de ser. </UL>
 
+        <UL> 29. Una crisis de balanza de pagos es, entonces, una situación a la que se llega cuando el Estado lleva tiempo impidiendo al mercado llegar naturalmente al equilibrio, haciendo uso de sus reservas en el banco central (que, por cierto, obtuvo a pura coerción) y tomando deuda. </UL>
 
-        <SUBTITLE> EMISIÓN Y REDISTRIBUCIÓN DE VALOR </SUBTITLE>
+        <UL> 30. En cambio, lo natural es que una moneda estatal pierda valor internacional cuando pasan cosas malas (como una sequía, un auge importador o una perturbación política), estimulando nuevas exportaciones y reprimiendo las compras de activos externos, pero gane valor cuando pasen cosas buenas (inversiones extranjeras, nuevas exportaciones, etcétera). </UL>
 
-        <UL> 27. Los argumentos —socialistas— en torno a la necesidad de expandir circulante meten de contrabando un asunto esencial: Ofertante de dinero compite con ofertante de dinero, y cuando el Estado emite se lleva valor para sí mismo. </UL>
+        <UL> 31. Para ser extremadamente claros: un país con déficit de balanza de pagos no puede estar endeudando al Estado para que los productos importados sigan valiendo lo mismo (pero que se importe menos por empobrecimiento del país); necesita que se vendan más caros. Y tampoco se puede estar endeudando al Estado para que los productos de exportación se sigan vendiendo en el mercado interno al mismo precio (pero que se exporte más por empobrecimiento del propio país); necesita que se vendan más caros. Y tampoco se puede estar endeudando al Estado para que las companías financieras y la gente en general sigan comprando divisas extranjeras al mismo precio (pero que compren menos porque se empobrecen); necesita que se vendan más caras. </UL>
 
-        <UL> 28. Si la emisión no causa inflación, está evitando una deflación. La deflación significa aumento de poder de compra a favor de los que tienen dinero. Por eso, en este caso, la redistribución a favor del Estado no se mide por inflación sino por los puntos de deflación que evita. </UL>
+        <UL> 32. Júzguese cuál puede ser la utilidad de la zona euro cuando los países periféricos siempre están perdiendo productividad por orientar sus economías al consumo y al gasto público y tomando deuda. El ataque europeo al sistema de precios terminará mal. </UL>
 
-        <UL> 29. Si al expandir circulante el Estado de alguna manera repartiera ese nuevo circulante entre los poseedores de dinero, a cada uno en proporción a lo que ya tiene, en principio no habría redistribución del valor alguna. Sería una "política monetaria" que no fuera a su vez "política fiscal". </UL>
+        <UL> 33. En la práctica, el FMI termina haciendo préstamos a gobiernos socialistas que terminarán en grandes crisis, durante las cuales las grandes propiedades del tercer mundo serán vendidas a precio vil a grupos económicos extranjeros. Y los Estados, por su parte, terminarán endeudados hasta el cuello, para el saqueo impositivo ulterior. </UL>
 
-        <UL> 30. Vas a oír al socialista infinitas veces defender la "necesidad monetaria" de emitir. Pero nunca lo vas a ver defendiendo una emisión monetaria que no atente contra la propiedad privada. Porque, en principio, el problema no es la emisión (ni la inflación) sino quién será el primer dueño del dinero nuevo. </UL>
 
-        <UL> 31. Lo que suele ocurrir es que la nueva emisión llega a ser una extracción de valor (una confiscación o un impuesto no declarado) donde a cada uno se le quita en proporción a la cantidad de dinero que tiene. En números, si una persona tuviera el 0.00001% del circulante de un país, pero otra el 0.00002%, a la segunda la emisión le impactaría el doble. </UL>
+        <SUBTITLE> RESERVAS </SUBTITLE>
 
-        <UL> 32. Pero a cada uno la emisión le dolerá más en proporción al peso que tenga esa tenencia de dinero en su propio patrimonio: Al pobre, cuyo único patrimonio es el dinero que cobró a principio de mes y tiene que durarle hasta principios del mes que viene, es a quien más le afecta en su patrimonio y poder de consumo. </UL>
+        <UL> 34. Todo Estado genera una demanda para su propia moneda cuando obliga a sus ciudadanos a usarla en las transacciones locales. Luego, el Estado regula la cantidad de dinero para que no haya inflación. ¿Necesita el Estado una reserva de divisas extranjeras u oro para que el sistema funcione? No la necesita. </UL>
 
-        <UL> 33. Igualmente, el otro lugar favorito de confiscación emisionista está en los contratos previamente cerrados: el propietario de un inmueble rentado, el acreedor de una deuda y el empleado pierden valor porque es como si el dinero ya lo tuviesen pero lo tuvieran inutilizable hasta las fechas pactadas. </UL>
+        <UL> 35. Para lo único que sirve una reserva de divisas extranjeras u oro es para luchar contra el sistema de precios. Pero el tipo de cambio libre no es un enemigo sino lo que hace que se multiplique el comercio exterior de los países, erradicando la pobreza. Porque el tipo de cambio es el precio más importante de la economía, y atentar contra él es la peor de todas las formas cuantitativas de intervención estatal en la economía. </UL>
 
-        <UL> 34. La emisión causa una redistribución del valor del dinero a favor del Estado, independientemente de que cause inflación o no. </UL>
 
-        <UL> 35. La única excepción sería un caso donde los precios no pueden subir porque hay recesión pero, al mismo tiempo, se resisten a bajar, por el motivo que fuese (como el estado de endeudamiento de los vendedores o por contratos cerrados o por expetativas de crecimiento de los precios). Parece haber sido el caso en el <i>crash</i> de 1929-1933, como veremos. </UL>
+        <SUBTITLE> NÉMESIS DEL FMI </SUBTITLE>
 
+        <UL> 36. Se teme, por su parte, que la pérdida de valor internacional de la moneda nacional cause inflación. Pero la inflación no es un fenómeno cambiario sino monetario, y una devaluación no causa inflación excepto que el banco central local se niegue a reducir la cantidad de dinero circulante cuando se devalúa (capítulo 15). </UL>
 
-        <SUBTITLE> INFLACIÓN Y CRÉDITO </SUBTITLE>
+        <UL> 37. Un aumento del tipo de cambio, entonces, no causa un proceso inflacionario sino un cambio de precios relativos a favor de exportadores y contrario a importadores; a favor de inversiones extranjeras y contrario a la compra de divisas extranjeras. Una ajuste en tasa de cambio es exactamente lo que necesita un país con "déficit de balanza de pagos" porque logra un ajuste del problema de manera instantánea, sin tener que secar la plaza y empobrecer a toda la nación. </UL>
 
-        <UL> 36. Cuando la inflación crece, es más probable que se acelere todavía más. Por eso es que los créditos se vuelven sumamente caros en los países inflacionarios, porque el riesgo que asume el acreedor es muy alto y se cubre exigiendo una tasa alta. </UL>
+        <UL> 38. Y una "devaluación" no puede ser contagiada en sentido amplificado, como si de una epidemia se tratara. Cada ajuste de moneda conlleva otros ajustes de moneda menores, de la misma forma que una persona en crisis trabajando muchas horas por día no causa una crisis en el mercado laboral, y una empresa al borde de la quiebra aumentando la producción y vendiendo más barato para salvarse no destruye al mercado donde vende. Las finanzas internacionales no necesitan un administrador o un director. </UL>
 
-        <UL> 37. En los países inflacionarios, hay pocas inversiones y poco crédito hipotecario, poca construcción, mucho alquiler pero caro... El progreso económico de la sociedad se detiene para poder asistir al presupuesto del Estado. </UL>
+        <UL> 39. A diferencia de lo que dicen los socialistas, una liberación del tipo de cambio que cause un aumento de tipo de cambio no es una redistribución de recursos a favor de los exportadores ni en contra de los importadores, ni en contra de los ciudadanos que compran y venden en el mercado local. No hay redistribución del ingreso. </UL>
 
+        <UL> 40. Redistribución del ingreso hay cuando el Estado financia el desequilibrio de balanza de pagos vendiendo reservas, que es una redistribución del ingreso a favor de los importadores y en contra de los exportadores, a favor de los compradores de divisas extranjeras y en contra de las inversiones en el país. Liberar al mercado pone fin a la redistribución del ingreso. </UL>
 
-        <SUBTITLE> CRISIS Y EMISIÓN </SUBTITLE>
 
-        <UL> 38. Cuando sobreviene una crisis, hay dos reacciones opuestas en diferentes países donde los Estados han secuestrado el mercado del dinero. En los países con larga tradición de mantener baja la inflación, los ciudadanos se resisten mucho más que antes a desprenderse del dinero: cancelan compras, viajes, postergan inversiones y exigen precios más bajos para comprar algo. A su vez, los que no tienen dinero están dispuestos a aceptar menos con tal de tener algún ahorro líquido para hacer frente a lo que pueda ocurrir. </UL>
+        <SUBTITLE> FIN DEL PATRÓN ORO </SUBTITLE>
 
-        <UL> 39. Lo primero significa una contracción de la oferta privada de dinero, y lo segundo, una expansión de la demanda de dinero. Mirar el gráfico donde la curva de oferta se va a la izquierda pero la de demanda a la derecha. </UL>
+        <UL> 41. En agosto de 1971, EE.UU. decidió que el dólar ya no iba a ser convertible a oro sino que iba a flotar libremente, de acuerdo a oferta y demanda. Más tarde, logró darle a la moneda una fuerte demanda transaccional por los acuerdos petroleros con Arabia Saudí. Y, después, mató la inflación (alta) con las reformas neoliberales de Reagan. Desde entonces, el dólar es la divisa internacional, en vez del oro. </UL>
 
-        <UL> 40. Sobrevendría una gran deflación si el Estado no hiciera una fuerte expansión de la oferta pública de dinero (cuyo financiamiento se haría con emisión), sea vía gasto público deficitario o vía créditos bancarios (o devaluación). Esto suele ser un problema porque hace quebrar a los endeudados, pero es un tema para los posteos sobre la teoría del capital y los ciclos y la Gran Depresión. </UL>
+        <UL> 42. ¿Cuál es la función del FMI, ahora que las potencias económicas dejan flotar sus monedas? El FMI insiste en que los países subdesarrollados mantengan la administración estatal de los mercados cambiarios, ahora de acuerdo a una paridad con el dólar. </UL>
 
-        <UL> 41. Muy por el contrario, hay países con tradición inflacionista e hiperinflacionista, donde los privados huyen de la moneda nacional cada vez que sobreviene una crisis. Lo que se espera del Estado en estos países es lo opuesto: que reduzca la oferta de dinero al ritmo en que los privados la aumentan. </UL>
+        <UL> 43. ¿Qué sentido tiene mantener una paridad con una moneda que flota, o sea que cambia de valor todos los días de acuerdo a las necesidades económicas y financieras de los países que las emiten? Ninguno, realmente. Ahora el FMI es más dañino que antes. Es enemigo del más que beneficioso tipo de cambio libre para países pequeños, como antes, pero ahora multiplica su nocividad. </UL>
 
-        <IMAGECENTER src="/15/15b.jpg" />
-
-        <UL> 42. Pero no es la tradición inflacionista e hiperinflacionista lo que estimula este comportamiento (porque la memoria financiera de los pueblos se resetea cada 10 años) sino la realidad presente de que el gobierno tercermundista se halla: incapacitado de aumentar los impuestos porque ya ha saturado de impuestos a su población como si de un ejército de ocupación se tratase; tan endeudado que no conseguirá nuevos créditos durante la recesión; totalmente imposibilitado de reducir el gasto porque grupos grandes y poderosos se alimentan de cada centavo que sale del Estado. </UL>
-
-
-        <SUBTITLE> HIPERINFLACIÓN </SUBTITLE>
-
-        <UL> 43. Una emisión alta en curso para financiar a un Estado fuertemente deficitario dispara también la oferta privada de dinero. Con ambos componentes de la oferta de dinero muy aumentados (uno por la emisión y otro por la huída), el resultado lleva a hiperinflación. </UL>
-
-        <UL> 44. La hiperinflación surge siempre de una crisis de financiamiento del Estado socialista. Su trasfondo es que la tasa de inflación es siempre más alta que la tasa de emisión porque el mercado se desprende del dinero que emite el Estado. El Estado emite desesperadamente porque el dinero nunca le alcanza; los precios siempre le ganan. </UL>
-
-        <UL> 45. Si cantidad de dinero en circulación dividido producto interno midiera la monetización de la economía, ese es el índice que se desploma durante una hiperinflación. La economía se queda sin dinero, en sentido relativo; o, lo que es lo mismo, muere el signo monetario y la sociedad busca otras formas de intercambiar. </UL>
-
-        <UL> 46. La moneda nacional —instrumento opresor del Estado socialista— es despreciada por la sociedad. Porque en política el invento siempre revienta al inventor. </UL>
-
-
-        <SUBTITLE> EL ROL DE LA DEMANDA DE DINERO </SUBTITLE>
-
-        <UL> 47. Contradecimos a todas las escuelas de pensamiento económico en la manera de usar (también) el concepto de "demanda de dinero". La definimos como la voluntad de desprenderse de bienes y activos y de dar servicios para conseguir dinero. </UL>
-
-        <UL> 48. Esta demanda de dinero es un factor secundario a la hora de explicar la inflación porque tiene una naturaleza coercitiva. El comerciante, el empresario, el trabajador y el autónomo están obligados a vender a cambio de la moneda del Estado local. </UL>
-
-        <UL> 49. Demandar dinero significa querer vender cosas y en tiempos de crisis todos quieren vender más aunque el dinero se esté desvalorizando. En todo caso, la misma persona será un gran demandante de dinero y, cuando reciba dinero, será un ofertante de dinero aun más decidido. </UL>
-
-        <UL> 50. El gobierno socialista intenta aumentar coercitivamente la demanda de dinero para que la moneda no pierda valor al ritmo de la emisión. Establece precios máximos y controles policíacos de precios. Quiere que el mercado acepte dinero por las malas. Intenta correr la curva de demanda de dinero hacia la derecha. </UL>
-
-        <UL> 51. Lo que se percibe como contracción de la demanda de dinero ("la gente no quiere el dinero y por eso se deshace de él ni bien lo recibe") en verdad es (en nuestro esquema explicativo) una expansión de la oferta privada de dinero. </UL>
-
-        <UL> 52. El mercado, en realidad, demanda más dinero cuanto más se deprecia... lo cual es otra forma de decir que los precios suben. Los vendedores de bienes y servicios demandan más dinero por cada bien o servicio a la venta. La función de demanda de dinero no debería, en principio, modificarse durante los procesos inflacionarios. </UL>
-
-        <UL> 53. Luego ocurre que el efecto redistribución de valor a favor del gobierno arruina al sector privado y se produce menos. Ahí es cuando la demanda de dinero verdaderamente se contrae y agrava la inflación. </UL>
-
-        <UL> 54. Contrariamente a lo que dicen economistas de todos los tipos, los ahorros bancarios no neutralizan la demanda de dinero (en el sentido que le dan ellos) ni la oferta de dinero (en el sentido que le damos nosotros). Ese dinero cambia de manos; es oferta de dinero que se suma a la cantidad tranzada. </UL>
-
-        <UL> 55. Lo que suele ocurrir en el tercer mundo es que personas decidan bancarizar sus ahorros en vez de comprar moneda extranjera y ese dinero termina en consumo o inversión en vez de alimentar una devaluación. Pero la inflación no es un fenómeno cambiario; es un fenómeno monetario, se determina en el mercado de dinero de la moneda nacional. </UL>
-
-
-        <SUBTITLE> EFECTOS EXPANSIVOS </SUBTITLE> 
-
-        <UL> 56. ¿Puede la emisión reactivar o estimular la economía? Nótese que el producto matemático de la cantidad de dinero que circula en un período (M* en el gráfico) y su poder adquisitivo es un índice de producción, por la simple razón de que el índice de poder adquisitivo es la inversa del nivel de precios: </UL>
-
-        <CENTER>
-            <UL> M* = Q . P </UL>
-            <UL> M* . P<sup>-1</sup> = Q </UL>
-        </CENTER>
-
-        <UL> 57. Por tanto, la posibilidad de que el aumento de M* por un aumento de la oferta pública de dinero -causada por una emisión- haga crecer el índice de producción depende de la reacción de la demanda de dinero y de la oferta privada de dinero. </UL>
-
-        <UL> 58. Aunque este índice de producción incluye bienes y servicios intermedios, sigue siendo cierto que si, por ejemplo, una fuerte emisión duplica la circulación de dinero pero reduce a la mitad su poder adquisitivo, el resultado final sobre la actividad es nulo y solo sirve para el saqueo estatal. Pero si no reduce tanto el poder adquisivo, su resultado es expansivo. </UL>
-
-        <UL> 59. Hay muchos estudios que demuestran que la emisión fuerte (la que reduce las tasas de interés) sí tiene un efecto expansivo de corto plazo, que se va diluyendo con el tiempo y da paso a la inflación después. Ver las secciones dedicadas a Consumo y Crecimiento y a la Teoría del Capital. </UL>
-
-
-        <SUBTITLE> CONCLUSIÓN </SUBTITLE>
-
-        <UL> 60. Se entiende de todo esto que la cantidad de dinero —determinada unilateralmente por el directorio del Banco Central— participa de la determinación de la inflación de una manera indirecta. </UL>
-
-        <UL> 61. La inflación es determinada por la interacción de la oferta y la demanda de dinero; a su vez, la oferta de dinero tiene dos componentes: oferta privada y oferta pública; y, finalmente, la cantidad de dinero es un componente que explica —en parte— la oferta pública de dinero. Y es a través de todo este rodeo que la emisión monetaria influye en la inflación. </UL>
-
-        <UL> 62. La inflación es un fenómeno monetario siempre y en todo lugar, en el sentido de que es determinada en el mercado de dinero. </UL>
-
-        <UL> 63. Se ve con toda claridad lo que concluyera Milton Friedman y es una verdad incuestionable: la inflación es siempre y en todo lugar un fenómeno monetario, es decir, que surge en el mercado de dinero a causa de una mala administración del monopolio estatal de la moneda estatal. </UL>
-
-        <UL> 64. No es un fenómeno redistributivo: no se debe a que los trabajadores hayan forzado aumentos salariales mediante leyes o gracias a leyes, ni a que haya concentración en los rubros de la canasta básica, ni es debida a alta presión impositiva, ni mucho menos se debe a codiciosos especuladores que intenten causar una escasez artificial para después vender muy caro. </UL>
-
-        <UL> 65. No es un fenómeno cambiario: no se debe a que se haya devaluado la moneda frente a las extranjeras o a que hayan cambiado los términos del intercambio entre commodities y productos industrializados. </UL>
-
-        <UL> 66. Tampoco es un fenómeno contractual: no se debe a que la expectativa de inflación se refleje en contratos de precios futuros. </UL>
-
-        <UL> 67. La inflación la causa un excedente relativo de dinero que desequilibra a muchos mercados de bienes, servicios y monedas extranjeras a la vez. La causa la emisión excesiva del banco central, o la causa la negativa del banco central de retirar circulante cuando es necesario. </UL>
-
-        <UL> 68. La inflación sí es multicausal en el sentido de que muchos factores alteran el mercado de dinero; pero si el Banco Central hiciese siempre lo que tiene que hacer, la inflación no existiría, sin importar ninguno de esos muchos factores. </UL>
-
-        <UL> 69. Para decirlo de una vez: Hay muchas causas de inflación... pero hay una única causa para que no haya inflación, y es la intervención del banco central. </UL>
-
-        <UL> 70. Cualquiera de esos factores puede aumentar el costo de la vida. Sin embargo, la inflación es otra cosa. Si oligopolios aumentan ciertos precios, podemos leerlo como una contracción de la demanda de dinero que causaría inflación. Pero para eso tenemos un banco central, para que contraiga la oferta pública de dinero y así salvar el valor de la moneda. </UL>
-
-        <UL> 71. Mismo para la presión impositiva y para las devaluaciones: tienen que causar retroceso económico, no inflación. Habrá inflación si y solo si el banco central se niega a retirar circulante cuando pasen esas cosas. </UL>
-
-
-        <SUBTITLE> LA INFLACIÓN Y EL SOCIALISTA </SUBTITLE>
-
-        <UL> 72. El socialista jamás se detiene a estudiar economía y se deja llevar fácilmente por argumentos incorrectos si —de acuerdo a la técnica del <i>doble pensar</i>, tal como se describe en el libro <i>1984</i>— esos argumentos incorrectos le son funcionales a la victoria del socialismo sobre la sociedad libre. </UL>
-
-        <UL> 73. Así es como, solo después de la mano invisible, el concepto de la inflación como un fenómeno de naturaleza estrictamente monetaria le resulta ridículo y se burla de él. Él entendió mal; cree que la inflación como un fenómeno monetario significa que debería existir una causalidad total y proporcional entre inflación y emisión, del tipo: </UL>
-
-        <CENTER>
-            <UL> INFLACIÓN &nbsp;=&nbsp; EMISIÓN &nbsp;-&nbsp; CRECIMIENTO ECONÓMICO </UL>
-        </CENTER>
-
-        <UL>, tal que, si una economía crece 3% pero emite 8% tendrá 5% de inflación. Eso es lo que entiende por teoría monetaria. Cuando ve que esta fórmula no se cumple en la práctica, se mofa del monetarismo y se hace más socialistas que antes. En esta sección le dejamos una explicación que cualquiera puede entender. </UL>
-
-        <UL> 74. La inflación sucede siempre y en todo lugar por una sola causa: el Estado crea su propia moneda de papel y banco, monopoliza su emisión, obliga a usarla como único medio para las transacciones locales y luego administra mal la cantidad de circulante para lograr que el Estado avance sobre la gente, sea porque emite de más o sea porque se niega a retirar circulante cuando se dispara la oferta privada de dinero o se achica la economía. </UL>
-
-        <UL> 75. Antes de los bancos centrales, el crecimiento económico se daba con caída de precios. Ahora, cada vez que hay un impulso económico, los gobiernos abren la boca para llevarse una porción más grande. Por eso se crece a pesar del Estado (con inflación), no gracias al Estado. </UL>
-
-        <UL> 76. Y no olvidar esta cuestión central: cuando el Estado emite, no reparte el dinero nuevo entre la gente en proporción a lo que cada uno ya tiene sino que lo gasta o lo presta él mismo. Logra una redistribución del valor a su favor, y se ha demostrado que a quienes más les quita en proporción al ingreso es a los pobres que el gobierno dice defender. La inflación es un fenómeno socialista. </UL>
+        <UL> 44. Hijos del Fondo Monetario fueron los gravísimos incidentes financieros de México (1994), tigres asiáticos (1997), Rusia (1998), Brasil (1998) y Argentina (1998-2002), por nombrar algunos. Todos países pequeños (comparados con las potencias) que eligieron tipo de cambio fijo cuando EE.UU. estaba haciendo "política monetaria expansiva". Y les fue muy bien, pero estallaron por el aire cuando EE.UU. empezó a hacer "política monetaria contractiva", de acuerdo a su propio ciclo económico. Países que se endeudaron con el FMI para intentar detener los pánicos cambiarios, sin éxito, obvio. </UL>
 
     </div>
     )

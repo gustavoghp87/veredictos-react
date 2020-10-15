@@ -1,73 +1,68 @@
 import React, { useEffect } from 'react'
-import { CHAPIMAGE, TITLE2, UL, SUBTITLE } from '../css/css'
+import { CHAPIMAGE, TITLE2, UL, SUBTITLE, CENTER, SPECIALRIGHT } from '../css/css'
+import { data } from '../../chapters'
+import { urlbase, isLocalhost } from '../../index'
 
 
 export const V11 = () => {
 
-    useEffect(() => {window.scrollTo(0, 0)}, [])
+    const url = urlbase + data[11].url
+    useEffect(() => {window.scrollTo(0, 0); if(!isLocalhost)fetch(url)}, [])
 
     return (
     <div>
 
-        <CHAPIMAGE src="/frontend-src/11/11.jpg" />
+        <CHAPIMAGE src="/frontend-src/14/14.jpg" />
 
-        <TITLE2> XI. MALTHUSIANISMO </TITLE2>
+        <TITLE2> {data[11].number}. {data[11].title} </TITLE2>
 
-        <UL> 1. Adam Smith había observado en 1776 que las familias obreras y campesinas tenían una alta tasa de mortalidad debido al hambre. Así, cuando los salarios reales subían, disminuía la mortalidad, eso incrementaba la fuerza laboral del país y los salarios volvían a bajar al nivel de subsistencia. Cuando, en cambio, los salarios reales bajaban, aumentaba la mortalidad, se reducía luego la clase trabajadora y los salarios volvían a subir. </UL>
+        <UL> 1. Mucha gente piensa que los bolcheviques derrocaron al zar ruso en octubre/noviembre de 1917 pero eso no es cierto. El zar fue derrocado por una revolución hecha por el parlamento ruso en febrero/marzo de ese año (cuando los comunistas estaban exiliados), una revolución que dio lugar a un gobierno de transición que llamó a elecciones. </UL>
 
-        <UL> 2. Luego, Thomas Malthus publicó un ensayo sobre población en 1798, adjudicándole esta dinámica a una disonancia entre el crecimiento de la producción de alimentos (lineal) y la natalidad (exponencial). Y al día de hoy se conoce como "malthusianismo" a la postura de oposición —pasiva o activa— a la natalidad de los pobres. </UL>
+        <UL> 2. Pero los bolcheviques perdieron esas elecciones 23,5% contra 41% contra un partido socialdemócrata (de izquierda) que representaba a los campesinos. Entonces tomaron San Petersburgo de noche con el apoyo del ejército y la asamblea comunista de la ciudad (llamada "soviet"). Asaltaron el banco central e imprimieron cantidades astronómicas de billetes durante 5 años para financiar al "ejército rojo", arrunando al país entero por hiperinflación pero ganando la guerra civil. Luego, los bolcheviques establecieron una dictadura totalitaria que abolió los soviets, subjugó al pueblo por 74 años y asesinó a millones. </UL>
 
-        <UL> 3. Los malthusianos creen que los pobres no deberían tener hijos o que deberían tener pocos porque esa sería la causa o la causa principal de la pobreza; que la economía no puede generar oportunidades de empleo y progreso al ritmo al que los pobres tienen hijos. </UL>
+        <UL> 3. No todos entre los comunistas estaban de acuerdo con hacer esto. La mayoría estaba en desacuerdo. "Mayoría" en ruso se dice "bolchevique", y "minoría" es "menchevique". No obstante, los minoritarios se llamaron a sí mismos "bolcheviques", imponiendo haber sido mayoría. Porque la historia la escriben los vencedores. </UL>
 
-        <UL> 4. Lo de Smith fue una observación de algo que sucedía en la primera sociedad capitalista moderna... capitalista a medias y que heredaba del feudalismo una población sumamente pobre. La propuesta de reprimir la natalidad para que así subieran los salarios reales fue enteramente de Malthus y no se lleva bien con el pensamiento de Smith. </UL>
+        <UL> 4. Pero "cría cuervos y te sacarán los ojos" dice el refrán. Y dicho y hecho, el menchevique Stalin se abrió paso en el poder y fusiló a todos los dirigentes de la "revolución" con pruebas falsas de traición y falsas confesiones arrancadas a pura tortura incompasiva. </UL>
 
-        <UL> 5. La dinámica tenía una perspectiva positiva ya para 1776 porque parecía que el progreso económico iba a ser más veloz que cualquier tasa de natalidad de los pobres. Fue, de hecho, lo que pasó y la pobreza en Gran Bretaña fue erradicada por los mismos pobres, trabajando. </UL>
+        <UL> 5. Más allá de eso, la URSS causó un profundo cambio dentro de la ideología socialista porque, de acuerdo a Marx y Engels, el capitalismo debía desarrollar las fuerzas productivas de Rusia antes de la revolución socialista, pero Lenin propuso lograrlo a través de la planificación estatal. El marxismo-leninismo había nacido. </UL>
 
-        <UL> 6. Así, la realidad misma se encargó de refutar a Malthus: la solución a la pobreza es el crecimiento económico, no la represión de la natalidad de los pobres. Y cuando la pobreza se supera, la natalidad baja. </UL>
+        <UL> 6. En el siglo XX, la asociación natural de marxismo con leninismo fue tan grande que pocas personas notaron la diferencia. Los verdaderos marxistas nunca quisieron planificar la entera economía de un país agrícola atrasado para conducirlo hacia la industrialización. La idea de lograrlo era juzgada absurda. Los marxistas querían y siempre quisieron estatizar la entera economía gradualmente, redistribuyendo el ingreso y expropiando las industrias capitalistas "maduras". </UL>
 
-        <UL> 7. No obstante, esta doctrina malthusiana sigue vigente en los pensadores sociales que no entienden de razones ni de datos: los socialistas. </UL>
+        <UL> 7. La gente en occidente olvidó todo acerca del verdadero marxismo (el del Manifiesto Comunista de 1848) pero comenzó a llamarlo "keynesianismo" y "fascismo" apartir de los años 1930. Esto es el marxismo no-leninista, a veces llamado "menchevismo". Porque los mencheviques no estaban en contra de tomar el poder porque habían perdido las elecciones sino porque adherían a Marx. </UL>
 
+        <UL> 8. Los marxistas leninistas (o bolcheviques) solo pudieron tomar el poder en países agrícolas atrasados. Fueron gobiernos solamente dictatoriales asesinos totalitarios y nunca lograron el desarrollo de la economía ni hacer que la gente viviese mejor. </UL>
 
-        <SUBTITLE> HEBREOS EN EGIPTO </SUBTITLE>
+        <UL> 9. Este "comunismo" es la ideología y movimiento político que colapsó con el muro de Berlín, cuando los mismos jerarcas lo decidieron. En China comunista ya se había decidido un paso al marxismo no-leninista hacia 1978; en Vietnam hacia 1986, etcétera. </UL>
 
-        <UL> 8. El primer malthusianismo registrado se halla en la Biblia: Cuenta Éxodo que el gobernante egipcio era un tirano que tenía a los israelitas trabajando como esclavos, fabricando ladrillos para la fundación de ciudades nuevas en honor al Faraón. En ese contexto, la natalidad entre los esclavos israelitas se volvió muy alta y el rey temió que se rebelaran. </UL>
+        <SPECIALRIGHT>
+            <UL> Por origen, en Rusia y en occidente: </UL>
+        </SPECIALRIGHT>
 
-        <UL> 9. La estructura económica de Egipto asignada a los hebreos (el esclavismo) no podía dar oportunidades a tantos pobres. La solución obvia que se presentó en la mente del rey fue controlar la natalidad, practicando compulsivamente el aborto de la época: matar a los recién nacidos. </UL>
+        <CENTER>
+            <UL> MARXISTAS = MENCHEVIQUES = KEYNESIANOS </UL>
+            <UL> LENINISTAS = BOLCHEVIQUES = COMUNISTAS </UL>
+        </CENTER>
 
+        <UL> 10. Luego de la caída del muro de Berlín, occidente ha sido tomado casi enteramente por el marxismo original, dándose a conocer como keynesianismo o neokeynesianismo o progresismo. En otros artículos de este sitio (como el 7 y el 8), se demuestra que la <i>Teoría General</i> de Keynes de 1936 es una actualización doctrinaria del Manifiesto Comunista de 1848. </UL>
 
-        <SUBTITLE> OPORTUNIDADES DE PROGRESO </SUBTITLE>
+        <UL> 11. La caída del muro de Berlín (el desplome del bloque soviético) fue solo el comienzo de la etapa más dura de la lucha de la libertad contra el comunismo. No fue "el fin de la historia", como algún irresponsable se animó a declarar, sino que fue un punto de inflexión a favor del socialismo. Sirvió para que occidente bajara la guardia y para que los comunistas se reciclaran bajo nuevos títulos y renovaran los argumentos en contra de la libertad. </UL>
 
-        <UL> 10. De forma parecida, el malthusianismo moderno —anticonceptivo y abortista— se presenta como la solución o paliativo para la pobreza en las mentes de quienes no reconocen que la falta de oportunidades de trabajo y progreso no está causada por la economía sino por la intervención del Estado en la economía; justamente las mentes de quienes tienen la economía secuestrada mediante el Estado y no lo quieren reconocer. </UL>
+        <UL> 12. Ahora nos toca ver a las nuevas generaciones creciendo en países marxistas no-leninistas, clamando por socialismo por creer que las injusticias que ven pertenecen al capitalismo. </UL>
 
-        <UL> 11. Grupos que para vender han sido bendecidos con licencias o habilitaciones. Y profesionales que son pocos porque para ejercer hay que hacer largas carreras universitarias de métodos preindustriales y tener matrículas de "consejos de profesionales" que limitan la competencia a los límites de lo que los profesionales en ejercicio llaman "ética", y que tienen al resto de la sociedad consumiendo sus servicios por obligación pública. </UL>
-
-        <UL> 12. Así, uno está obligado a comprar los servicios de numerosos profesionales por orden del Estado, mientras que ellos son pocos y no compiten gracias a las leyes que los privilegian. </UL>
-
-        <UL> 13. En consecuencia, son grupos caros y de calidad subóptima en sentido de Pareto, que lentifican el progreso de toda la sociedad para que ellos puedan ganar mucho dinero trabajando poco y mal, y hasta haciendo trabajos que no son necesarios. </UL>
-
-        <UL> 14. Una estructura económica rígida —que crece muy poco por el artefacto legal construido para secuestrarla— da pocas oportunidades de trabajo y progreso. Son socialistas burgueses, de clases acomodadas, que viven de la coerción estatal, directa o indirectamente. </UL>
-
-        <UL> 15. Son los beneficiarios de este régimen marxista de dominación de clases los que piensan que el malthusianismo es la solución a la pobreza y reclaman abortos y anticonceptivos para los pobres. </UL>
-
-        <UL> 16. Pero esta intervención socialista del Estado en la economía es solo una parte del problema, la que explica por qué la economía no crece tan rápido. La otra —y más directa— es la legislación laboral. </UL>
-
-        <UL> 17. Cuando un pobre quiere trabajar, tiene que entrar a competir con otros trabajadores poco formados. Por eso, los trabajadores poco formados se adelantaron, y bajo las banderas de los "derechos" del trabajador a no ser "explotados" por los capitalistas exigieron y consiguieron leyes para blindarse contra la competencia que podrían hacerle los pobres: indemnizaciones, impuestos, aportes para el sindicato, reglamentaciones sobre las condiciones de trabajo, prioridad para los familiares, etc. </UL>
+        <UL> 13. Una cosa más respecto al nacimiento de la URSS: Establecido el gobierno comunista, los mencheviques fueron perdonados por no apoyar la "revolución" y se unieron al partido gobernante, enseñando una gran lección para la historia: dentro de cada menchevique, hay un bolchevique. </UL>
 
 
-        <SUBTITLE> DERECHO Y PRIVILEGIO </SUBTITLE>
+        <SUBTITLE> LA ENEMISTAD IMPENSADA </SUBTITLE>
 
-        <UL> 18. Los socialistas pretenden lograr la riqueza de las naciones privilegiando a todos los sectores mediante leyes que violen la propiedad privada y prohiban la libertad económica, la competencia y el sistema de precios, de acuerdo a lo que ellos llaman "derechos". </UL>
+        <UL> 14. Súper interesante es el movimiento histórico (porque la realidad siempre supera a la ficción), y el programa del <i>Manifiesto del Partido Comunista</i> de 1848 fue adoptado por grupos que odiaban con todo su corazón al comunismo de tipo soviético, bolchevique, leninista, y que se declaraban enemigos del "comunismo". </UL>
 
-        <UL> 19. No entendieron que un privilegio es una ventaja relativa solamente al grupo que lo recibió pero perjudica a todos los demás, y que el resultado global de privilegiar a todos los sectores es no privilegiar a ninguno porque se genera una estructura económica rígida, que no crece, aparte de que excluye a quienes no tienen poder de <i>lobby</i>. </UL>
+        <UL> 15. Sucede que el capitalismo saca a los pueblos de la pobreza y los hace independientes del Estado. Por tanto, la gente que odia la libertad de los demás se opone al capitalismo. Y el Manifiesto Comunista explica qué tiene que hacer el Estado para que la población no se libere de su poder. </UL>
 
-        <UL> 20. Los mercados libres, por sí mismos, generan oportunidades para todos porque cada uno genera su propia oportunidad al salir a trabajar. A su vez, cuando las personas progresan tienen menos hijos y, así, la reducción de la natalidad es siempre consecuencia y nunca causa de la mejoría económica de las naciones. </UL>
+        <UL> 16. Así, el comunismo original —mucho más liviano en lo económico que el soviético— fue hecho propio por los pueblos de cultura católica y musulmana. Y las directrices para el engrandecimiento del Estado fueron política de Estado en toda América Latina, Europa central y el mundo islámico. Nazismo, falangismo, fascismo, peronismo, cardenismo son algunas de las expresiones del marxismo no leninista en el mundo católico; kadafismo, ayatolismo, y los demás, por el lado musulmán. </UL>
 
-        <UL> 21. El malthusianismo, en cambio, es una falsa solución socialista —planificadora y coercitiva— que se presenta en las mentes comunistas cuando perciben el fracaso del socialismo que ellos mismos impusieron con su egoísmo ignorante, que siempre fracasó y siempre va a fracasar. Es la crueldad de decirles a los pobres —falsamente— que tienen la culpa de ser pobres y que la solución es renunciar a tener hijos. </UL>
+        <UL> 17. Téngase muy presente que "nazi" resume <i>nationalsozialismus</i>: socialismo de derecha. Porque las calumnias sobre el capitalismo están también en el libro de Hitler de 1923-1924, y 15 años más tarde salía a saquear Europa porque la economía socialista de Alemania se estaba prendiendo fuego, como siempre se incendia la economía del socialismo. </UL>
 
-
-        <SUBTITLE> MALTHUS MAYOR </SUBTITLE>
-
-        <UL> 22. La humanidad libre está expectante para contemplar el desastre que sobrevendrá sobre China comunista por lo que fue el malthusianismo más grande de la historia: la política de hijo único, aparte de los abortos obligatorios y las esterilizaciones forzadas de minorías. Desastre que está llegando y que está arrojando al Partido Comunista Chino a hacer robo masivo de tecnología, espionaje y conflictividad internacional a gran escala, mientras acentúa el sometimiento de su propia población. </UL>
+        <UL> 18. El nazismo es el caso más significativo (pero el mundo islámico es más constante) de régimen ultra marxista que se cree enemigo del marxismo. Porque los leninistas se arrogaron la representatividad de Marx con tanta contundencia que todos los enemigos de ese movimiento político de psicópatas se llamaron a sí mismos "anti marxistas". Así, la Segunda Guerra Mundial puede entenderse como el gran intento de Marx de destruir la libertad atacando a los países libres de occidente, mezclado con una enemistad nacionalista entre alemanes y rusos. </UL>
 
     </div>
     )

@@ -1,87 +1,95 @@
 import React, { useEffect } from 'react'
-import { CHAPIMAGE, TITLE2, UL, SUBTITLE, SPECIALRIGHT } from '../css/css'
-
+import { CHAPIMAGE, TITLE2, UL, SUBTITLE } from '../css/css'
+import { data } from '../../chapters'
+import { urlbase, isLocalhost } from '../../index'
 
 
 export const V09 = () => {
 
-    useEffect(() => {window.scrollTo(0, 0)}, [])
+    const url = urlbase + data[9].url
+    useEffect(() => {window.scrollTo(0, 0); if(!isLocalhost)fetch(url)}, [])
 
     return (
     <div>
 
-        <CHAPIMAGE src="/frontend-src/09/09.jpg" />
+        <CHAPIMAGE src="/frontend-src/12/12.jpg" />
 
-        <TITLE2> IX. CONCENTRACIÓN Y CÁRTELES </TITLE2>
+        <TITLE2> {data[9].number}. {data[9].title} </TITLE2>
 
-        <UL> 1. Adam Smith señaló la importancia de la libertad económica para alcanzar la prosperidad gracias a la competencia de empresas. Pero el Manifiesto Comunista de 1848 (sin negar esta importancia) dijo que la competencia entre empresas es solamente una etapa en el desarrollo del capitalismo, destinada a desaparecer. </UL>
+        <UL> 1. David Ricardo publicó su <i>Principles of Political Economy and Taxation</i> in 1817. En general, su trabajo significó un retroceso científico. Pero sus razonamientos acerca del comercio internacional hicieron una gran contribución a la teoría económica. </UL>
 
-        <UL> 2. Para Marx y Engels, el curso de la economía hace que unas empresas tomen la delantera mientras sus competidores quiebran. Avanzadas las cosas, se vuelve imposible empezar una nueva compañía que entre en el mercado y compita. Con los años, quedará solo un puñado de grandes corporaciones o una sola por actividad. </UL>
+        <UL> 2. Antes de Adam Smith, la idea predominante era que la riqueza de las naciones estaba formada por dinero (oro y plata). Se creía que regular y secuestrar el mercado del dinero era el medio para lograr la riqueza de toda nación. Por eso, había limitaciones y prohibiciones para exportar oro y plata, incluso aunque se quisiera importar materias primas para producir objetos de exportación. </UL>
 
-        <UL> 3. Así, los beneficios de la competencia tendrían que retroceder gradualmente hasta desaparecer. Y prepararían la economía para la expropiación y alcanzar su destino final, que sería la administración estatal de toda la economía. </UL>
+        <UL> 3. Buscando metales, los Españoles rastrillaron América y consiguieron mucho pero, a más largo plazo, no les fue bien: la inyección de dinero de metal perjudicó a la industria española porque causó inflación y el aumento de importaciones. En cambio, en el siglo XVIII estaban prosperando los países donde había crecido la industria. El pensamiento económico mercantilista debía ajustarse a la realidad económica. </UL>
 
-        <UL> 4. Los socialistas, entonces, suelen apuntar contra las grandes compañías y clamar que la intervención del Estado los proteja de lo que, juzgan, es un poder de mercado abusivo. Quieren expropiarlas. </UL>
+        <UL> 4. Pero la riqueza de una nación —en un sentido internacional— consiste en ganar el favor de otras naciones, y para lograrlo no hay nada mejor que producir artículos y servicios de alta calidad y con alta productividad. No se trata de conseguir metales. </UL>
 
-        <UL> 5. Nuevamente, no es importante el Manifiesto Comunista de 1848, que ya nadie lee. Pero sí que mucha gente en la actualidad ha llegado a las mismas conclusiones sin haberlo leído. Y los economistas no han hecho el trabajo de ayudar a resolver estas dudas, que son muy válidas. </UL>
-
-
-        <SUBTITLE> ORIGEN DE LA CONCENTRACIÓN </SUBTITLE>
-
-        <UL> 6. Cuando en un mercado hay un único vendedor, es esencial determinar el motivo. Así, hay 2 tipos de situaciones bien diferentes: la causada por el Estado y la causada por las preferencias de los compradores. </UL>
-
-        <UL> 7. En la mayoría de los casos hay poco qué decir. La concentración es un fenómeno causado por el Estado. Son las leyes del Estado las que dan a una compañía el poder de monopolio, porque previenen o limitan la competencia o la posibilidad de entrar a competir. </UL>
-
-        <UL> 8. Pero la concentración no siempre es lo que parece. Una compañía muy grande con una gran cuota de mercado no es necesariamente un monopolio, solo por esto. Si la mayoría en el mercado prefiere comprar a una única empresa, tendremos una única empresa vendiendo, elegida por la gente. No es un monopolio. </UL>
-
-        <UL> 9. ¿Cómo podría una compañía convencer al mercado de que solo le compren a ella? Diferenciando sus productos, con innovación y secreto de fórmulas y tecnologías y el prestigio de las marcas. No es monopolio si no hay intervención del Estado, como leyes de la propiedad intelectual. Algunos ejemplos: </UL>
-
-        <SPECIALRIGHT>
-            <UL> -los carteles de la droga son oligopolios a causa de la prohibición de la droga; </UL>
-
-            <UL> -Facebook tiene una enorme cuota de mercado a causa de la cantidad de usuarios activos, tal que haciendo una red social idéntica no se lograría nada; </UL>
-
-            <UL> -el <i>trust</i> del petróleo (OPEP) existe porque los Estados miembros han secuestrado el petróleo en sus respectivos países; </UL>
-
-            <UL> -el cártel de bancos de todo país existe a causa de las leyes de banco central y de bancos y entidades financieras; </UL>
-
-            <UL> -Coca-Cola y Pepsi suman una enorme cuota de mercado gracias al secreto empresarial de sus fórmulas; </UL>
-
-            <UL> -Windows tuvo su gigantesca cuota de mercado debito a la ley de propiedad intelectual, que convirtió a los Estados en policías de recaudación para la empresa. </UL>
-        </SPECIALRIGHT>
+        <UL> 5. Por eso, Smith razonó que la mejor manera que tiene una nación de enriquecerse era dar de baja a toda la legislación existente que buscaba la acumulación de oro y plata dentro de las fronteras nacionales. La libertad de comercio haría que prosperaran las exportaciones y la sustitución de importaciones. Y la acumulación de oro y plata serían consecuencias necesarias de esa properidad, no sus medios. </UL>
 
 
-        <SUBTITLE> LOS PELIGROS DE LA CONCENTRACIÓN </SUBTITLE>
+        <SUBTITLE> RICARDO CONTRA SMITH </SUBTITLE>
 
-        <UL> 10. Para el caso de las infraestructuras: Cuando el Estado llama a concesión, puede firmar contrato con la compañía que ofrezca la combinación óptima de servicios y tarifas. Son "monopolios" que operan a precio de mercado competitivo, obligados a dar resultados para conseguir la renovación. </UL>
+        <UL> 6. Acerca de Ricardo, su mejora consistió en razonar que la libertad de comercio entre naciones era (como en Smith) la mejor forma de lograr la riqueza de las naciones pero que opera de una forma diferente: no porque cada país se ocuparía en producir y exportar lo que podía producir de forma más barata que los demás, y en importar lo que no, sino en producir y exportar lo que dejara más ganancias, que no es lo mismo. </UL>
 
-        <UL> 11. ¿Son las compañías concentradas peligrosas en un mercado libre? Se dice que podrían cobrar los precios que quisiesen. Pero en caso de precios altos, surgirán nuevos competidores porque no hay barreras para entrar. Por tanto, el precio de concentración no es mucho más alto al precio de competencia abundante. Y lo mismo cuenta para las condiciones de los productos, etcétera. </UL>
+        <UL> 7. En un ejemplo doméstico: Si yo tengo la posibilidad de ahorrarme $10 por cocinar mi propio alimento en vez de comprarlo cocinado, el tipo de razonamiento Smith me haría proceder. Pero el tipo de razonamiento Ricardo me haría, mas bien, usar el tiempo que costaría cocinar en hacer horas extra en mi profesión, donde ganaría $15 en vez de $10 por el mismo tiempo. Así me enriquecería más rápido y, además, me haría mejor en mi profesión. Y las tiendas de comida elaborada, por su parte, se harían mejores y más productivas. </UL>
 
-        <UL> 12. Si no surge ningún emprendimiento para entrar al mercado a competir para aprovechar el precio "abusivo", entonces ese precio está bien. Es el mínimo posible. </UL>
+        <UL> 8. De la misma manera, el sistema de precios hace que un país con abundancia de mano de obra termine exportando manufacturas a otro país que podría producirlas más baratas por estar más avanzado en tecnología, solo que este otro país tiene todos sus recursos destinados a la producción de servicios de tecnología y no le conviene ocuparse en manufacturas. </UL>
 
-        <UL> 13. Por lo tanto, salvo intervención del Estado en la economía, lo que los socialistas entienden como "precio abusivo de monopolio" es solo el precio que la gente decide pagar. Y es el mejor precio posible. No hay monopolio, ni hay "formadores de precios". </UL>
+        <UL> 9. Concretamente, lo que el segundo país va a notar es que los productos importados resultan caros pero que para empezar a producirlos hay que reorientar capitales y empleados que están produciendo mucho más valor haciendo otras cosas. Es decir, los precios indican qué conviene producir y qué conviene importar, porque existe el costo de oportunidad de dejar de producir una cosa para producir otra. </UL>
 
+        <UL> 10. Los ejemplos de Ricardo revelan un nulo entendimiento sobre precios (determinación por costos), así que lo explicamos nosotros: Cuando aumentan las importaciones, se da cierta depreciación de la moneda nacional (o caída de precios) que estimula nuevas exportaciones. De modo que las importaciones y las exportaciones crecen a la par, y el comercio exterior crece junto con el mercado interno. </UL>
 
-        <SUBTITLE> CÁRTELES </SUBTITLE>
+        <UL> 11. Así, el sistema de precios hace que cada país se especialice en lograr el máximo favor de las otras naciones, por iniciativa de sus empresarios que persiguen la ganancia. Los recursos de cada nación son asignados a la economía de forma tal que el país se enriquece —en sentido internacional— al mejor ritmo posible. </UL>
 
-        <UL> 14. Pero hay un asunto más: el acuerdo entre las pocas compañías que concentran casi todo el mercado para subir los precios e imponer condiciones. </UL>
+        <UL> 12. No sucede por una decisión gubernamental. Es el sistema de precios el que da la señal y el incentivo para proceder así. Se entiende que la diferencia entre Smith y Ricardo no es acerca de "política económica" sino en el entendimiento sobre cómo funcionan los mercados libres. </UL>
 
-        <UL> 15. Es cuando el Estado interviene como defensor de la propiedad privada. El acuerdo entre empresas con alta cuota de mercado para coordinar acciones que perjudiquen al resto del mercado es un atentado contra los intereses de los demás. </UL>
-
-        <UL> 16. Y la represión del cártel es doctrina propia del liberalismo y opuesta al socialismo, como es doctrina del liberalismo reprimir a las empresas que hagan un uso de la tecnología que atente contra la libertad y la intimidad. </UL>
-
-
-        <SUBTITLE> MONOPOLIOS Y SOCIALISMO </SUBTITLE>
-
-        <UL> 17. Hipocrecía mediante, los socialistas en el poder limitan la competencia y favorecen o promocionan la concentración para poder controlar la economía a través de los monopolios y oligopolios que ellos mismos forman. Cuando una gran compañía se rehusa a colaborar con el gobierno socialista, es acusada de oprimir al pueblo con sus precios y de financiar a la oposición. </UL>
-
-        <UL> 18. Los socialistas culpan a las compañías por la inflación y por el alto costo de la vida. Pero la inflación la causan el banco central (monopolio) y el cártel bancario (oligopolio, tentáculos del banco central). Detrás de estas acusaciones se esconden las intenciones de expropiarlas para convertirlas en armas de sometimiento. </UL>
+        <UL> 13. Se entiende que a ningún país le conviene ahorrar divisas reprimiendo las importaciones sino que debe liberar todo el comercio exterior de trabas, aranceles y administración de los tipos de cambio. </UL>
 
 
-        <SUBTITLE> COTIZACIÓN Y REDISTRIBUCIÓN </SUBTITLE>
+        <SUBTITLE> DIVISIÓN DEL TRABAJO </SUBTITLE>
 
-        <UL> 19. Cuando los socialistas escuchan a cuánto cotizan las compañías en los mercados bursátiles o a cuánto ascienden las fortunas de los millonarios, se imaginan que hay una desigualdad enorme en el mundo y hacen cálculos estúpidos sobre cómo sería el mundo si ellos tuviesen el poder totalitario para repartir en partes iguales esa supuesta riqueza. </UL>
+        <UL> 14. La especialización (también llamada "división del trabajo") siempre conduce a aumentos de la productividad y a mejoras en los productos y servicios porque cada uno se ocupa de un único asunto. </UL>
 
-        <UL> 20. Pero medir la riqueza en cantidad de dinero es una mala idea. Las empresas cotizan de acuerdo a las expectativas de ganancias que tienen los inversores. Y, por eso, los impuestos en los mercados bursátiles y financieros y las expropiaciones siempre causan el desplome de esos valores. Son capitales que se destruyen cuando el socialista extiende la mano para robárselos. </UL>
+        <UL> 15. 2300 años antes de Ricardo, Platón señalaba las ventajas de la especialización social del trabajo, cuando, en cada país, cada uno se ocupa de un oficio diferente y compra todo lo demás. </UL>
+
+        <UL> 16. Henri Pirenne explicó, también, que la sociedad europea se derrumbó hacia el siglo VII cuando los musulmanes los expulsaron del mar Mediterráneo, rompiendo todo su comercio internacional y obligándolos a vivir de la agricultura casi exclusivamente. </UL>
+
+        <UL> 17. Adam Smith habló, por su parte, de las ventajas de la especialización de la producción dentro del mismo proceso productivo, permitida por la contratación laboral y la economía de escala, y del comercio exterior. Y Ricardo mejoró el entendimiento de esto último. </UL>
+
+
+        <SUBTITLE> COMERCIO EXTERIOR SOCIALISTA </SUBTITLE>
+
+        <UL> 18. El libre comercio hace que el comercio internacional crezca al mayor ritmo posible. Pero el gran crecimiento de las importaciones asusta a los cerebros socialistas, que aun no superan la etapa mercantilista del mundo, y se oponen. </UL>
+
+        <UL> 19. Los socialistas del tercer mundo tienen una obsesión con lo que ellos llaman "industrialización". Si los mercantilistas y los fisiócratas antes de Adam Smith creían que el origen de la riqueza de las naciones estaba en los metales y en los productos primarios (respectivamente), los socialistas tardíos creen que está en la producción metalmecánica estandarizada. "Así fue como se hicieron ricos los países que se hicieron ricos antes de la Primera Guerra Mundial, así que (razonan los socialistas) esa tiene que ser la clave". </UL>
+
+        <UL> 20. El socialismo ha caído en un neomercantilismo respecto a divisas y en un neofisiocracismo respecto a la producción industrial. Y para intentar lograr esta industrialización y acumulación de reservas de divisas, hechan mano de las riquezas generadas por los otros sectores productivos, que saquean, arruinando la economía. </UL>
+
+        <UL> 21. Así, los socialistas pretenden enriquecer al tercer mundo mediante una "antiespecialización" de la economía, cerrando las fronteras total o parcialmente y haciendo una gran redistribución del ingreso a favor de las industrias metalmecánicas. </UL>
+
+        <UL> 22. Proliferan expresiones como sustitución de importaciones, tipo de cambio competitivo, créditos subsidiados, diversificación de la economíal, proteccionismo. </UL>
+
+
+        <SUBTITLE> PRIVILEGIOS E INTERESES </SUBTITLE>
+
+        <UL> 23. "Proteccionismo" es una expresión incorrecta. No se protege, se privilegia a un grupo; se detiene o lentifica el progreso de todos para que una parte se beneficie. Más bien conviene hablar de "privilegismo". </UL>
+
+        <UL> 24. Los intereses creados en torno a la intervención del Estado para la generación de privilegios (opuestos al crecimiento del comercio exterior) llegan a ser grupos de presión que atentan contra el bien común. Luego, la economía no puede ser liberada fácilmente por la oposición que ellos presentan. </UL>
+
+        <UL> 25. Y, segundo, está el problema del orden a la hora de desmantelar los privilegios porque quitarle a unos sin quitarle a otros puede resultar en empeoramiento general (como suele pasar cuando gobiernos se presentan como liberales pero solo liberalizan el mercado laboral). </UL>
+
+        <UL> 26. Como ejemplo: En 1846, el Parlamento del Reino Unido abolió las leyes que prohibían o limitaban la importación de granos de otros países para privilegiar a los productores nacionales. La comida se hizo más barata (que era lo que el país industrializado más necesitaba) pero fue un desastre económico y humanitario para Irlanda. Porque no es fácil liberar la economía luego de décadas de intervención nefasta del Estado. </UL>
+
+
+        <SUBTITLE> COMERCIO EXTERIOR Y DESARROLLO </SUBTITLE>
+
+        <UL> 27. Si la consigna fuese encontrar el denominador común de todo proceso de desarrollo económico, donde un país pobre y atrasado logró la prosperidad, la libertad de comercio exterior tiene que ser el defendido. La libertad económica interna y el respeto a la propiedad privada por el Estado son muy importantes pero no tanto como la libertad de comercio exterior en particular. </UL>
+
+        <UL> 28. Países muy distintos lograron el desarrollo pasando unas tres décadas exportando y ahorrando. Gran Bretaña lo logró mientras financiaba guerras, Argentina exportando grano, Corea con acuerdos entre grupos económicos concentrados y el Estado, China bajo una dictadura comunista con mano de obra barata, Japón con un liberalismo total con trabajo calificado, y demás. </UL>
+
+        <UL> 29. Se contempla que el comercio internacional es lo que "tracciona la demanda" (en términos keynesianos), no el mercado interno. La idea de generar demanda interna a través de "política económica" solo consiste en quitarle a unos para darle a otros y, como tal, mata la inversión. </UL>
+
+        <UL> 30. La doctrina de apostar por el mercado interno es una postura socialista para armar una estructura de poder dictatorial donde el Estado se asocia con algunos grupos económicos locales para expoliar a la población y convertirla en una colonia económica de explotación exclusiva para sus dirigentes políticos y empresarios asociados. </UL>
 
     </div>
     )

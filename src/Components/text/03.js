@@ -1,61 +1,82 @@
 import React, { useEffect } from 'react'
-import { CHAPIMAGE, TITLE2, UL, SUBTITLE, IMAGECENTER } from '../css/css'
-
+import { CHAPIMAGE, TITLE2, UL, SUBTITLE, SPECIALRIGHT } from '../css/css'
+import { data } from '../../chapters'
+import { urlbase, isLocalhost } from '../../index'
 
 
 export const V03 = () => {
 
-    useEffect(() => {window.scrollTo(0, 0)}, [])
+    const url = urlbase + data[3].url
+    useEffect(() => {window.scrollTo(0, 0); if(!isLocalhost)fetch(url)}, [])
 
     return (
     <div>
 
-        <CHAPIMAGE src="/frontend-src/03/03.jpg" />
+        <CHAPIMAGE src="/frontend-src/06/06.jpg" />
 
-        <TITLE2> III. VALOR AGREGADO<br/>Y PRECIOS </TITLE2>
+        <TITLE2> {data[3].number}. {data[3].title} </TITLE2>
 
-        <UL> 1. Pero, ¿los precios son determinados solamente por la oferta, como dicen los marxistas-keynesianos? ¿Son determinados solo por la demanda, como los economistas austríacos dicen? Hay casos extremos donde el precio de mercado es solamente explicado por la oferta (como el hilo y la tela a mediados del siglo XIX) y hay casos extremos donde es explicado solamente por la demanda (como en obras de arte, vino añejo y algunos espectáculos). Son singularidades. </UL>
+        <UL> 1. En febrero de 1848 vio la luz el <i>Manifest der Kommunistischen Partei</i>. En este libro-panfleto se encuentra el principal argumento de todo el socialismo ─el socialismo de izquierda, como el comunismo, y el socialismo de derecha, como el nazismo y el fascismo─: que el capitalismo hace crecer la producción exponencialmente pero destruye empleos y reduce los salarios, de manera que se estrangula a sí mismo. </UL>
 
-        <UL> 2. ¿Qué significa que "los precios son determinados por la oferta y la demanda"? La gente quiere comprar más cuanto más bajo sea el precio -obviamente-, y las empresas quieren vender más cuanto mayor sea el precio, y, como resultado, los precios de los bienes y servicios son determinados -en mercados libres- por la oferta y la demanda en un juego de equilibrios. Pero ¿por qué las empresas requieren precios más altos para ofrecer más? Porque los costos unitarios de producción son siempre crecientes. Para aumentar la producción y vender más, las empresas necesitarán usar recursos que están siendo utilizados en otras actividades o funciones y pagar más por ellos que lo que están recibiendo ahora. </UL>
+        <UL> 2. Esto significaría que el sistema natural de libertad económica contiene en sí mismo una contradicción insalvable entre producción y distribución: cuando los capitalistas usan máquinas para reemplazar a los trabajadores, la producción crece mucho pero las ventas crecen poco. Entonces, las ganancias tienen que caer. </UL>
 
-        <UL> 3. Lo que los economistas austríacos dicen sobre esto es, no obstante, cierto: El precio es lo que los consumidores están dispuestos a pagar. Pero esto es así porque cuando los consumidores determinan cuánto están dispuestos a pagar tienen en cuenta las otras opciones -las de la competencia-. Asi es como los precios no son subjetivos -como ellos dicen- sino de interacción entre costos y demanda. En otras palabras, si trazamos una función de oferta de pendiente positiva, la demanda conjunta escoge subjetivamente la combinación de precio y cantidad ofrecida entre todas las que las condiciones de oferta permiten. Los precios no son subjetivos y sí dependen de los costos. </UL>
+        <UL> 3. Como el capital se alimenta de ganancias para su propia preservación, tasas decrecientes de ganancia deberían conducir a estancamiento económico y llevar a la revolución social de obreros que imponen el socialismo. De esta manera, el capitalismo debe ser entendido como una etapa en el desarrollo de la historia humana, destinada a cumplir una función (desarrollar las fuerzas productivas e intensificar la lucha de clases) y entonces dar lugar a otra etapa superior. </UL>
 
-        <UL> 4. Nuevamente, "los precios son lo que los consumidores están dispuestos a pagar" es cierto pero no significa que estén determinados solo por la demanda. </UL>
+        <UL> 4. Esta teoría de la autodestrucción del capitalismo es diferente de la expuesta en el tercer tomo de <i>El Capital</i> (basada en la ley del valor-trabajo) y es 46 años más vieja, aunque llegue a la misma conclusión. </UL>
 
-        <UL> 5. Cuando hablamos de activos en los mercados bursátiles secundarios como bonos, acciones, futuros y commodities, la oferta suele ser muy inelástica porque allí todos son compradores y vendedores pero ninguno productor; ciertamente, ninguno es productor de los valores que se están tranzando. Y, como resultado, esos valores están determinados según las expectativas de precios futuros y del nivel de endeudamiento de los actores, y así suelen fluctuar de acuerdo a leyes probabilísticas; los precios no prestan mucha atención a los costos, o nada. Cuando algunos economistas o analistas técnicos de mercado dicen que los precios solo dependen de la demanda y nunca de los costos están pensando en esta dinámica estadística pero no en las actividades productivas. No es que el esquema explicativo de la oferta y la demanda no funcione; es que los vendedores no tienen costos y eso le da mucha inestabilidad a las funciones de oferta, haciendo al esquema poco útil. </UL>
+        <UL> 5. La conclusión natural a la que llega todo creyente en esta <i>teoría del Manifiesto</i> es que los Estados deben intervenir la economía para apoderarse de parte de las ganancias del capital: </UL>
 
+        <SPECIALRIGHT>
+            <UL> 1°. forzando incrementos salariales (aunque Marx y Engels no creían en este punto; ver capítulo 4); </UL>
 
-        <SUBTITLE> VALOR AGREGADO </SUBTITLE>
+            <UL> 2°. dándole dinero a quienes tienen poco; </UL>
 
-        <UL> 6. Si en un mercado libre un trabajo o una inversión consigue un pago, es porque la gente está dispuesta a pagar por eso y a pagar esa cantidad; no puede bajar porque no se consigue más barato. Es la ley de la oferta y la demanda aplicada al mercado laboral y al mercado de capitales. Luego, como cada vendedor tiene que bajar el precio hasta el mínimo que es aceptable para él, y pagarle a los trabajadores, proveedores e inversores el mínimo que es aceptable para ellos, se puede explicar el precio final como la sumatoria de todos estos "costos". De esta manera, la suma de remuneraciones de todos los factores determina un piso para el precio final del producto que fabrican. Y en un mercado libre, los precios bajarán hasta encontrar este piso. </UL>
+            <UL> 3°. generando empleo estatal directo o indirecto, sin nunca detenerse; </UL>
 
-        <UL> 7. Por lo tanto, a causa de esto, podemos decir que este trabajo o esta inversión <b>agrega valor</b> al producto final: gracias a este trabajo o gracias a esta inversión, el precio de venta no sigue bajando; están "agregando valor" en el sentido de que gracias a su participación en la producción, el precio final tiene un contenido extra. </UL>
+            <UL> 4°. aumentar año a año el gasto del Estado en obras públicas. </UL>
+        </SPECIALRIGHT>
 
-        <UL> 8. Por lo tanto, una persona genera valor cuando aporta trabajo o capital por los cuales la sociedad está dispuesta a pagar, y la cantidad recibida en pago es igual al valor agregado que ese factor genera en el producto final (esto último es cierto por definición de valor de cambio). </UL>
+        <UL> 6. Ellos piensan que sin una redistribución del ingreso como política de Estado, la inequidad se hará demasiado grande y la economía se estancará ─causando violencia y hambre─ porque el sistema tendría un problema intrínseco con la distribución de la producción. El Estado debería aumentar gradualmente sus empleados y su gasto a medida que el capitalismo se estrangula a sí mismo, hasta que se haya apoderado de la entera economía. </UL>
 
-        <UL> 9. Este principio aplicado a la remuneración de los factores dice que los trabajadores reciben como salarios lo que los consumidores están dispuestos a pagar por sus trabajos y que los capitalistas reciben como ganancias lo que los consumidores están dispuestos a pagar por sus inversiones. Cuando la gente escoge comprar la opción más económica, están escogiendo el proceso de producción que prefieren y las remuneraciones a los factores que prefieren. No hay explotación entre factores. </UL>
+        <UL> 7. Por tanto y por esta vía, los socialistas creen que la redistribución del ingreso tiene que causar auges económicos ─salvando incluso a los adinerados a quienes se confisca─. </UL>
 
-        <UL> 10. Como recapitulación de todo lo dicho: Los precios están determinados por la interacción de la oferta y la demanda y, como consecuencia, los precios son lo que los consumidores están dispuestos a pagar y, como consecuencia, los precios son las sumas de las remuneraciones de los factores que participan en la producción y, como consecuencia, los precios son las sumas de valor agregado por los factores y, como consecuencia, finalmente, cada factor se lleva la parte que produce. Cada cual gana de acuerdo a lo que le aporta a la sociedad libre y nadie se lleva el valor que produce otro, al menos durante el proceso productivo. Y todo esto es cierto con la única condición de que no se cambien las reglas de juego durante el proceso; no necesita que haya una "competencia perfecta". </UL>
+        <UL> 8. Esto (someramente) es el marxismo no leninista (el marxismo original), una forma de socialismo con cierto gradualismo en comparación con el planificador, y es el vector principal que guía a los socialistas. Pero la mayoría de los marxistas no saben que lo son ni saben que lo que piensan fue formulado por primera vez en el Manifiesto Comunista de 1848, ni mucho menos se imaginan que ya fueron refutados hace mucho tiempo por la ciencia y por la historia. </UL>
 
-        <UL> 11. Los precios no son "objetivos" ni "subjetivos". La demanda es subjetiva pero condicionada por factores objetivos, y la oferta es objetiva pero condicionada por factores subjetivos. </UL>
+        <UL> 9. Por otra parte, muchos socialistas piensan que la inequidad creciente no va a causar más problemas macroeconómicos que desempleo y pobreza en una franja de la sociedad -según una versión liviana de la <i>teoría del Manifiesto</i>, al menos por ahora. Estos creen que es necesario sacrificar un poco de crecimiento económico para que no haya tanta desigualdad, porque el sistema podría seguir adelante sin los rezagados. (Puede sorprenderte oír a los mismos socialistas defender ambas versiones de la teoría al mismo tiempo.) </UL>
 
-
-        <SUBTITLE> MARGINALISMO </SUBTITLE>
-
-        <UL> 11. Los microeconomistas suelen decir que cuando unos pocos trabajadores son agregados al proceso productivo ellos son muy productivos y, entonces, se contratan más porque contratarlos deja ganancias extraordinarias. A medida que más trabajadores son contratados, la productividad promedio decrece, y cuando se ha alcanzado la situación donde contratar a un trabajador más significaría un desembolso de dinero más grande que los nuevos ingresos que causaría el correspondiente aumento de la producción ("producto marginal"), las contrataciones cesan. Así es como los salarios son iguales a la productividad marginal del trabajo (el valor de mercado de el incremento marginal de la producción). </UL>
-
-        <UL> 12. Los economistas marginalistas (1870-1900) intentaron imponer las funciones de producción de retornos decrecientes para la totalidad de las industrias para lograr que sus esquemas matemáticos de sistemas de ecuaciones pudieran funcionar (esquemas con costos de los factores constantes) en vez de dar indeterminación matemática; es decir, impusieron los costos unitarios crecientes como una realidad física en vez de una realidad económica basada en el costo de oportunidad. Lo importante es: Lo que expresamos en el punto 10 es cierto en todos los tipos de procesos de producción porque los costos unitarios son siempre crecientes cuando aumenta la producción, sea porque los factores se hacen más caros o sea porque la productividad se reduce. </UL>
+        <UL> 10. A pesar de la fuerte y enorme evidencia de que los países que no hicieron redistribución del ingreso y cuyos Estados no participan en más del 10% de la renta nacional son mucho más prósperos y equitativos y nunca tuvieron un estrangulamiento de la economía, los socialistas insisten. ¿Cuál es el veredicto? </UL>
 
 
-        <SUBTITLE> SMITH (1776) </SUBTITLE>
+        <SUBTITLE> CRECIMIENTO Y OPORTUNIDADES </SUBTITLE>
 
-        <UL> 13. Finalmente, respecto al comentario generalizado acerca de que Adam Smith predicó la ley del valor-trabajo: </UL>
+        <UL> 11. Dijimos en el capítulo 4 que capitalistas y trabajadores no compiten por el ingreso porque cada uno toma la parte de valor que produce. Pero ciertamente compiten en este otro sentido: cuando las empresas compran máquinas que pueden hacer las mismas tareas que ellos. </UL>
 
-        <IMAGECENTER src="/frontend-src/03/sm1.png" />
+        <UL> 12. Es necesario separar 2 procesos simultáneos: el crecimiento del capital y el reemplazo de obreros por máquinas. Se determinó en los capítulos 3 y 4 que el crecimiento del capital crea empleos y aumenta salarios. Por tanto, hay dos procesos que conducen en direcciones opuestas. ¿Cuál va a ganar? </UL>
 
-        <IMAGECENTER src="/frontend-src/03/sm2.png" />
+        <UL> 13. Antes que nada, es necesario también separar los empleos entre los que pueden ─en cierta época─ ser reemplazados por máquinas y los que no. Los que no, reciben los beneficios del crecimiento del capital y reciben los beneficios de las caídas de precios que la maquinización causa. </UL>
 
-        <UL> 14. "Realmente creo que todo lo que los economistas descubrieron ya estaba en Adam Smith" dijo Alfred Marshall. </UL>
+        <UL> 14. Finalmente, está el caso de los empleos que pueden ser reemplazados. Mientras la introducción de tecnologías en los procesos productivos significa una contracción en la demanda de trabajo mecánico, el crecimiento del capital significa una expansión. Cuando la productividad de las máquinas es significativamente mayor, los empleos son destruídos y los trabajadores necesitan encontrar otros, unos que las máquinas no puedan reemplazar con eficiencia. Esos empleos más calificados ─digamos─ tienen mejores remuneraciones y permiten recibir los beneficios de la maquinización. Esto podría ser un gran problema si el mismo sistema que los dejó sin empleo no creara mejores oportunidades que las que destruyó, pero lo hace. </UL>
+
+        <UL> 15. Cuando una empresa introduce máquinas en los procesos productivos para reducir los costos unitarios, los precios de los productos finales caen y deviene una gran abundancia de artículos. La sociedad como un todo se vuelve más rica a causa de esto, y una sociedad más ricas siempre tiene más oportunidades de progreso; no falla. La riqueza incrementada de los beneficiarios directos de esta maquinización significa mayores oportunidades para otros: mayor demanda de trabajo, abundancia de productos y precios bajos. </UL>
+
+        <UL> 16. Para graficarlo: Si la entera economía se redujera a una única empresa que emplea a todos los empleados del país y que vende toda su producción a ellos mismos, se hace obvio que reemplazando a esos trabajadores con máquinas la empresa se quedará sin vender. Si bien esta forma de plantearlo representaría una forma extremadamente veloz de maquinización, es solo el comienzo de la historia. Los dueños son ahora más ricos en mercaderías y es cosa de tiempo para que encuentren la manera en que los desempleados les sean útiles o que ellos mismos lo hagan. Los precios subirán y bajarán hasta que todos estén plenamente trabajando, ganando más que antes. </UL>
+
+        <UL> 17. El crecimiento natural del capital de una sociedad (que es ahorro puesto a producir) causa salarios altos en actividades que no pueden ser reemplazadas por máquinas. Además, hay motivación empresarial para la formación de los empleados y así incrementar la oferta de los recursos escasos. Y, por otra parte, las industrias más mecanizadas van expulsando a los trabajadores que ya no les sirven, cuyos intereses están en tomar empleos calificados. Si hay respeto a la propiedad privada, cada pieza encajará en su lugar. </UL>
+
+        <UL> 18. Entonces, la libertad económica con descentralización de la propiedad de los capitales conduce a los trabajadores a trabajar en empleos que las máquinas no pueden hacer tan bien como ellos. El sistema está en constante movimiento; es dinámico, y la situación de la clase trabajadora mejora con el crecimiento de los capitales y la introducción de nueva tecnología en los procesos productivos. </UL>
+
+        <UL> 19. Para que las oportunidades crezcan siempre, la demanda de capital siempre debe estar creciendo. Esto sucede cuando se forman nuevos negocios, se crean nuevos productos, hay nuevos clientes y se adquieren nuevas habilidades laborales. Y todo esto es ciertamente lo que ocurre cuando crece la población y cuando la gente se esfuerza por mejorar su situación. </UL>
+
+        <UL> 20. La maquinización le da impulso a la formación de nuevos capitales ─creando empleo y aumentando salarios─, no la detiene; y multiplica las oportunidades de progreso, no las reduce. El capitalismo genera más oportunidades que las que destruye; esa es la dinámica que ha seguido el mundo desde 1848, excepto en los países donde el Estado todo lo destruye. </UL>
+
+
+        <SUBTITLE> ORÍGENES </SUBTITLE>
+
+        <UL> 21. Mucha gente no está de acuerdo o no sabe que puede mejorar sus condiciones de vida si eligiesen bien su empleo. Usualmente, ven el crecimiento económico de su país con recelo. No saben o no están de acuerdo con que trabajar significa ganarse el favor voluntario de otras personas y, mas bien, prefieren los empleos de coerción estatal donde los otros están obligados a pagarles. </UL>
+
+        <UL> 22. Está en la estructura mental de muchos la necesidad de sentir que no se están ganando la vida sirviendo a los demás sino todo lo contrario: que los demás les dan dinero porque están obligados a hacerlo. Es un principio de sometimiento, que solo se logra en asociación con el Estado o desde dentro del Estado. Esos grupos constituyen la base socialista de toda nación, aunque hablen muy mal del socialismo de bandera roja y pretendan un estilo bien oligárquico de comportamiento. </UL>
+
+        <UL> 23. La redistribución del ingreso por el Estado no es necesaria para evitar el estancamiento económico ni la exclusión; el estancamiento económico y la exclusión son causados por el Estado. De esta forma, el marxismo es la cura para una enfermedad que no existía, y llegó a ser la enfermedad que pretende curar. </UL>
 
     </div>
     )
