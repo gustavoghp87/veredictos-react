@@ -7,7 +7,7 @@ import { urlbase, isLocalhost } from '../../index'
 export const V12 = () => {
 
     const url = urlbase + data[12].url
-    useEffect(() => {window.scrollTo(0, 0); if(!isLocalhost)fetch(url)}, [])
+    useEffect(() => {window.scrollTo(0, 0); if(!isLocalhost)fetch(url)}, [url])
 
     return (
     <div>
@@ -44,13 +44,11 @@ export const V12 = () => {
 
         <UL> 9. El mercado de dinero -como cualquier otro- ajusta precio y cantidad buscando el equilibrio: </UL>
 
-        <SPECIALRIGHT>
-            <UL> (i) Cuando el poder adquisitivo de una moneda es muy bajo, la cantidad de dinero ofrecida en el mercado es muy baja ya que la gente no quiere desprenderse de él fácilmente. Para ellos, los precios están altos. En otras palabras, los dueños de dinero quieren hacer pocas transacciones a causa de la poca contraprestación que les ofrecen por cada unidad monetaria. Y, al contrario, la cantidad de dinero demandada es muy alta. La gente quiere vender muchas cosas al estado actual de precios; quieren mucho dinero. Los planes no se encuentran; la deflación sobreviene. </UL>
+            <SPECIALRIGHT> (i) Cuando el poder adquisitivo de una moneda es muy bajo, la cantidad de dinero ofrecida en el mercado es muy baja ya que la gente no quiere desprenderse de él fácilmente. Para ellos, los precios están altos. En otras palabras, los dueños de dinero quieren hacer pocas transacciones a causa de la poca contraprestación que les ofrecen por cada unidad monetaria. Y, al contrario, la cantidad de dinero demandada es muy alta. La gente quiere vender muchas cosas al estado actual de precios; quieren mucho dinero. Los planes no se encuentran; la deflación sobreviene. </SPECIALRIGHT>
 
-            <UL> (ii) Cuando el poder adquisitivo de una moneda es muy alto, la cantidad de dinero ofrecida en el mercado es muy alta ya que la gente quiere desprenderse de él para conseguir las muchas cosas que se están ofreciendo a cambio. Los precios están bajos. Pero, al mismo tiempo, la cantidad demandada de dinero es muy baja. La gente quiere vender poco porque los precios están bajos y no es negocio. Los planes no se encuentran; la inflación sobreviene. </UL>
+            <SPECIALRIGHT> (ii) Cuando el poder adquisitivo de una moneda es muy alto, la cantidad de dinero ofrecida en el mercado es muy alta ya que la gente quiere desprenderse de él para conseguir las muchas cosas que se están ofreciendo a cambio. Los precios están bajos. Pero, al mismo tiempo, la cantidad demandada de dinero es muy baja. La gente quiere vender poco porque los precios están bajos y no es negocio. Los planes no se encuentran; la inflación sobreviene. </SPECIALRIGHT>
 
-            <UL> (iii) Finalmente, hay un poder adquisitivo de equilibrio que hace que los planes se encuentren. Y también hay una cantidad de dinero de equilibrio, que no es la cantidad de dinero circulante M99 sino la cantidad de dinero que cambia de manos en el período cierto de tiempo que se está considerando en el gráfico. </UL>
-        </SPECIALRIGHT>
+            <SPECIALRIGHT> (iii) Finalmente, hay un poder adquisitivo de equilibrio que hace que los planes se encuentren. Y también hay una cantidad de dinero de equilibrio, que no es la cantidad de dinero circulante M99 sino la cantidad de dinero que cambia de manos en el período cierto de tiempo que se está considerando en el gráfico. </SPECIALRIGHT>
 
         <UL> 10. En principio, poco más que esto. Todos los mercados están en constante movimiento. Pero cuando todos se mueven en la misma dirección, probablemente sea el mercado de dinero el que está siendo perturbado (en sus variables exógenas). </UL>
 
@@ -134,7 +132,7 @@ export const V12 = () => {
 
         <UL> 41. Muy por el contrario, hay países con tradición inflacionista e hiperinflacionista, donde los privados huyen de la moneda nacional cada vez que sobreviene una crisis. Lo que se espera del Estado en estos países es lo opuesto: que reduzca la oferta de dinero al ritmo en que los privados la aumentan. </UL>
 
-        <IMAGECENTER src="/15/15b.jpg" />
+        <IMAGECENTER src="/frontend-src/15/15b.jpg" />
 
         <UL> 42. Pero no es la tradición inflacionista e hiperinflacionista lo que estimula este comportamiento (porque la memoria financiera de los pueblos se resetea cada 10 años) sino la realidad presente de que el gobierno tercermundista se halla: incapacitado de aumentar los impuestos porque ya ha saturado de impuestos a su población como si de un ejército de ocupación se tratase; tan endeudado que no conseguirá nuevos créditos durante la recesión; totalmente imposibilitado de reducir el gasto porque grupos grandes y poderosos se alimentan de cada centavo que sale del Estado. </UL>
 

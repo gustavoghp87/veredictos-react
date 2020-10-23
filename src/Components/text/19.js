@@ -7,7 +7,7 @@ import { urlbase, isLocalhost } from '../../index'
 export const V19 = () => {
 
     const url = urlbase + data[19].url
-    useEffect(() => {window.scrollTo(0, 0); if(!isLocalhost)fetch(url)}, [])
+    useEffect(() => {window.scrollTo(0, 0); if(!isLocalhost)fetch(url)}, [url])
 
     return (
     <div>

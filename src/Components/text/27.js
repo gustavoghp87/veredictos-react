@@ -7,10 +7,10 @@ import { urlbase, isLocalhost } from '../../index'
 export const V27 = () => {
 
     const url = urlbase + data[1].url
-    useEffect(() => {window.scrollTo(0, 0); if(!isLocalhost)fetch(url)}, [])
+    useEffect(() => {window.scrollTo(0, 0); if(!isLocalhost)fetch(url)}, [url])
 
     return (
-    <div>
+    <>
 
         <CHAPIMAGE src="/frontend-src/27/27.jpg" />
 
@@ -19,12 +19,10 @@ export const V27 = () => {
         <UL> 1. Difícilmente alguien vivo recuerde los tiempos anteriores al dinero estatal, cuando las monedas valían por el valor de sus metales: plata y oro. Y tal vez sea por eso que las ideas que tienen las personas acerca del dinero son siempre de naturaleza coercitiva. Es una realidad que se deja entrever en la definición más aceptada de dinero. </UL>
 
         <UL> 2. Se acepta comúnmente que dinero es un bien que cumple 3 requisitos: </UL>
-
-        <SPECIALRIGHT>
-            <UL> (i) es un medio de pago generalmente aceptado, o ampliamente aceptado; </UL>
-            <UL> (ii) es unidad de medida para hacer cálculo económico, es decir, mantiene su valor en el tiempo; </UL>
-            <UL> (iii) es reserva de valor, en el sentido de que permite ahorrar. </UL>
-        </SPECIALRIGHT>
+        
+            <SPECIALRIGHT> (i) es un medio de pago generalmente aceptado, o ampliamente aceptado; </SPECIALRIGHT>
+            <SPECIALRIGHT> (ii) es unidad de medida para hacer cálculo económico, es decir, mantiene su valor en el tiempo; </SPECIALRIGHT>
+            <SPECIALRIGHT> (iii) es reserva de valor, en el sentido de que permite ahorrar. </SPECIALRIGHT>
 
         <UL> 3. Si estamos ante un problema o no, que lo juzgue el lector. Pero la única manera de lograr las 3 metas a la vez es mediante la coerción estatal, que significa un Estado que no se limite a su función racional de garantizar la libertad económica, la propiedad privada y el cumplimiento de los contratos sino que también tiene que regular la cantidad de crédito, los impuestos, el gasto y hasta, tal vez, intervenir el mercado cambiario. Y es que si la economía crece y demanda más dinero, el Estado debe crearlo para evitar una deflación, causando una redistribución de valor a su favor y en contra de los que ya tienen dinero. Y cuando la economía se contrae y demanda menos dinero, el Estado debe retirar el excedente para evitar una inflación contrayendo el crédito, aumentando los impuestos o bajando las prestaciones, etcétera. Es decir que los Estados les quitan  </UL>
 
@@ -54,6 +52,6 @@ export const V27 = () => {
 
         <UL> 15. La inteligencia artificial tiene que hacer pronto su aparición en el mercado de dinero, y todo el mundo se dará por enterado. </UL>
 
-    </div>
+    </>
     )
 }

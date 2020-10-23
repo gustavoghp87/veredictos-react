@@ -6,9 +6,7 @@ import { Link } from 'react-router-dom'
 export const Navbar = () => {
 
     return (
-        
-        <div>
-
+        <>
             <Link to={'/'}>
                 <HAMMER src="/frontend-src/index/hammer7.png" />
             </Link>
@@ -16,7 +14,6 @@ export const Navbar = () => {
             <TITLE1> VEREDICTOS DE ECONOMÍA  </TITLE1>
         
             <HR />
-
-        </div>
+        </>
     )
 }

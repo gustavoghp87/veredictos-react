@@ -19,15 +19,17 @@ export const Index = () => {
 
             <PRESENTATIONP> Algunos años después, hice la carrera de economía en una casa de estudios marxista-keynesiana: la Universidad de Buenos Aires, perteneciente al Estado federal argentino. Mientras sufría mucho cada clase y cada profesor a lo largo de los años, solía pensar que todos estaban locos por los razonamientos que hacían para argumentar, como una gran pesadilla de ideologías de izquierda y posicionamientos políticos. </PRESENTATIONP>
 
-            <PRESENTATIONP> Fui capaz —con el tiempo— de pensar en todas las cosas, de recordar con sentimientos cruzados cada clase y cada estudio, tratando de escapar de la confusión. Lo que descubrí es que hoy día es imposible explicar economía sin meterse en un enfrentamiento directo contra los socialistas porque ellos han corrompido completamente la enseñanza de la economía. </PRESENTATIONP>
+            <PRESENTATIONP> Fui capaz —con el tiempo— de pensar en todas las cosas, de recordar con sentimientos cruzados cada clase y cada estudio, tratando de escapar de la confusión. Lo que descubrí es que hoy día es imposible explicar economía sin meterse en un enfrentamiento directo contra los socialistas porque ellos han corrompido completamente la enseñanza de la ciencia. </PRESENTATIONP>
 
-            <PRESENTATIONP> Creo haber "decodificado" el genoma socialista en economía de la manera en que George Orwell lo hizo en un sentido político y social, y así expongo. En realidad, la economía es una ciencia bastante sencilla de por sí una vez que se le ha removido la contaminación socialista, como cualquiera puede comprobar por sí mismo. </PRESENTATIONP>
+            <PRESENTATIONP> El resultado es una suerte de "decodificación" del genoma socialista en economía, de la manera de la "decodificación" que George Orwell hizo en un sentido político y social. En realidad, la economía es una ciencia bastante sencilla de por sí una vez que se le ha removido la contaminación socialista, como cualquiera puede comprobar por sí mismo. </PRESENTATIONP>
 
             <PRESENTATIONP> Defino desde el comienzo que llamo socialismo a la dirección estatal de la economía, que, como tal y necesariamente, convierte a una nación en un campo de explotación económica exclusiva para sus dirigentes políticos y empresarios asociados, es decir, una colonia clasista de los más ricos, que tiene sus directrices en el <i>Manifiesto del Partido Comunista</i> de 1848, donde los privilegios coercitivos son asignados a cada grupo humano en proporción al aporte que haga o pueda hacer a la concentración de poder, con independencia de la ideología que el Partido gobernante profese de la boca para afuera y del origen jurídico de su autoridad. </PRESENTATIONP>
 
             <PRESENTATIONP> Bajo el compromiso de ser lo más breve que cada tema lo permita, este sitio, que fue pensado para el público en general y escrito en un lenguaje que cualquiera puede entender, pretende ser un <i>tour</i> por los tópicos más importantes de la ciencia, donde cada artículo fue diseñado para poder ser entendido sin necesitar de los anteriores. Pero el orden en el que están no es caprichoso y es el que se recomienda. </PRESENTATIONP>
 
             <PRESENTATIONP> Estoy convencido de que toda persona debería interesarse seriamente en estas cosas, pero eso es problema de cada uno. Este sitio es 100% objetivo, pro ciencia, y va directo al grano con crudeza. </PRESENTATIONP>
+
+            <PRESENTATIONP> Dedicación especial a Carlos Gustavo Maslaton. </PRESENTATIONP>
 
             <br/>
 

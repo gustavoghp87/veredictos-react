@@ -7,7 +7,7 @@ import { urlbase, isLocalhost } from '../../index'
 export const V06 = () => {
 
     const url = urlbase + data[6].url
-    useEffect(() => {window.scrollTo(0, 0); if(!isLocalhost)fetch(url)}, [])
+    useEffect(() => {window.scrollTo(0, 0); if(!isLocalhost)fetch(url)}, [url])
 
     return (
     <div>
@@ -37,19 +37,17 @@ export const V06 = () => {
 
         <UL> 9. ¿Cómo podría una compañía convencer al mercado de que solo le compren a ella? Diferenciando sus productos, con innovación y secreto de fórmulas y tecnologías y el prestigio de las marcas. No es monopolio si no hay intervención del Estado, como leyes de la propiedad intelectual. Algunos ejemplos: </UL>
 
-        <SPECIALRIGHT>
-            <UL> -los carteles de la droga son oligopolios a causa de la prohibición de la droga; </UL>
+        <SPECIALRIGHT> -los carteles de la droga son oligopolios a causa de la prohibición de la droga; </SPECIALRIGHT>
 
-            <UL> -Facebook tiene una enorme cuota de mercado a causa de la cantidad de usuarios activos, tal que haciendo una red social idéntica no se lograría nada; </UL>
+        <SPECIALRIGHT> -Facebook tiene una enorme cuota de mercado a causa de la cantidad de usuarios activos, tal que haciendo una red social idéntica no se lograría nada; </SPECIALRIGHT>
 
-            <UL> -el <i>trust</i> del petróleo (OPEP) existe porque los Estados miembros han secuestrado el petróleo en sus respectivos países; </UL>
+        <SPECIALRIGHT> -el <i>trust</i> del petróleo (OPEP) existe porque los Estados miembros han secuestrado el petróleo en sus respectivos países; </SPECIALRIGHT>
 
-            <UL> -el cártel de bancos de todo país existe a causa de las leyes de banco central y de bancos y entidades financieras; </UL>
+        <SPECIALRIGHT> -el cártel de bancos de todo país existe a causa de las leyes de banco central y de bancos y entidades financieras; </SPECIALRIGHT>
 
-            <UL> -Coca-Cola y Pepsi suman una enorme cuota de mercado gracias al secreto empresarial de sus fórmulas; </UL>
+        <SPECIALRIGHT> -Coca-Cola y Pepsi suman una enorme cuota de mercado gracias al secreto empresarial de sus fórmulas; </SPECIALRIGHT>
 
-            <UL> -Windows tuvo su gigantesca cuota de mercado debito a la ley de propiedad intelectual, que convirtió a los Estados en policías de recaudación para la empresa. </UL>
-        </SPECIALRIGHT>
+        <SPECIALRIGHT> -Windows tuvo su gigantesca cuota de mercado debito a la ley de propiedad intelectual, que convirtió a los Estados en policías de recaudación para la empresa. </SPECIALRIGHT>
 
 
         <SUBTITLE> LOS PELIGROS DE LA CONCENTRACIÓN </SUBTITLE>

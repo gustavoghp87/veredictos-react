@@ -8,7 +8,7 @@ export const Footer = () => {
 
             <LOGOFOOTER src="/frontend-src/logo.jpg" />
 
-            <UL>
+            <UL style={{textIndent:'0'}}>
                 No me detengo a hacer culto a cada economista que dijo cada cosa porque no me interesa ni podría hacerlo bien porque no lo recuerdo, pero están las imágenes como orientación. Si alguien quiere corregir o comentar, el contacto es veredictosdeeconomia@gmail.com
             </UL>
 

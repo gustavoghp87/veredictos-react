@@ -7,10 +7,10 @@ import { urlbase, isLocalhost } from '../../index'
 export const V10 = () => {
 
     const url = urlbase + data[10].url
-    useEffect(() => {window.scrollTo(0, 0); if(!isLocalhost)fetch(url)}, [])
+    useEffect(() => {window.scrollTo(0, 0); if(!isLocalhost)fetch(url)}, [url])
 
     return (
-    <div>
+    <>
 
         <CHAPIMAGE src="/frontend-src/13/13.jpg" />
 
@@ -97,6 +97,6 @@ export const V10 = () => {
 
         <UL> 30. Cuando el Estado socialista se apodera de estos "capitales", arruina la economía. </UL>
 
-    </div>
+    </>
     )
 }

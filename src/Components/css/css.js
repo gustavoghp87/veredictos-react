@@ -39,7 +39,7 @@ export const CHAPIMAGE = styled.img`
 export const TITLE2 = styled.h1`
     text-align: center;
     font-size: ${mobile ? '1.7rem' : '3rem'};
-    max-width: ${mobile ? '80%' : '60%'};
+    max-width: ${mobile ? '80%' : '63%'};
     margin: ${mobile ? '30px auto 30px auto' : '70px auto 50px auto'};
     line-height: ${mobile ? '35px' : '50px'};
     text-indent: ${mobile ? '0 !important' : '0'};
@@ -62,8 +62,8 @@ export const ULANCHOR = styled.ul`
 
 export const SUBTITLE = styled.div`
     text-align: center;
-    font-size: ${mobile ? '1.3rem' : '2rem'};
-    margin: ${mobile ? '45px auto 0 auto' : '70px auto 30px auto'};
+    font-size: ${mobile ? '1.3rem' : '2.4rem'};
+    margin: ${mobile ? '45px auto 0 auto' : '80px auto 30px auto'};
     line-height: ${mobile ? '30px' : '50px'};
     max-width: ${mobile ? '92%' : '74%'};
     text-indent: 0 !important;
@@ -80,13 +80,16 @@ export const BUTTON = styled.button`
     font-size: ${mobile ? '1.2rem' : '1.5rem'};
     border-radius: 12px;
     height: ${mobile ? '50px' : '60px'};
-    color: #007bff;
+    color: white;
 `
+// 007bff
 
 export const SPECIALRIGHT = styled.div`
-    margin: ${mobile ? '0 3%' : '0 5%'};
-    text-indent: 0px;
-    line-height: 25px;
+    text-indent: 0 !important;
+    line-height: ${mobile ? '15px' : '25px'};
+    font-size: ${mobile ? '0.8rem' : '1.5rem'};
+    padding-left: 0px;
+    margin: ${mobile ? '20px 6%' : '40px 18%'};
 `
 
 export const CENTER = styled.div`

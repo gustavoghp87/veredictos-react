@@ -81,11 +81,9 @@ export const V02 = () => {
 
         <UL> 23. ¿Bajo qué condiciones es "cierta" la teoría de la <i>plusvalía</i>? Necesitaríamos: </UL>
 
-        <SPECIALRIGHT>
-            <UL> PRIMERO: alguna autoridad superior (el Estado) que impusiera una equivalencia entre precios y cantidad de trabajo; </UL>
+        <SPECIALRIGHT> PRIMERO: alguna autoridad superior (el Estado) que impusiera una equivalencia entre precios y cantidad de trabajo. </SPECIALRIGHT>
 
-            <UL> SEGUNDO: la negación o imposibilidad de los capitalistas de invertir más en las ramas y empresas con tasas de ganancia mayores; </UL>
-        </SPECIALRIGHT>
+        <SPECIALRIGHT> SEGUNDO: la negación o imposibilidad de los capitalistas de invertir más en las ramas y empresas con tasas de ganancia mayores. </SPECIALRIGHT>
 
         <UL> 24. O, en su defecto, una única condición: que la movilidad del capital fuera tal que cada capital se acomodara en cada empresa y en cada negocio, no según las ganancias esperadas, sino según la necesidad de los precios de subir o bajar para acomodarse a la ley del valor-trabajo. </UL>
         

@@ -6,8 +6,8 @@ import { urlbase, isLocalhost } from '../../index'
 
 export const V26 = () => {
 
-    const url = urlbase + data[26].url
-    useEffect(() => {window.scrollTo(0, 0); if(!isLocalhost)fetch(url)}, [])
+    const url = urlbase + data[1].url
+    useEffect(() => {window.scrollTo(0, 0); if(!isLocalhost)fetch(url)}, [url])
 
     return (
     <div>
@@ -39,15 +39,13 @@ export const V26 = () => {
 
         <UL> 7. Una cadena de bloques es un registro de eventos ordenados cronológicamente, donde a cada asiento se le incorpora el hash del asiento anterior y entonces se le calcula su hash, de tal forma que quedan encadenados . Por ejemplo, un bloque podría verse así: </UL>
 
-        <SPECIALRIGHT>
-            <UL> Asiento 501 - Tue Aug 04 2020 23:51:28 GMT-0300 (1596595888098) <br />
+        <SPECIALRIGHT> Asiento 501 - Tue Aug 04 2020 23:51:28 GMT-0300 (1596595888098) <br />
             Sender: 1GzE6GG3qecDUoGXNyn2zqkRwhhFCZMiqN <br />
             Recipient: 1B5hPUjVoqmjXEgdEuCWs8sbij1dSYeeVT <br />
             Quantity: 0.1 <br />
             Preceding Hash: <small>000000b3325a4bf1d347e21a574ec7277fa13455d049327a779eaafec66535c2</small> <br />
             Nonce: 6568256014056771 <br />
-            Hash: <small>000004008b1ee106abd1402999420644ff3e059f3ae032cb0d0e398f6b07e27c</small> </UL>
-        </SPECIALRIGHT>
+            Hash: <small>000004008b1ee106abd1402999420644ff3e059f3ae032cb0d0e398f6b07e27c</small> </SPECIALRIGHT>
 
 
         <SUBTITLE> PEER TO PEER </SUBTITLE>

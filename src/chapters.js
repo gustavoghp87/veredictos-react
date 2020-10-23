@@ -13,11 +13,11 @@ export const data = [
         number: "II",
         url: "02"
     },{
-        title: "CRECIMIENTO Y DESIGUALDAD: LA TEORÍA DEL MANIFIESTO",
+        title: "LA TEORÍA DEL CRECIMIENTO Y LA DESIGUALDAD",
         number: "III",
         url: "03"
     },{
-        title: "CONSUMO Y CRECIMIENTO",
+        title: "KEYNES: CONSUMO Y CRECIMIENTO",
         number: "IV",
         url: "04"
     },{
@@ -41,7 +41,7 @@ export const data = [
         number: "IX",
         url: "09"
     },{
-        title: "EL PROBLEMA DE LA RENTA",
+        title: "EL PROBLEMA DE LA RENTA Y LOS RECURSOS NATURALES",
         number: "X",
         url: "10"
     },{

@@ -7,10 +7,10 @@ import { urlbase, isLocalhost } from '../../index'
 export const V09 = () => {
 
     const url = urlbase + data[9].url
-    useEffect(() => {window.scrollTo(0, 0); if(!isLocalhost)fetch(url)}, [])
+    useEffect(() => {window.scrollTo(0, 0); if(!isLocalhost)fetch(url)}, [url])
 
     return (
-    <div>
+    <>
 
         <CHAPIMAGE src="/frontend-src/12/12.jpg" />
 
@@ -91,6 +91,6 @@ export const V09 = () => {
 
         <UL> 30. La doctrina de apostar por el mercado interno es una postura socialista para armar una estructura de poder dictatorial donde el Estado se asocia con algunos grupos económicos locales para expoliar a la población y convertirla en una colonia económica de explotación exclusiva para sus dirigentes políticos y empresarios asociados. </UL>
 
-    </div>
+    </>
     )
 }

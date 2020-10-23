@@ -7,7 +7,7 @@ import { urlbase, isLocalhost } from '../../index'
 export const V11 = () => {
 
     const url = urlbase + data[11].url
-    useEffect(() => {window.scrollTo(0, 0); if(!isLocalhost)fetch(url)}, [])
+    useEffect(() => {window.scrollTo(0, 0); if(!isLocalhost)fetch(url)}, [url])
 
     return (
     <div>
@@ -34,9 +34,7 @@ export const V11 = () => {
 
         <UL> 9. Este "comunismo" es la ideología y movimiento político que colapsó con el muro de Berlín, cuando los mismos jerarcas lo decidieron. En China comunista ya se había decidido un paso al marxismo no-leninista hacia 1978; en Vietnam hacia 1986, etcétera. </UL>
 
-        <SPECIALRIGHT>
-            <UL> Por origen, en Rusia y en occidente: </UL>
-        </SPECIALRIGHT>
+        <SPECIALRIGHT> Por origen, en Rusia y en occidente: </SPECIALRIGHT>
 
         <CENTER>
             <UL> MARXISTAS = MENCHEVIQUES = KEYNESIANOS </UL>

@@ -7,7 +7,7 @@ import { urlbase, isLocalhost } from '../../index'
 export const V13 = () => {
 
     const url = urlbase + data[13].url
-    useEffect(() => {window.scrollTo(0, 0); if(!isLocalhost)fetch(url)}, [])
+    useEffect(() => {window.scrollTo(0, 0); if(!isLocalhost)fetch(url)}, [url])
 
     return (
     <div>
@@ -80,12 +80,10 @@ export const V13 = () => {
 
         <UL> 23. Para recapitular, la "creación secundaria de dinero" (como se le llama) tiene 4 implicaciones: </UL>
 
-        <SPECIALRIGHT>
-            <UL> (1°) da beneficios estratosféricos a los bancos comerciales; </UL>
-            <UL> (2°) pone la "política monetaria" de los países en manos de los bancos comerciales; </UL>
-            <UL> (3°) causa elevada inestabilidad; </UL>
-            <UL> (4°) deja servida la posibilidad de acciones coordinadas de los grandes bancos contra los menores y contra la sociedad en general. </UL>
-        </SPECIALRIGHT>
+        <SPECIALRIGHT> (1°) da beneficios estratosféricos a los bancos comerciales; </SPECIALRIGHT>
+        <SPECIALRIGHT> (2°) pone la "política monetaria" de los países en manos de los bancos comerciales; </SPECIALRIGHT>
+        <SPECIALRIGHT> (3°) causa elevada inestabilidad; </SPECIALRIGHT>
+        <SPECIALRIGHT> (4°) deja servida la posibilidad de acciones coordinadas de los grandes bancos contra los menores y contra la sociedad en general. </SPECIALRIGHT>
 
         <UL> 24. Crisis recurrentes, control sobre la sociedad y rentas condujeron a oligopolios bancarios que devoraron las riquezas de las naciones mediante el privilegio de abastecer a la economía de dinero a interés a perpetuidad. </UL>
 

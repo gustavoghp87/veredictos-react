@@ -7,10 +7,10 @@ import { urlbase, isLocalhost } from '../../index'
 export const V22 = () => {
 
     const url = urlbase + data[22].url
-    useEffect(() => {window.scrollTo(0, 0); if(!isLocalhost)fetch(url)}, [])
+    useEffect(() => {window.scrollTo(0, 0); if(!isLocalhost)fetch(url)}, [url])
 
     return (
-    <div>
+    <>
 
         <CHAPIMAGE src="/frontend-src/25/25.jpg" />
 
@@ -18,17 +18,17 @@ export const V22 = () => {
 
         <UL> 1. Tenemos ya los nueve postulados de la teoría económica socialista. Dicen que bajo libertad económica y propiedad privada: </UL>
 
-        <SPECIALRIGHT>
-            <UL> I - hay explotación económica entre clases sociales porque el valor agregado es producido solamente por los trabajadores pero otros grupos participan a causa de medios institucionales coercitivos (la propiedad privada); </UL>
-            <UL> II - hay competición entre trabajadores y capitalistas por el ingreso y el capitalista se vuelve cada vez más fuerte con el tiempo; </UL>
-            <UL> III - se generan naturalmente exclusión y desigualdad crecientes que tienen que ser paliadas con empleo público, inversión pública, subsidios y asistencialismo; </UL>
-            <UL> IV - se forman ahorro y grandes fortunas que causan desempleo y pobreza y estrangulan la economía; </UL>
-            <UL> V - todas las ramas de la economía se van concentrando en unas pocas compañías que abusan de su poder; </UL>
-            <UL> VI - los precios son mecanismos de distribución del ingreso que despojan a los más débiles; </UL>
-            <UL> VII - se generan rentas no competitivas, que causan clases sociales parasitarias; </UL>
-            <UL> VIII - las variables macroeconómicas (o cuentas nacionales) son el resultado de la dirección estatal; </UL>
-            <UL> IX - se cae periódicamente en crisis financieras: inflación, pánicos bancarios y cambiarios, ciclos económicos, recesiones, quiebras en cadena; </UL>
-        </SPECIALRIGHT>
+        
+            <SPECIALRIGHT> I - hay explotación económica entre clases sociales porque el valor agregado es producido solamente por los trabajadores pero otros grupos participan a causa de medios institucionales coercitivos (la propiedad privada); </SPECIALRIGHT>
+            <SPECIALRIGHT> II - hay competición entre trabajadores y capitalistas por el ingreso y el capitalista se vuelve cada vez más fuerte con el tiempo; </SPECIALRIGHT>
+            <SPECIALRIGHT> III - se generan naturalmente exclusión y desigualdad crecientes que tienen que ser paliadas con empleo público, inversión pública, subsidios y asistencialismo; </SPECIALRIGHT>
+            <SPECIALRIGHT> IV - se forman ahorro y grandes fortunas que causan desempleo y pobreza y estrangulan la economía; </SPECIALRIGHT>
+            <SPECIALRIGHT> V - todas las ramas de la economía se van concentrando en unas pocas compañías que abusan de su poder; </SPECIALRIGHT>
+            <SPECIALRIGHT> VI - los precios son mecanismos de distribución del ingreso que despojan a los más débiles; </SPECIALRIGHT>
+            <SPECIALRIGHT> VII - se generan rentas no competitivas, que causan clases sociales parasitarias; </SPECIALRIGHT>
+            <SPECIALRIGHT> VIII - las variables macroeconómicas (o cuentas nacionales) son el resultado de la dirección estatal; </SPECIALRIGHT>
+            <SPECIALRIGHT> IX - se cae periódicamente en crisis financieras: inflación, pánicos bancarios y cambiarios, ciclos económicos, recesiones, quiebras en cadena; </SPECIALRIGHT>
+        
 
         <UL> 2. Todo socialista lleva el sello de estas nueve creencias, que siempre aparecen todas juntas. Porque las nueves son resultado de un pensamiento de base: Existe una contradicción insalvable entre el bien común y la libertad económica y el respeto a la propiedad privada. Para alcanzar el bien común, es necesario renunciar a la libertad (de los demás) y a la propiedad privada (de los demás) y ponerlas en manos del Estado socialista como acumulación de poder. Y quien rechace la acumulación de poder y la violación de la propiedad se está oponiendo al bien común y es un egoísta y un opresor. </UL>
 
@@ -37,17 +37,16 @@ export const V22 = () => {
         <UL> 4. Todo es terraplanismo. Los nueve puntos son pura ilusión, pero están en la mente de las personas y, por supuesto, son predicadas por casi todos los economistas. Todo es terraplanismo. Pero el verdadero terraplanismo no lastima a nadie; el socialismo, en cambio, conduce a concentración de poder, pobreza, inequidad, lucha de clases por el ingreso y privilegios estatales, corrupción, dictaduras totalitarias, abolición del ascenso social. </UL>
 
         <UL> 5. No obstante: </UL>
-        <SPECIALRIGHT>
-            <UL> I - La teoría de la explotación fue refutada en 1871 mediante la teoría de los precios; la ganancia del capital es un valor generado por él mismo en su relación con el mercado, no por el trabajador despojado; salarios y ganancias suben juntos y bajan juntos, no compiten (capítulos 3 y 5). </UL>
-            <UL> II - Trabajadores compiten con trabajadores, y capitalistas compiten con capitalistas; la exclusión social la causan los mismos trabajadores mediante la legislación que impusieron como grupo de presión para ser privilegiados por el Estado, y la concentración empresarial la causan las mismas empresas mediante la legislación que impusieron como grupo de presión para ser privilegiados por el Estado (capítulos 4, 12 y 13). </UL>
-            <UL> III - La economía genera cada vez más oportunidades de progreso, reduciendo la desigualdad, excepto cuando el Estado distorsiona los precios y reparte privilegios a los que llegaron primero, a cada uno en función de su poder de presión e influencias (capítulos 6 y 11). </UL>
-            <UL> IV - Los ahorros y las grandes fortunas limitan el poder del Estado y son sumamente beneficiosos para la economía y para los salarios en particular (capítulo 8). </UL>
-            <UL> V - La tendencia natural de la economía libre es hacia la concentración de la producción en pocas compañías para la optimización del uso de los recursos y la aplicación de tecnología para mejorar el nivel de vida, y estas compañías no pueden abusar de sus posiciones de mercado si no hay leyes que las privilegien (capítulo 9). </UL>
-            <UL> VI - Los precios son señales que indican dónde hay que invertir y trabajar más, y dónde menos, y liberados a su suerte van siempre a la baja (excepto los salarios) y hacen que la economía responda a las necesidades y las preferencias de consumo, empleo y progreso. (capítulos 2 y 10). </UL>
-            <UL> VII - La renta en sentido clásico no existe, fue un error de teoría económica, y no hay clases parasitarias, excepto funcionarios y políticos que viven de la intervención coercitiva de los mercados (capítulo 13). </UL>
-            <UL> VIII - La realidad del humano sobre la tierra es de naturaleza estocástica y sus actividades económicas no son la excepción, de modo que las grandes variables económicas no responden a los planes económicos de la dirección ni a la planificación del Estado sino a la eventualidad de las leyes de la estadística, que condiciona a la política (capítulos 23 y 24). </UL>
-            <UL> IX - Las crisis las causa el Estado haciendo macroeconomía y regulando actividades, siempre, en todo lugar (capítulos 7 y 15 a 22). </UL>
-        </SPECIALRIGHT>
+        
+            <SPECIALRIGHT> I - La teoría de la explotación fue refutada en 1871 mediante la teoría de los precios; la ganancia del capital es un valor generado por él mismo en su relación con el mercado, no por el trabajador despojado; salarios y ganancias suben juntos y bajan juntos, no compiten (capítulos 3 y 5). </SPECIALRIGHT>
+            <SPECIALRIGHT> II - Trabajadores compiten con trabajadores, y capitalistas compiten con capitalistas; la exclusión social la causan los mismos trabajadores mediante la legislación que impusieron como grupo de presión para ser privilegiados por el Estado, y la concentración empresarial la causan las mismas empresas mediante la legislación que impusieron como grupo de presión para ser privilegiados por el Estado (capítulos 4, 12 y 13). </SPECIALRIGHT>
+            <SPECIALRIGHT> III - La economía genera cada vez más oportunidades de progreso, reduciendo la desigualdad, excepto cuando el Estado distorsiona los precios y reparte privilegios a los que llegaron primero, a cada uno en función de su poder de presión e influencias (capítulos 6 y 11). </SPECIALRIGHT>
+            <SPECIALRIGHT> IV - Los ahorros y las grandes fortunas limitan el poder del Estado y son sumamente beneficiosos para la economía y para los salarios en particular (capítulo 8). </SPECIALRIGHT>
+            <SPECIALRIGHT> V - La tendencia natural de la economía libre es hacia la concentración de la producción en pocas compañías para la optimización del uso de los recursos y la aplicación de tecnología para mejorar el nivel de vida, y estas compañías no pueden abusar de sus posiciones de mercado si no hay leyes que las privilegien (capítulo 9). </SPECIALRIGHT>
+            <SPECIALRIGHT> VI - Los precios son señales que indican dónde hay que invertir y trabajar más, y dónde menos, y liberados a su suerte van siempre a la baja (excepto los salarios) y hacen que la economía responda a las necesidades y las preferencias de consumo, empleo y progreso. (capítulos 2 y 10). </SPECIALRIGHT>
+            <SPECIALRIGHT> VII - La renta en sentido clásico no existe, fue un error de teoría económica, y no hay clases parasitarias, excepto funcionarios y políticos que viven de la intervención coercitiva de los mercados (capítulo 13). </SPECIALRIGHT>
+            <SPECIALRIGHT> VIII - La realidad del humano sobre la tierra es de naturaleza estocástica y sus actividades económicas no son la excepción, de modo que las grandes variables económicas no responden a los planes económicos de la dirección ni a la planificación del Estado sino a la eventualidad de las leyes de la estadística, que condiciona a la política (capítulos 23 y 24). </SPECIALRIGHT>
+            <SPECIALRIGHT> IX - Las crisis las causa el Estado haciendo macroeconomía y regulando actividades, siempre, en todo lugar (capítulos 7 y 15 a 22). </SPECIALRIGHT>
 
 
         <SUBTITLE> CIENCIA ECONÓMICA </SUBTITLE>
@@ -117,14 +116,33 @@ export const V22 = () => {
         <UL> 31. Eric Arthur Blair (George Orwell) llamó al sistema socialista "colectivismo oligárquico", tal como lo expuso en la novela <i>1984</i>. La creencia en una economía colectivista (o sea, estatal) amistosa con el estado de derecho y las libertades políticas y sociales es contraria a toda la ciencia política. </UL>
 
 
+        <SUBTITLE> NEOLENGUA </SUBTITLE>
+
+        <UL> 32. El socialismo ha mostrado una poderosa capacidad para construir un lenguaje que invalida el pensamiento que le pueda ser crítico. Así, hablan de socialismo como si el sistema tuviese la meta de poner a la sociedad por encima del individuo, o a la mayoría por encima de intereses egoístas minoritarios. </UL>
+
+        <UL> 33. Muy por el contrario, el socialismo es el sistema del Estado, para el Estado, para la grandeza, riqueza y gloria de los dirigentes políticos y grupos asociados. No hay elevación de la sociedad sobre una minoría sino exactamente lo inverso, y el sistema debería llamarse estatismo. </UL>
+
+        <UL> 34. La expresión comunismo remite a una propiedad común de las cosas. Muy por el contrario, el comunismo es el sistema dondo todo pertenece al Estado, y, por eso, nada pertenece a los gobernados. Lo único que se acerca a la idea de propiedad común es la generalización de la propiedad privada. </UL>
+
+        <UL> 35. En esta neolengua <i>orwelliana</i>, se confunden sistemáticamente los intereses del Estado y del partido socialista en particular con los intereses del pueblo, la nación, los trabajadores y el bien común, como cuando el producto interno de todo país es confundido con el presupuesto del Estado y, así, se miden el gasto público y la deuda estatal como porcentajes del producto, y todo ajuste en el presupuesto del Estado es confundido con un ajuste a los trabajadores y los jubilados. </UL>
+
+        <UL> 36. La ambición de poder totalitario los impulsa a creerse salvadores de los mismos grupos humanos que planean someter y expoliar hasta la muerte, y su lenguaje lo refleja. </UL>
+
+        <UL> 37. Es la farsa de la clásica dicotomía entre derechos individuales y derechos sociales. Los socialistas llaman derechos sociales, en realidad, a los derechos del Estado socialista a imponerse sobre la sociedad para pisarle la cabeza. Los individualistas son ellos. </UL>
+
+
         <SUBTITLE> LUCHA DE CLASES </SUBTITLE>
 
-        <UL> 32. No hay un enfrentamiento natural de intereses entre las clases que tienen medios de producción y las que no tienen (cuando el Estado no interviene en economía). La única lucha de intereses es la que existe entre los que quieren vivir en libertad y los que quieren oprimir a los demás. Y los socialistas son los que quieren oprimir, como demostramos en todos los capítulos de este sitio. </UL>
+        <UL> 38. No hay un enfrentamiento natural de intereses entre las clases que tienen medios de producción y las que no tienen (cuando el Estado no interviene en economía). La única lucha de intereses es la que existe entre los que quieren vivir en libertad y los que quieren oprimir a los demás. Y los socialistas son los que quieren oprimir, como demostramos en todos los capítulos de este sitio. </UL>
 
-        <UL> 33. Pero la propiedad privada no es un privilegio estatal. La propiedad privada existe desde antes de los Estados, y los Estados solo pueden decidir si respetarla, para el progreso de la sociedad, o violarla, para su destrucción. </UL>
+        <UL> 39. Pero la propiedad privada no es un privilegio estatal. La propiedad privada existe desde antes de los Estados, y los Estados solo pueden decidir si respetarla, para el progreso de la sociedad, o violarla, para su destrucción. </UL>
 
-        <UL> 34. La lucha de clases es, entonces, un enfrentamiento entre humanos por el control del Estado para hacer al Estado intervenir en economía para conseguir privilegios que perjudiquen al resto. No hay un enfrentamiento natural de intereses entre clases sociales cuando hay libertad. </UL>
+        <UL> 40. La lucha de clases es, entonces, un enfrentamiento entre humanos por el control del Estado para hacer al Estado intervenir en economía para conseguir privilegios que perjudiquen al resto. No hay un enfrentamiento natural de intereses entre clases sociales cuando hay libertad. </UL>
 
-    </div>
+        <UL> 41. El Estado es entendido en la actual generación como una arena de combate donde cada grupo intenta hacer prevalecer su voluntad de aplastar a otros grupos para el triunfo del grupo propio, al que se le asigna arbitrariamente la virtud de representar al bien común. </UL>
+
+        <UL> 42. El Estado, así, es convertido en un <i>Leviathan</i> de Hobbes pero con contenido extra. Es el dios en quien ponen su esperanza los que están convencidos de que se accede al bien común suprimiendo la libertad (de los demás). </UL>
+
+    </>
     )
 }
