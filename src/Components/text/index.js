@@ -1,10 +1,13 @@
 import React, { useEffect } from 'react'
 import { CHAPIMAGE, PRESENTATION, TITLE2, PRESENTATIONP, FIRM } from '../css/css'
+import { data } from '../../chapters'
+import { urlbase, isLocalhost } from '../../index'
 
 
 export const Index = () => {
 
-    useEffect(() => {window.scrollTo(0, 0)}, [])
+    const url = urlbase + data[0].url
+    useEffect(() => {window.scrollTo(0, 0); if(!isLocalhost)fetch(url)}, [url])
 
     return (
     <div>
