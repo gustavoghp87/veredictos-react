@@ -37,6 +37,8 @@ export const isLocalhost = false
 export const rootPath = isLocalhost ? "/" : "/veredictos-react/"
 export const urlbase = "https://veredictos.herokuapp.com/count"    // localhost:  "http://localhost:8005/count"
 
+console.log(window.location.pathname);
+
 function App() {
 
   const appStyle = {
@@ -87,7 +89,7 @@ function App() {
           <Redirect exact strict from={`${rootPath}7`} to={`${rootPath}07`} />
           <Redirect exact strict from={`${rootPath}8`} to={`${rootPath}08`} />
           <Redirect exact strict from={`${rootPath}9`} to={`${rootPath}09`} />
-          <Redirect from={rootPath} to={rootPath} />
+          <Redirect from={"/"} to={rootPath} />
         </Switch>
         <Buttons />
         <Indice />

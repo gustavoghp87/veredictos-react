@@ -32,21 +32,21 @@ export default withRouter(function Buttons(props) {
         <Row style={ROWBUTTONS}>
 
             <Col lg={4}>
-                <BUTTON className="btn btn-dark" onClick={()=>props.history.push(ant)}
+                <BUTTON className="btn btn-dark" onClick={() => window.location.href=ant}
                     style={{display: ant===rootPath ? 'none' : 'block'}}>
                     <b style={{color:'#007bff'}}>ANTERIOR</b>
                 </BUTTON>
             </Col>
 
             <Col lg={4}>
-                <BUTTON className="btn btn-dark" onClick={()=>props.history.push('/')}
+                <BUTTON className="btn btn-dark" onClick={()=>window.location.href=rootPath}
                     style={{display: act===rootPath ? 'none' : 'block'}}>
                     <b style={{color:'#007bff'}}>PRINCIPIO</b>
                 </BUTTON>
             </Col>
 
             <Col lg={4}>
-                <BUTTON className="btn btn-dark" onClick={()=>props.history.push(pos)}
+                <BUTTON className="btn btn-dark" onClick={()=>window.location.href=pos}
                     style={{display: act===`${rootPath}22` ? 'none' : 'block'}}>
                     <b style={{color:'#007bff'}}>SIGUIENTE</b>
                 </BUTTON>
