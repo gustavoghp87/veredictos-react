@@ -12,7 +12,7 @@ export const V15 = () => {
     return (
     <div>
 
-        <CHAPIMAGE src="/frontend-src/18/18.jpg" />
+        <CHAPIMAGE src="/veredictos-react/frontend-src/18/18.jpg" />
 
         <TITLE2> {data[15].number}. {data[15].title} </TITLE2>
 

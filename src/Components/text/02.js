@@ -12,7 +12,7 @@ export const V02 = () => {
     return (
     <div>
 
-        <CHAPIMAGE src="/frontend-src/05/05.jpg" />
+        <CHAPIMAGE src="/veredictos-react/frontend-src/05/05.jpg" />
 
         <TITLE2> {data[2].number}. {data[2].title} </TITLE2>
 
@@ -36,7 +36,7 @@ export const V02 = () => {
 
         <UL> 7. Es fácil confundir esto porque las ganancias pueden crecer si los salarios caen por aumento de la población, y los salarios pueden crecer si los trabajadores consiguen aumentos por la fuerza. Pero la competencia entre capitalistas y trabajadores es solo una ilusión, como la razón revela. Y la evidencia empírica dice que ganancias y salarios crecen juntos y decrecen juntos. </UL>
 
-        <IMAGECENTER src="/frontend-src/04/04.jpg" />
+        <IMAGECENTER src="/veredictos-react/frontend-src/04/04.jpg" />
 
         <UL> 8. Ya es siglo XXI. Cualquiera sabe que, en las naciones donde los Estados nunca intervinieron en economía para intentar beneficiar a los trabajadores buscando la "justicia social", el capital creció mucho más que en los otros países, y ese capital engrandecido compite consigo mismo por los trabajadores, que, por eso, ganan mucho más. </UL>
 

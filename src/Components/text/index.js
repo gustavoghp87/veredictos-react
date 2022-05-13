@@ -12,7 +12,7 @@ export const Index = () => {
     return (
     <div>
 
-        <CHAPIMAGE src="/frontend-src/index/index.png" />
+        <CHAPIMAGE src="/veredictos-react/frontend-src/index/index.png" />
 
         <PRESENTATION>
 

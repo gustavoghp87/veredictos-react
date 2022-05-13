@@ -8,7 +8,7 @@ export const Navbar = () => {
     return (
         <>
             <Link to={'/'}>
-                <HAMMER src="/frontend-src/index/hammer7.png" />
+                <HAMMER src="/veredictos-react/frontend-src/index/hammer7.png" />
             </Link>
 
             <TITLE1> VEREDICTOS DE ECONOMÍA  </TITLE1>

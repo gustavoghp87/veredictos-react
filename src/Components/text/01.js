@@ -12,7 +12,7 @@ export const V01 = () => {
     return (
     <div>
 
-        <CHAPIMAGE src="/frontend-src/03/03.jpg" />
+        <CHAPIMAGE src="/veredictos-react/frontend-src/03/03.jpg" />
 
         <TITLE2> {data[1].number}. {data[1].title} </TITLE2>
 
@@ -42,7 +42,7 @@ export const V01 = () => {
 
         <UL> 10. El precio es determinado por las relaciones humanas: la oferta y la demanda porque compradores compiten entre ellos por los productos y vendedores compiten entre ellos por el dinero. </UL>
 
-        <IMAGECENTER src="/frontend-src/02/02.jpg" />
+        <IMAGECENTER src="/veredictos-react/frontend-src/02/02.jpg" />
 
         <UL> 11. El ahorro es riqueza (material o social) que no es consumida. El capital, en cambio, es ahorro puesto a producir más; pero, en un sentido social o de mercado, es un valor de cambio puesto a producir más valor de cambio. El capitalismo es un sistema donde la propiedad del capital está descentralizada, y el socialismo es un sistema donde el Estado es el principal propietario de capital. El monopolio del capital conduce a tiranía. </UL>
 
@@ -151,9 +151,9 @@ export const V01 = () => {
 
         <UL> 50. Finalmente, respecto al comentario generalizado acerca de que Adam Smith predicó la ley del valor-trabajo, copiamos un extracto del capítulo VII del primer libro que representa bien su pensamiento: </UL>
 
-        <IMAGECENTER src="/frontend-src/03/sm1.png" />
+        <IMAGECENTER src="/veredictos-react/frontend-src/03/sm1.png" />
 
-        <IMAGECENTER src="/frontend-src/03/sm2.png" />
+        <IMAGECENTER src="/veredictos-react/frontend-src/03/sm2.png" />
 
         <UL> 51. Se repite vez tras vez en su obra que el precio es resultante de los valores agregados que producen los factores de producción capital, trabajo y tierra en la relación particular que tiene cada uno con el mercado, que son más o menos estables, y no la cantidad de trabajo que requiere la producción. "Realmente creo que todo lo que los economistas descubrieron ya estaba en Adam Smith", dijo Alfred Marshall. </UL>
 

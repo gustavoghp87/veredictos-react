@@ -12,7 +12,7 @@ export const V27 = () => {
     return (
     <>
 
-        <CHAPIMAGE src="/frontend-src/27/27.jpg" />
+        <CHAPIMAGE src="/veredictos-react/frontend-src/27/27.jpg" />
 
         <TITLE2> XXVII. NUEVA GENERACIÓN DE CRIPTOMONEDAS </TITLE2>
 
