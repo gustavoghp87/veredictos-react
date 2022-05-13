@@ -8,7 +8,6 @@ import { rootPath } from './App'
 export default withRouter(function Buttons(props) {
 
     const act = props.location.pathname
-    console.log(act);
     let ant, pos
     if (act===rootPath) {ant = rootPath; pos = `${rootPath}01`}
     else if (act===`${rootPath}01`) {ant = `${rootPath}`; pos = `${rootPath}02`}
@@ -21,7 +20,6 @@ export default withRouter(function Buttons(props) {
             ant = `${rootPath}0${aux-1}`
             pos = aux === 9 ? `${rootPath}10` : `${rootPath}0${aux+1}`
         } else {
-            console.log(aux);
             aux = parseInt(aux)
             ant = `${rootPath}${aux-1}`
             pos = `${rootPath}${aux+1}`

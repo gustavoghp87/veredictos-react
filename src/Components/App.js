@@ -28,14 +28,14 @@ import Buttons from './Buttons'
 import { Indice } from './Indice'
 import { Footer } from './Footer'
 
-export const isLocalhost = Boolean(
-  window.location.hostname === 'localhost' ||
-  window.location.hostname === '[::1]' ||
-  window.location.hostname.match(/^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/)
-)
+export const isLocalhost = false
+// Boolean(
+//   window.location.hostname === 'localhost' ||
+//   window.location.hostname === '[::1]' ||
+//   window.location.hostname.match(/^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/)
+// )
 export const rootPath = isLocalhost ? "/" : "/veredictos-react/"
 export const urlbase = "https://veredictos.herokuapp.com/count"    // localhost:  "http://localhost:8005/count"
-console.log("ROOT PATH:", rootPath)
 
 function App() {
 
