@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
 import { CHAPIMAGE, TITLE2, UL, SUBTITLE, IMAGECENTER } from '../css/css'
 import { data } from '../../chapters'
-import { urlbase, isLocalhost } from '../../index'
 
+import { isLocalhost, rootPath, urlbase } from '../App'
 
 export const V16 = () => {
 
@@ -12,7 +12,7 @@ export const V16 = () => {
     return (
     <div>
 
-        <CHAPIMAGE src="/veredictos-react/frontend-src/19/19.jpg" />
+        <CHAPIMAGE src={`${rootPath}frontend-src/19/19.jpg`} />
 
         <TITLE2> {data[16].number}. {data[16].title} </TITLE2>
 
@@ -24,7 +24,7 @@ export const V16 = () => {
 
         <UL> 4. La "función de demanda de dinero" keynesiana es decreciente con la tasa de interés de referencia porque cuanto menor sea la tasa, menos atractivo tienen los activos financieros. Mas bien, con tasas bajas (que significa activos financieros caros) conviene retener el dinero a la espera de que suban. O sea, a la espera de que los activos se hagan más baratos. Porque no tiene sentido asumir riesgos por activos que no dejan rendimientos significativos. </UL>
 
-        <IMAGECENTER src="/veredictos-react/frontend-src/19/k.jpg" />
+        <IMAGECENTER src={`${rootPath}frontend-src/19/k.jpg`} />
 
         <UL> 5. Así, el mercado tiende a una tasa de equilibrio que es la que hace coincidir los planes de los demandantes de dinero con la cantidad de circulante que determina el banco central. </UL>
 

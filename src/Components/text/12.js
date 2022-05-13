@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
 import { CHAPIMAGE, TITLE2, UL, SUBTITLE, IMAGECENTER, SPECIALRIGHT, CENTER } from '../css/css'
 import { data } from '../../chapters'
-import { urlbase, isLocalhost } from '../../index'
 
+import { isLocalhost, rootPath, urlbase } from '../App'
 
 export const V12 = () => {
 
@@ -12,7 +12,7 @@ export const V12 = () => {
     return (
     <div>
 
-        <CHAPIMAGE src="/veredictos-react/frontend-src/15/15.jpg" />
+        <CHAPIMAGE src={`${rootPath}frontend-src/15/15.jpg`} />
 
         <TITLE2> {data[12].number}. {data[12].title} </TITLE2>
 
@@ -40,7 +40,7 @@ export const V12 = () => {
 
         {/* La única dificultad que tiene este mercado es que el mismo demandante de dinero se convierte en ofertante luego de haberlo recibido y otra vez en demandante cuando ya lo ha entregado. En realidad, toda persona es ofertante y demandante de dinero a la vez, todo el tiempo. Pero el esquema analítico sigue siendo válido y el desafío intelectual no es gran cosa. */}
 
-        <IMAGECENTER src="/veredictos-react/frontend-src/15/money.jpg" />
+        <IMAGECENTER src={`${rootPath}frontend-src/15/money.jpg`} />
 
         <UL> 9. El mercado de dinero -como cualquier otro- ajusta precio y cantidad buscando el equilibrio: </UL>
 
@@ -132,7 +132,7 @@ export const V12 = () => {
 
         <UL> 41. Muy por el contrario, hay países con tradición inflacionista e hiperinflacionista, donde los privados huyen de la moneda nacional cada vez que sobreviene una crisis. Lo que se espera del Estado en estos países es lo opuesto: que reduzca la oferta de dinero al ritmo en que los privados la aumentan. </UL>
 
-        <IMAGECENTER src="/veredictos-react/frontend-src/15/15b.jpg" />
+        <IMAGECENTER src={`${rootPath}frontend-src/15/15b.jpg`} />
 
         <UL> 42. Pero no es la tradición inflacionista e hiperinflacionista lo que estimula este comportamiento (porque la memoria financiera de los pueblos se resetea cada 10 años) sino la realidad presente de que el gobierno tercermundista se halla: incapacitado de aumentar los impuestos porque ya ha saturado de impuestos a su población como si de un ejército de ocupación se tratase; tan endeudado que no conseguirá nuevos créditos durante la recesión; totalmente imposibilitado de reducir el gasto porque grupos grandes y poderosos se alimentan de cada centavo que sale del Estado. </UL>
 

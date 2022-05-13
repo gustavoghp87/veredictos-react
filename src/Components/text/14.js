@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
 import { CHAPIMAGE, TITLE2, UL, SUBTITLE, IMAGECENTER } from '../css/css'
 import { data } from '../../chapters'
-import { urlbase, isLocalhost } from '../../index'
 
+import { isLocalhost, rootPath, urlbase } from '../App'
 
 export const V14 = () => {
 
@@ -12,7 +12,7 @@ export const V14 = () => {
     return (
     <div>
 
-        <CHAPIMAGE src="/veredictos-react/frontend-src/17/17.jpg" />
+        <CHAPIMAGE src={`${rootPath}frontend-src/17/17.jpg`} />
 
         <TITLE2> {data[14].number}. {data[14].title} </TITLE2>
 
@@ -35,7 +35,7 @@ export const V14 = () => {
 
         <UL> 8. La FED no es pública ni privada. Es más correcto entenderla como el hijo socialista que el país más capitalista del mundo tuvo con el <i>lobby</i> bancario. Es el gerenciamiento privado de una parte del Estado, para la riqueza rentística del Estado y de los empresarios asociados. </UL>
 
-        <IMAGECENTER src="/veredictos-react/frontend-src/17/jackson4.jpg" />
+        <IMAGECENTER src={`${rootPath}frontend-src/17/jackson4.jpg`} />
 
         <UL> 9. Antes de emitir juicio, se recomienda recordar que EE.UU. fue el único país del mundo cuya dirigencia política se resistió a este engendro comunista con tenasidad, luchando con todas sus fuerzas a lo largo de 140 años. Los demás países se rindieron sin luchar. </UL>
 

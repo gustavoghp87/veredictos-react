@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
 import { CHAPIMAGE, TITLE2, UL, SUBTITLE } from '../css/css'
 import { data } from '../../chapters'
-import { urlbase, isLocalhost } from '../../index'
 
+import { isLocalhost, rootPath, urlbase } from '../App'
 
 export const V15 = () => {
 
@@ -12,7 +12,7 @@ export const V15 = () => {
     return (
     <div>
 
-        <CHAPIMAGE src="/veredictos-react/frontend-src/18/18.jpg" />
+        <CHAPIMAGE src={`${rootPath}frontend-src/18/18.jpg`} />
 
         <TITLE2> {data[15].number}. {data[15].title} </TITLE2>
 

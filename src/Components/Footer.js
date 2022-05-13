@@ -1,12 +1,12 @@
 import React from 'react'
 import { FOOT, LOGOFOOTER, UL, CENTER, VERE } from './css/css'
-
+import { rootPath } from './App'
 
 export const Footer = () => {
     return (
         <FOOT>
 
-            <LOGOFOOTER src="/veredictos-react/frontend-src/logo.jpg" />
+            <LOGOFOOTER src={`${rootPath}frontend-src/logo.jpg`} />
 
             <UL style={{textIndent:'0'}}>
                 No me detengo a hacer culto a cada economista que dijo cada cosa porque no me interesa ni podría hacerlo bien porque no lo recuerdo, pero están las imágenes como orientación. Si alguien quiere corregir o comentar, el contacto es veredictosdeeconomia@gmail.com
@@ -16,9 +16,9 @@ export const Footer = () => {
                 <UL style={{textIndent:'0'}}> Donaciones en bitcoins: <small>1AtHe23t5zHWPS5wSYtDXz2fFjZqB9FgHN</small> </UL>
             </CENTER>
 
-            <a href="https://www.veredictosdeeconomia.com" style={{textDecoration:'none'}}>
+            {/* <a href="https://www.veredictosdeeconomia.com" style={{textDecoration:'none'}}> */}
                 <CENTER style={VERE}> VeredictosDeEconomia.com </CENTER>
-            </a>
+            {/* </a> */}
 
             <br/>
 

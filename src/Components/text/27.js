@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
-import { CHAPIMAGE, TITLE2, UL } from '../css/css'
+import { CHAPIMAGE, TITLE2, UL, SPECIALRIGHT } from '../css/css'
 import { data } from '../../chapters'
-import { urlbase, isLocalhost } from '../../index'
 
+import { isLocalhost, rootPath, urlbase } from '../App'
 
 export const V27 = () => {
 
@@ -12,7 +12,7 @@ export const V27 = () => {
     return (
     <>
 
-        <CHAPIMAGE src="/veredictos-react/frontend-src/27/27.jpg" />
+        <CHAPIMAGE src={`${rootPath}frontend-src/27/27.jpg`} />
 
         <TITLE2> XXVII. NUEVA GENERACIÓN DE CRIPTOMONEDAS </TITLE2>
 
