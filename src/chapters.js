@@ -91,12 +91,12 @@ export const data = [
         url: "17"
     },
     {
-        title: "HACER MACROECONOMÍA",
+        title: "NEOLIBERALISMO",
         number: "XVIII",
         url: "18"
     },
     {
-        title: "NEOLIBERALISMO",
+        title: "HACER MACROECONOMÍA",
         number: "XIX",
         url: "19"
     },

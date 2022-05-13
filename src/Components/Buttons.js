@@ -8,18 +8,20 @@ import { rootPath } from './App'
 export default withRouter(function Buttons(props) {
 
     const act = props.location.pathname
+    console.log(act);
     let ant, pos
     if (act===rootPath) {ant = rootPath; pos = `${rootPath}01`}
     else if (act===`${rootPath}01`) {ant = `${rootPath}`; pos = `${rootPath}02`}
     else if (act===`${rootPath}10`) {ant = `${rootPath}09`; pos = `${rootPath}11`}
     else {
-        let aux = act.split(rootPath)[1]
+        let aux = act.split(rootPath) && act.split(rootPath).length > 1 ? act.split(rootPath)[1] : "01"
         if (aux[0]==='0') {
             aux = aux[1]
             aux = parseInt(aux)
             ant = `${rootPath}0${aux-1}`
             pos = aux === 9 ? `${rootPath}10` : `${rootPath}0${aux+1}`
         } else {
+            console.log(aux);
             aux = parseInt(aux)
             ant = `${rootPath}${aux-1}`
             pos = `${rootPath}${aux+1}`

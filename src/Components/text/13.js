@@ -36,7 +36,7 @@ export const V13 = () => {
 
         <SUBTITLE> LA RESERVA FRACCIONARIA </SUBTITLE>
 
-        <UL> 8. Pero todo banco necesita conservar alguna cantidad de dinero material para hacer funcionar al sistema (para hacer que ambas formas de dinero sea intercambiables). Esa cantidad suele ser de entre 10% y 20% del total de depósitos a la vista, un porcentaje que se conoce como coeficiente de encaje o radio de reserva. </UL>
+        <UL> 8. Pero todo banco necesita conservar alguna cantidad de dinero material para hacer funcionar al sistema (para hacer que ambas formas de dinero sean intercambiables). Esa cantidad suele ser de entre 10% y 20% del total de depósitos a la vista, un porcentaje que se conoce como coeficiente de encaje o radio de reserva. </UL>
 
         <UL> 9. Hay, luego, un cálculo muy sencillo: La cantidad de dinero bancario en la economía es de 5 a 10 veces la cantidad de dinero físico que los bancos tienen en reserva (dependiendo del coeficiente de encaje). Así, la cantidad de dinero material en los bancos (que depende, sobre todo, de la confianza en los bancos) limita la creación de dinero de banco. </UL>
 
