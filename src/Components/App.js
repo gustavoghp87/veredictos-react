@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react'
-import { Switch, Route, Redirect } from 'react-router-dom'
+import { Navigate, Route, Routes } from 'react-router-dom'
 import { Navbar } from './Navbar'
 import { Index } from './text/index'
 import { V01 } from './text/01'
@@ -24,7 +24,7 @@ import { V19 } from './text/19'
 import { V20 } from './text/20'
 import { V21 } from './text/21'
 import { V22 } from './text/22'
-import Buttons from './Buttons'
+import { Buttons } from './Buttons'
 import { Indice } from './Indice'
 import { Footer } from './Footer'
 
@@ -37,9 +37,7 @@ export const isLocalhost = false
 export const rootPath = isLocalhost ? "/" : "/veredictos-react/"
 export const urlbase = "https://veredictos.herokuapp.com/count"    // localhost:  "http://localhost:8005/count"
 
-console.log(window.location.pathname);
-
-function App() {
+export const App = () => {
 
   const appStyle = {
     maxWidth: '100%',
@@ -54,49 +52,54 @@ function App() {
 
   return (
     <Suspense fallback={(<div>Cargando...</div>)}>
+
       <div style={appStyle}>
+
         <Navbar />
-        <Switch>
-          <Route exact path={`${rootPath}`} component={Index} />
-          <Route exact path={`${rootPath}01`} component={V01} />
-          <Route exact path={`${rootPath}02`} component={V02} />
-          <Route exact path={`${rootPath}03`} component={V03} />
-          <Route exact path={`${rootPath}04`} component={V04} />
-          <Route exact path={`${rootPath}05`} component={V05} />
-          <Route exact path={`${rootPath}06`} component={V06} />
-          <Route exact path={`${rootPath}07`} component={V07} />
-          <Route exact path={`${rootPath}08`} component={V08} />
-          <Route exact path={`${rootPath}09`} component={V09} />
-          <Route exact path={`${rootPath}10`} component={V10} />
-          <Route exact path={`${rootPath}11`} component={V11} />
-          <Route exact path={`${rootPath}12`} component={V12} />
-          <Route exact path={`${rootPath}13`} component={V13} />
-          <Route exact path={`${rootPath}14`} component={V14} />
-          <Route exact path={`${rootPath}15`} component={V15} />
-          <Route exact path={`${rootPath}16`} component={V16} />
-          <Route exact path={`${rootPath}17`} component={V17} />
-          <Route exact path={`${rootPath}18`} component={V18} />
-          <Route exact path={`${rootPath}19`} component={V19} />
-          <Route exact path={`${rootPath}20`} component={V20} />
-          <Route exact path={`${rootPath}21`} component={V21} />
-          <Route exact path={`${rootPath}22`} component={V22} />
-          <Redirect exact strict from={`${rootPath}1`} to={`${rootPath}01`} />
-          <Redirect exact strict from={`${rootPath}2`} to={`${rootPath}02`} />
-          <Redirect exact strict from={`${rootPath}3`} to={`${rootPath}03`} />
-          <Redirect exact strict from={`${rootPath}4`} to={`${rootPath}04`} />
-          <Redirect exact strict from={`${rootPath}5`} to={`${rootPath}05`} />
-          <Redirect exact strict from={`${rootPath}6`} to={`${rootPath}06`} />
-          <Redirect exact strict from={`${rootPath}7`} to={`${rootPath}07`} />
-          <Redirect exact strict from={`${rootPath}8`} to={`${rootPath}08`} />
-          <Redirect exact strict from={`${rootPath}9`} to={`${rootPath}09`} />
-          <Redirect from={"/"} to={rootPath} />
-        </Switch>
+
+        <Routes>
+          <Route element={ <Index /> } path={`${rootPath}`} />
+          <Route element={ <V01 /> } path={`${rootPath}01`} />
+          <Route element={ <V02 /> } path={`${rootPath}02`} />
+          <Route element={ <V03 /> } path={`${rootPath}03`} />
+          <Route element={ <V04 /> } path={`${rootPath}04`} />
+          <Route element={ <V05 /> } path={`${rootPath}05`} />
+          <Route element={ <V06 /> } path={`${rootPath}06`} />
+          <Route element={ <V07 /> } path={`${rootPath}07`} />
+          <Route element={ <V08 /> } path={`${rootPath}08`} />
+          <Route element={ <V09 /> } path={`${rootPath}09`} />
+          <Route element={ <V10 /> } path={`${rootPath}10`} />
+          <Route element={ <V11 /> } path={`${rootPath}11`} />
+          <Route element={ <V12 /> } path={`${rootPath}12`} />
+          <Route element={ <V13 /> } path={`${rootPath}13`} />
+          <Route element={ <V14 /> } path={`${rootPath}14`} />
+          <Route element={ <V15 /> } path={`${rootPath}15`} />
+          <Route element={ <V16 /> } path={`${rootPath}16`} />
+          <Route element={ <V17 /> } path={`${rootPath}17`} />
+          <Route element={ <V18 /> } path={`${rootPath}18`} />
+          <Route element={ <V19 /> } path={`${rootPath}19`} />
+          <Route element={ <V20 /> } path={`${rootPath}20`} />
+          <Route element={ <V21 /> } path={`${rootPath}21`} />
+          <Route element={ <V22 /> } path={`${rootPath}22`} />
+          <Route path={`${rootPath}1`} element={<Navigate to={`${rootPath}01`} replace />} />
+          <Route path={`${rootPath}2`} element={<Navigate to={`${rootPath}02`} replace />} />
+          <Route path={`${rootPath}3`} element={<Navigate to={`${rootPath}03`} replace />} />
+          <Route path={`${rootPath}4`} element={<Navigate to={`${rootPath}04`} replace />} />
+          <Route path={`${rootPath}5`} element={<Navigate to={`${rootPath}05`} replace />} />
+          <Route path={`${rootPath}6`} element={<Navigate to={`${rootPath}06`} replace />} />
+          <Route path={`${rootPath}7`} element={<Navigate to={`${rootPath}07`} replace />} />
+          <Route path={`${rootPath}8`} element={<Navigate to={`${rootPath}08`} replace />} />
+          <Route path={`${rootPath}9`} element={<Navigate to={`${rootPath}09`} replace />} />
+          <Route path="*" element={<Navigate to={rootPath} replace />} />
+        </Routes>
+
         <Buttons />
+
         <Indice />
+
         <Footer />
+        
       </div>
     </Suspense>
   )
 }
-
-export default App

@@ -1,13 +1,12 @@
 import React from 'react'
-import { withRouter } from 'react-router-dom'
 import { HR, ROWBUTTONS, BUTTON } from './css/css'
 import { Col, Row } from 'react-bootstrap'
 import { rootPath } from './App'
 
 
-export default withRouter(function Buttons(props) {
+export const Buttons = () => {
 
-    const act = props.location.pathname
+    const act = window.location.pathname
     let ant, pos
     if (act===rootPath) {ant = rootPath; pos = `${rootPath}01`}
     else if (act===`${rootPath}01`) {ant = `${rootPath}`; pos = `${rootPath}02`}
@@ -58,4 +57,4 @@ export default withRouter(function Buttons(props) {
         
     </>
     )
-})
+}
