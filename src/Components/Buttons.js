@@ -1,11 +1,12 @@
 import React from 'react'
+import { useNavigate } from 'react-router'
 import { HR, ROWBUTTONS, BUTTON } from './css/css'
 import { Col, Row } from 'react-bootstrap'
 import { rootPath } from './App'
 
-
 export const Buttons = () => {
 
+    let navigate = useNavigate();
     const act = window.location.pathname
     let ant, pos
     if (act===rootPath) {ant = rootPath; pos = `${rootPath}01`}
@@ -31,21 +32,21 @@ export const Buttons = () => {
         <Row style={ROWBUTTONS}>
 
             <Col lg={4}>
-                <BUTTON className="btn btn-dark" onClick={() => window.location.href=ant}
+                <BUTTON className="btn btn-dark" onClick={() => navigate(ant)}
                     style={{display: ant===rootPath ? 'none' : 'block'}}>
                     <b style={{color:'#007bff'}}>ANTERIOR</b>
                 </BUTTON>
             </Col>
 
             <Col lg={4}>
-                <BUTTON className="btn btn-dark" onClick={()=>window.location.href=rootPath}
+                <BUTTON className="btn btn-dark" onClick={()=>navigate(rootPath)}
                     style={{display: act===rootPath ? 'none' : 'block'}}>
                     <b style={{color:'#007bff'}}>PRINCIPIO</b>
                 </BUTTON>
             </Col>
 
             <Col lg={4}>
-                <BUTTON className="btn btn-dark" onClick={()=>window.location.href=pos}
+                <BUTTON className="btn btn-dark" onClick={()=>navigate(pos)}
                     style={{display: act===`${rootPath}22` ? 'none' : 'block'}}>
                     <b style={{color:'#007bff'}}>SIGUIENTE</b>
                 </BUTTON>
